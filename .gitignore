@@ -4,6 +4,4 @@
 .svn
 .vscode
 
-jars/
-*.jar
 *.zip

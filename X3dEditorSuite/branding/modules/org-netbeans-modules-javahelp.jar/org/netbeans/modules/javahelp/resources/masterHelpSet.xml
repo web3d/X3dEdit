@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+The contents of this file are subject to the terms of the Common Development
+and Distribution License (the License). You may not use this file except in
+compliance with the License.
+
+You can obtain a copy of the License at http://www.netbeans.org/cddl.html
+or http://www.netbeans.org/cddl.txt.
+
+When distributing Covered Code, include this CDDL Header Notice in each file
+and include the License file at http://www.netbeans.org/cddl.txt.
+If applicable, add the following below the CDDL Header, with the fields
+enclosed by brackets [] replaced by your own identifying information:
+"Portions Copyrighted [year] [name of copyright owner]"
+
+The Original Software is NetBeans. The Initial Developer of the Original
+Software is Sun Microsystems, Inc. Portions Copyright 1997-2006 Sun
+Microsystems, Inc. All Rights Reserved.
+-->
+<!-- RCP, Ch 21, included just to put our own title in place -->
+
+<!DOCTYPE helpset PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp HelpSet Version 2.0//EN" "http://java.sun.com/products/javahelp/helpset_2_0.dtd">
+<helpset version="2.0">
+    <!--<title>IDE Help</title>-->
+    <title>X3D-Edit 4.0 Help</title>
+    <maps>
+        <homeID>org.netbeans.api.javahelp.MASTER_ID</homeID>
+        <mapref location="masterHelpMap.jhm"/>
+    </maps>
+    <view mergetype="javax.help.UniteAppendMerge">
+        <name>TOC</name>
+        <label>Contents</label>
+        <type>javax.help.TOCView</type>
+        <data>masterHelpToc.xml</data>
+    </view>
+    <!--
+    <view mergetype="javax.help.SortMerge">
+        <name>Index</name>
+        <label>Index</label>
+        <type>javax.help.IndexView</type>
+    </view>
+    -->
+    <view>
+        <name>Search</name>
+        <label>Search</label>
+        <type>javax.help.SearchView</type>
+    </view>
+    <!--
+    <view>
+        <name>Favorites</name>
+        <label>Favorites</label>
+        <type>javax.help.FavoritesView</type>
+    </view>
+    -->
+    <presentation default="true" displayviews="true" displayviewimages="false">
+        <name>main window</name>
+        <toolbar>
+            <helpaction image="helpviewer_back">javax.help.BackAction</helpaction>
+            <helpaction image="helpviewer_forward">javax.help.ForwardAction</helpaction>
+            <helpaction image="helpviewer_print">javax.help.PrintAction</helpaction>
+            <helpaction image="helpviewer_page-setup">javax.help.PrintSetupAction</helpaction>
+        </toolbar>
+    </presentation>
+    <presentation displayviews="false">
+        <name>NBSecondaryWindow</name>
+        <size width="600" height="400" />
+        <location x="200" y="200" />
+    </presentation>
+
+    </helpset>
