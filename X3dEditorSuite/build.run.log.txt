@@ -1,0 +1,275 @@
+platform.download:
+ant -f C:\\x3d-code\\www.web3d.org\\x3d\\tools\\X3dEdit4.next\\X3dEditorSuite run
+platformType:
+initializeXj3d:
+initializeWindows:
+initializeUnix:
+initializeMac:
+platformInitialize:
+branding:
+files-init:
+release:
+build:
+org.apache.taskdefs:
+org.apache.common-init:
+org.apache.projectized-common.basic-init:
+org.apache.basic-init:
+org.apache.files-init:
+org.apache.nbm-license-init:
+org.apache.build-init:
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\extide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\ide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\java
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\nb
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\platform
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\webcommon
+Scanning for modules in suite C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite
+org.apache.init:
+org.apache.up-to-date:
+org.apache.compile:
+org.apache.jar-prep:
+org.apache.jar:
+org.apache.netbeans-extra:
+org.apache.javahelp:
+org.apache.module-auto-deps:
+Copying 11 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+org.apache.release:
+org.apache.module-xml-regular:
+org.apache.module-xml-autoload:
+org.apache.module-xml-eager:
+org.apache.chmod-executables:
+org.apache.verify-class-linkage:
+1 file(s) have been successfully validated.
+org.apache.netbeans:
+Generating Auto Update information for org.apache
+org.jdom.taskdefs:
+org.jdom.common-init:
+org.jdom.projectized-common.basic-init:
+org.jdom.basic-init:
+org.jdom.files-init:
+org.jdom.nbm-license-init:
+org.jdom.build-init:
+org.jdom.init:
+org.jdom.up-to-date:
+org.jdom.compile:
+org.jdom.jar-prep:
+org.jdom.jar:
+org.jdom.netbeans-extra:
+org.jdom.javahelp:
+org.jdom.module-auto-deps:
+Copying 3 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+org.jdom.release:
+org.jdom.module-xml-regular:
+org.jdom.module-xml-autoload:
+org.jdom.module-xml-eager:
+org.jdom.chmod-executables:
+org.jdom.verify-class-linkage:
+1 file(s) have been successfully validated.
+org.jdom.netbeans:
+Generating Auto Update information for org.jdom
+edu.nps.moves.kmleditor.taskdefs:
+edu.nps.moves.kmleditor.common-init:
+edu.nps.moves.kmleditor.projectized-common.basic-init:
+edu.nps.moves.kmleditor.basic-init:
+edu.nps.moves.kmleditor.files-init:
+edu.nps.moves.kmleditor.nbm-license-init:
+edu.nps.moves.kmleditor.build-init:
+Scanning for modules in suite C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit3.3\X3dEditorSuite
+Warning: edu.nps.moves.kmleditor lacks a unit test dependency on org.netbeans.libs.junit4; using default dependencies for compatibility
+edu.nps.moves.kmleditor.init:
+edu.nps.moves.kmleditor.up-to-date:
+edu.nps.moves.kmleditor.compile:
+edu.nps.moves.kmleditor.jar-prep:
+edu.nps.moves.kmleditor.jar:
+edu.nps.moves.kmleditor.netbeans-extra:
+edu.nps.moves.kmleditor.javahelp:
+edu.nps.moves.kmleditor.module-auto-deps:
+edu.nps.moves.kmleditor.release:
+edu.nps.moves.kmleditor.module-xml-regular:
+edu.nps.moves.kmleditor.module-xml-autoload:
+edu.nps.moves.kmleditor.module-xml-eager:
+edu.nps.moves.kmleditor.chmod-executables:
+edu.nps.moves.kmleditor.verify-class-linkage:
+1 file(s) have been successfully validated.
+edu.nps.moves.kmleditor.netbeans:
+Generating Auto Update information for edu.nps.moves.kmleditor
+org.web3d.javahelp.taskdefs:
+org.web3d.javahelp.common-init:
+org.web3d.javahelp.projectized-common.basic-init:
+org.web3d.javahelp.basic-init:
+org.web3d.javahelp.files-init:
+org.web3d.javahelp.nbm-license-init:
+org.web3d.javahelp.build-init:
+org.web3d.javahelp.init:
+org.web3d.javahelp.up-to-date:
+org.web3d.javahelp.compile:
+org.web3d.javahelp.jar-prep:
+org.web3d.javahelp.jar:
+org.web3d.javahelp.netbeans-extra:
+org.web3d.javahelp.javahelp:
+org.web3d.javahelp.module-auto-deps:
+Copying 2 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+org.web3d.javahelp.release:
+org.web3d.javahelp.module-xml-regular:
+org.web3d.javahelp.module-xml-autoload:
+org.web3d.javahelp.module-xml-eager:
+org.web3d.javahelp.chmod-executables:
+org.web3d.javahelp.verify-class-linkage:
+0 file(s) have been successfully validated.
+org.web3d.javahelp.netbeans:
+Generating Auto Update information for org.web3d.javahelp
+org.web3d.x3d.collada.taskdefs:
+org.web3d.x3d.collada.common-init:
+org.web3d.x3d.collada.projectized-common.basic-init:
+org.web3d.x3d.collada.basic-init:
+org.web3d.x3d.collada.files-init:
+org.web3d.x3d.collada.nbm-license-init:
+org.web3d.x3d.collada.build-init:
+org.web3d.x3d.collada.init:
+org.web3d.x3d.collada.up-to-date:
+org.web3d.x3d.collada.compile:
+org.web3d.x3d.collada.jar-prep:
+org.web3d.x3d.collada.jar:
+org.web3d.x3d.collada.netbeans-extra:
+org.web3d.x3d.collada.javahelp:
+org.web3d.x3d.collada.module-auto-deps:
+org.web3d.x3d.collada.release:
+org.web3d.x3d.collada.module-xml-regular:
+org.web3d.x3d.collada.module-xml-autoload:
+org.web3d.x3d.collada.module-xml-eager:
+org.web3d.x3d.collada.chmod-executables:
+org.web3d.x3d.collada.verify-class-linkage:
+1 file(s) have been successfully validated.
+org.web3d.x3d.collada.netbeans:
+Generating Auto Update information for org.web3d.x3d.collada
+org.web3d.x3d.x3dedit.config.taskdefs:
+org.web3d.x3d.x3dedit.config.common-init:
+org.web3d.x3d.x3dedit.config.projectized-common.basic-init:
+org.web3d.x3d.x3dedit.config.basic-init:
+org.web3d.x3d.x3dedit.config.files-init:
+org.web3d.x3d.x3dedit.config.nbm-license-init:
+org.web3d.x3d.x3dedit.config.build-init:
+org.web3d.x3d.x3dedit.config.init:
+org.web3d.x3d.x3dedit.config.up-to-date:
+org.web3d.x3d.x3dedit.config.compile:
+org.web3d.x3d.x3dedit.config.jar-prep:
+org.web3d.x3d.x3dedit.config.jar:
+org.web3d.x3d.x3dedit.config.netbeans-extra:
+org.web3d.x3d.x3dedit.config.javahelp:
+org.web3d.x3d.x3dedit.config.module-auto-deps:
+Copying 3 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+org.web3d.x3d.x3dedit.config.release:
+org.web3d.x3d.x3dedit.config.module-xml-regular:
+org.web3d.x3d.x3dedit.config.module-xml-autoload:
+org.web3d.x3d.x3dedit.config.module-xml-eager:
+org.web3d.x3d.x3dedit.config.chmod-executables:
+org.web3d.x3d.x3dedit.config.verify-class-linkage:
+1 file(s) have been successfully validated.
+org.web3d.x3d.x3dedit.config.netbeans:
+Generating Auto Update information for org.web3d.x3d.x3dedit.config
+Xj3d Wrapper for X3D-Edit.taskdefs:
+Xj3d Wrapper for X3D-Edit.common-init:
+Xj3d Wrapper for X3D-Edit.projectized-common.basic-init:
+Xj3d Wrapper for X3D-Edit.basic-init:
+Xj3d Wrapper for X3D-Edit.files-init:
+Xj3d Wrapper for X3D-Edit.nbm-license-init:
+Xj3d Wrapper for X3D-Edit.build-init:
+Xj3d Wrapper for X3D-Edit.init:
+Xj3d Wrapper for X3D-Edit.up-to-date:
+Xj3d Wrapper for X3D-Edit.compile:
+Xj3d Wrapper for X3D-Edit.jar-prep:
+Xj3d Wrapper for X3D-Edit.jar:
+Xj3d Wrapper for X3D-Edit.netbeans-extra:
+Xj3d Wrapper for X3D-Edit.javahelp:
+Xj3d Wrapper for X3D-Edit.module-auto-deps:
+Copying 20 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+Xj3d Wrapper for X3D-Edit.release:
+Xj3d Wrapper for X3D-Edit.module-xml-regular:
+Xj3d Wrapper for X3D-Edit.module-xml-autoload:
+Xj3d Wrapper for X3D-Edit.module-xml-eager:
+Xj3d Wrapper for X3D-Edit.chmod-executables:
+Xj3d Wrapper for X3D-Edit.verify-class-linkage:
+1 file(s) have been successfully validated.
+Xj3d Wrapper for X3D-Edit.netbeans:
+Generating Auto Update information for org.web3d.x3d.xj3d
+org.web3d.x3d.taskdefs:
+org.web3d.x3d.common-init:
+org.web3d.x3d.projectized-common.basic-init:
+org.web3d.x3d.basic-init:
+org.web3d.x3d.files-init:
+org.web3d.x3d.nbm-license-init:
+org.web3d.x3d.build-init:
+org.web3d.x3d.init:
+org.web3d.x3d.up-to-date:
+org.web3d.x3d.projectized-common.-pre-compile:
+org.web3d.x3d.compile:
+org.web3d.x3d.jar-prep:
+org.web3d.x3d.jar:
+org.web3d.x3d.netbeans-extra:
+org.web3d.x3d.javahelp.initialization:
+javahelp.initialization: private.properties.file=nbproject/private/private.xml
+have.private.properties=${have.private.properties}
+# javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    
+../nbproject/private/private.properties:
+# javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    
+org.web3d.x3d.check.have.X3D-EditPages:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/X3D-Edit.html etc. already downloaded...
+org.web3d.x3d.get.X3D-EditPages:
+org.web3d.x3d.check.have.other.javahelp:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/X3dRegularExpressions.html etc. already downloaded...
+org.web3d.x3d.get.other.javahelp.pages:
+org.web3d.x3d.check.have.tooltips:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/X3dTooltips.html etc. already downloaded...
+org.web3d.x3d.get.tooltips:
+org.web3d.x3d.check.have.examples:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/newTextFile.txt etc. already downloaded...
+org.web3d.x3d.get.examples:
+org.web3d.x3d.check.have.schematron.help:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/schematron/X3dSchematron.html etc. already downloaded...
+org.web3d.x3d.get.schematron.help:
+org.web3d.x3d.check.have.Xj3D.help:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/images/Xj3D/navigation/ButtonFly.gif etc. already downloaded...
+org.web3d.x3d.get.Xj3D.help:
+org.web3d.x3d.get.all.javahelp.pages:
+org.web3d.x3d.harness.javahelp:
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\docs\org-web3d-x3d.jar
+org.web3d.x3d.javahelp:
+Deleting: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\docs\org-web3d-x3d.jar
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\docs\org-web3d-x3d.jar
+org.web3d.x3d.module-auto-deps:
+Copying 6 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+org.web3d.x3d.release:
+org.web3d.x3d.module-xml-regular:
+org.web3d.x3d.module-xml-autoload:
+org.web3d.x3d.module-xml-eager:
+org.web3d.x3d.chmod-executables:
+org.web3d.x3d.verify-class-linkage:
+1 file(s) have been successfully validated.
+org.web3d.x3d.netbeans:
+Generating Auto Update information for org.web3d.x3d
+suite.run:
+C:\Program Files\NetBeans-12.4\netbeans\harness\suite.xml:513: The following error occurred while executing this line:
+C:\Program Files\NetBeans-12.4\netbeans\harness\run.xml:131: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\teams as local user, not admin does not exist.
+BUILD FAILED (total time: 31 seconds)

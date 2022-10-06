@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 1995-2021 held by the author(s) .  All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+ * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer
+      in the documentation and/or other materials provided with the
+      distribution.
+ * Neither the names of the Naval Postgraduate School (NPS)
+      Modeling Virtual Environments and Simulation (MOVES) Institute
+      (http://www.nps.edu and https://MovesInstitute.nps.edu)
+      nor the names of its contributors may be used to endorse or
+      promote products derived from this software without specific
+      prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+-->
+<project name="javahelp.getDocs" default="get.all.javahelp.pages" basedir=".">
+  <description>Get X3D-Edit 3.3 online file updates for javahelp, specifications, example files, etc. from version control</description>
+
+  <dirname property="jh" file="${ant.file.javahelp.getDocs}"/>   <!-- get the javahelp directory incase this file is imported -->
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml">
+    <classpath>
+      <pathelement location="${jh}/antJars/ant-contrib-1.0b3.jar"/>
+    </classpath>
+  </taskdef>
+
+  <!-- remote paths -->
+  <property name="draft.specification.site"   value="http://www.igraphics.com/Standards"/>
+  <property name="web3d.specification.site"   value="https://www.web3d.org/standards"/>
+  <property name="web3d.standards.site"       value="https://www.web3d.org/documents/specifications"/>
+  <property name="collada.specification.site" value="http://www.khronos.org/files"/>
+  <property name="x3d.svn.site"               value="http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d"/>
+  <property name="x3d.svn.schematron.site"    value="${x3d.svn.site}/tools/schematron"/>
+  <property name="x3d.svn.stylesheets.site"   value="${x3d.svn.site}/stylesheets"/>
+  <property name="x3d.svn.examples.site"      value="${x3d.svn.site}/content/examples"/>
+  <property name="X3dForWebAuthors.site"      value="${x3d.svn.examples.site}/X3dForWebAuthors"/>
+  <property name="x3d.svn.templates.site"     value="${x3d.svn.site}/tools/X3dEdit3.3/X3D/src/org/web3d/x3d/templates"/>
+  <property name="x3d.content.site"           value="https://www.web3d.org/x3d/content"/>
+  <property name="xj3d.svn.javahelp.site"     value="https://sourceforge.net/p/xmsf/code/HEAD/tree/trunk/AuvWorkbench/javahelp/Pages"/>
+  <property name="xj3d.svn.images.site"       value="${xj3d.svn.javahelp.site}/images"/>
+  <property name="xj3d.svn.navigation.site"   value="${xj3d.svn.images.site}/Xj3D/navigation"/>
+
+  <!-- local paths -->
+  <property name="docs.loc"              value="${jh}/org/web3d/x3d/docs"/>
+  <property name="downloads.loc"         value="${docs.loc}/downloads"/>
+  <property name="specifications.loc"    value="${docs.loc}/specifications"/>
+  <property name="schematron.loc"        value="${downloads.loc}/schematron"/>
+  <property name="images.loc"            value="${downloads.loc}/images"/>
+  <property name="navigation.loc"        value="${images.loc}/Xj3D/navigation"/>
+  <property name="X3D-EditDir.loc"       value="${jh}/../../X3dEditorSuite/websites/savage.nps.edu/X3D-Edit"/>
+  <property name="x3d.src.templates.loc" value="${jh}/../../X3D/src/org/web3d/x3d/templates"/>
+<!-- property name="jhall.jar"             value="${jh}/../../JavaHelpWrapper/release/modules/ext/jh.jar"/
+  <property name="jhall.jar"             value="jars/jsearch.jar"/> -->
+
+  <property name="private.properties.file" value="nbproject/private/private.xml"/>
+  <available property="have.private.properties" file="${private.properties.file}"/>
+  <target name="javahelp.initialization" unless="${have.private.properties}">
+    <!--  You must set 'jhall.jar' (e.g. in private.properties) to the location of jsearch.jar from a JavaHelp distribution -->    
+    <echo message="javahelp.initialization: private.properties.file=${private.properties.file}"/>   
+    <echo message="have.private.properties=${have.private.properties}"/>
+    <mkdir dir="../nbproject/private/"/>
+    <concat>
+        <fileset dir="../nbproject/private/" includes="private.properties"/>
+    </concat>
+    <echo file="../nbproject/private/private.properties" append="true"># javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    </echo>
+    <!--
+jhall.jar=C:/x3d-code/www.web3d.org/x3d/tools/X3dEdit3.3/X3D/javahelp/jars/jhsearch-2.0_05.jar
+    -->  
+    <echo message="../nbproject/private/private.properties:"/>
+    <concat>
+        <fileset dir="../nbproject/private/" includes="private.properties"/>
+    </concat>
+  </target>
+
+  <target name="get.all.javahelp.pages" depends="javahelp.initialization,get.X3D-EditPages,get.other.javahelp.pages,get.tooltips,get.examples,get.schematron.help,get.Xj3D.help"> <!-- ,get.specifications -->
+    <!-- this shows up in sys.err colors<echo>completed javahelp.getDocs.get.all.javahelp.pages online file updates for X3D-Edit javahelp from remote sources</echo>-->
+  </target>
+
+  <!-- X3D-EditPages -->
+  <!-- ============= -->
+  <property name="X3D-EditPages.test.file" value="${downloads.loc}/X3D-Edit.html"/>
+  <available property="need.X3D-EditPages" file="${X3D-EditPages.test.file}"/>
+
+  <target name="check.have.X3D-EditPages" if="${need.X3D-EditPages}">
+    <echo message="${X3D-EditPages.test.file} etc. already downloaded..."/>
+  </target>
+
+  <target name="get.X3D-EditPages" depends="check.have.X3D-EditPages" unless="${need.X3D-EditPages}">
+    <!-- files and images are all inside X3D-Edit version control and copied over... depends="check.have.X3D-EditPages"
+    first ensure that X3D-Edit directory has copies of remote images, which subsequently get pushed to website as well -->
+    <get src="${X3dForWebAuthors.site}/Chapter03Grouping/CoordinateAxes.WhiteBackground.png"              dest="${X3D-EditDir.loc}/images/CoordinateAxes.WhiteBackground.png" usetimestamp="true" verbose="true"/>
+    <get src="${X3dForWebAuthors.site}/Chapter11LightingEnvironmentalEffects/PointLightVisualization.png" dest="${X3D-EditDir.loc}/images/PointLightVisualization.png"        usetimestamp="true" verbose="true"/>
+    <get src="${X3dForWebAuthors.site}/Chapter11LightingEnvironmentalEffects/SpotLightVisualization.png"  dest="${X3D-EditDir.loc}/images/SpotLightVisualization.png"         usetimestamp="true" verbose="true"/>
+    <get src="${X3dForWebAuthors.site}/Chapter12EnvironmentSensorSound/ProximitySensorVisualization.png"  dest="${X3D-EditDir.loc}/images/ProximitySensorVisualization.png"   usetimestamp="true" verbose="true"/>
+    <get src="${X3dForWebAuthors.site}/Chapter12EnvironmentSensorSound/SoundVisualization.png"            dest="${X3D-EditDir.loc}/images/SoundVisualization.png"             usetimestamp="true" verbose="true"/>
+    <get src="${X3dForWebAuthors.site}/Chapter14Prototypes/ViewFrustumObliqueView.png"                    dest="${X3D-EditDir.loc}/images/ViewFrustumObliqueView.png"         usetimestamp="true" verbose="true"/>
+    <get src="${X3dForWebAuthors.site}/Chapter14Prototypes/ViewFrustumOverheadView.png"                   dest="${X3D-EditDir.loc}/images/ViewFrustumOverheadView.png"        usetimestamp="true" verbose="true"/>
+    <get src="${X3dForWebAuthors.site}/Chapter14Prototypes/ViewpointCalculator.png"                       dest="${X3D-EditDir.loc}/images/ViewpointCalculator.png"            usetimestamp="true" verbose="true"/>
+
+    <mkdir dir="${images.loc}"/>
+    <copy toDir="${downloads.loc}"   verbose="true">
+      <fileset dir="${X3D-EditDir.loc}">
+        <include name="X3D-Edit.html"/>
+        <include name="XmppChatCollaborationModule.html"/>
+        <include name="BlenderExportToX3d.html"/>
+      </fileset>
+    </copy>
+    <copy toDir="${images.loc}"   verbose="true">
+      <fileset dir="${X3D-EditDir.loc}/images" includes="*.*"/>
+    </copy>
+  </target>
+  
+  <property name="X3dRegularExpressions.test.file" value="${downloads.loc}/X3dRegularExpressions.html"/>
+  <available property="need.other.javahelp" file="${X3dRegularExpressions.test.file}"/>
+  
+  <target name="check.have.other.javahelp" if="${need.other.javahelp}">
+    <echo message="${X3dRegularExpressions.test.file} etc. already downloaded..."/>
+  </target>
+
+  <target name="get.other.javahelp.pages" depends="check.have.other.javahelp" unless="${need.other.javahelp}">
+    <get src="https://www.web3d.org/specifications/X3dRegularExpressions.html" dest="${downloads.loc}/X3dRegularExpressions.html" usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.stylesheets.site}/X3dTidy.html"                       dest="${downloads.loc}/X3dTidy.html"               usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.stylesheets.site}/X3dToJson.html"                     dest="${downloads.loc}/X3dToJson.html"             usetimestamp="true" verbose="true"/>
+  </target>
+  
+  <!-- tooltips -->
+  <!-- ======== -->
+  <property name="tooltips.test.file" value="${downloads.loc}/X3dTooltips.html"/>
+  <available property="need.tooltips" file="${tooltips.test.file}"/>
+
+  <target name="check.have.tooltips" if="${need.tooltips}">
+    <echo message="${tooltips.test.file} etc. already downloaded..."/>
+  </target>
+
+  <target name="get.tooltips" depends="check.have.tooltips" unless="${need.tooltips}">
+
+    <!-- TODO:  move tooltip targets? -->
+    <mkdir dir="${downloads.loc}"/>
+    <mkdir dir="${downloads.loc}/icons"/>
+    <mkdir dir="${downloads.loc}/images/Xj3D"/>
+    <copy todir="${downloads.loc}/icons">
+      <fileset dir="${jh}/icons" includes="*.*"/>
+    </copy>
+    <copy todir="${downloads.loc}/images/Xj3D">
+      <fileset dir="${jh}/images/Xj3D" includes="*.*"/>
+    </copy>
+
+    <get src="${x3d.content.site}/X3dTooltips.html"           dest="${tooltips.test.file}"                       usetimestamp="true" verbose="true"/>
+    <!--get src="${x3d.content.site}/X3dTooltipsChinese.html"    dest="${downloads.loc}/X3dTooltipsChinese.html"    usetimestamp="true" verbose="true"/-->
+    <get src="${x3d.content.site}/X3dTooltipsFrench.html"     dest="${downloads.loc}/X3dTooltipsFrench.html"     usetimestamp="true" verbose="true"/>
+    <get src="${x3d.content.site}/X3dTooltipsGerman.html"     dest="${downloads.loc}/X3dTooltipsGerman.html"     usetimestamp="true" verbose="true"/>
+    <get src="${x3d.content.site}/X3dTooltipsItalian.html"    dest="${downloads.loc}/X3dTooltipsItalian.html"    usetimestamp="true" verbose="true"/>
+    <get src="${x3d.content.site}/X3dTooltipsKorean.html"     dest="${downloads.loc}/X3dTooltipsKorean.html"    usetimestamp="true" verbose="true"/>
+    <get src="${x3d.content.site}/X3dTooltipsPortuguese.html" dest="${downloads.loc}/X3dTooltipsPortuguese.html" usetimestamp="true" verbose="true"/>
+    <get src="${x3d.content.site}/X3dTooltipsSpanish.html"    dest="${downloads.loc}/X3dTooltipsSpanish.html"    usetimestamp="true" verbose="true"/>
+    <!--<get src="${x3d.content.site}/X3dTooltipsThai.html"      dest="${downloads.loc}/X3dTooltipsThai.html"       usetimestamp="true" verbose="true"/>-->
+  </target>
+
+  <!-- examples -->
+  <!-- ======== -->
+
+  <property name="examples.test.file" value="${downloads.loc}/newTextFile.txt"/>
+  <available property="need.examples" file="${examples.test.file}"/>
+      
+  <target name="check.have.examples" if="${need.examples}">
+    <echo message="${examples.test.file} etc. already downloaded..."/>
+  </target>
+
+  <target name="get.examples" depends="check.have.examples" unless="${need.examples}">
+    <mkdir dir="${downloads.loc}"/>
+
+    <get src="${x3d.svn.examples.site}/earth-topo.png"                  dest="${downloads.loc}/earth-topo.png"                  usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.examples.site}/HelloWorld.tall.png"             dest="${downloads.loc}/HelloWorld.tall.png"             usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.examples.site}/HelloWorld.x3d"                  dest="${downloads.loc}/HelloWorld.x3d"                  usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.examples.site}/X3dResources.html"               dest="${downloads.loc}/X3dResources.html"               usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.examples.site}/X3dSceneAuthoringHints.html"     dest="${downloads.loc}/X3dSceneAuthoringHints.html"     usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.examples.site}/license.html"                    dest="${downloads.loc}/license.html"                    usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.examples.site}/license.txt"                     dest="${downloads.loc}/license.txt"                     usetimestamp="true" verbose="true"/>
+
+    <!-- the following exemplars must also be copied below -->
+    <get src="${x3d.svn.examples.site}/newScene.x3d"                    dest="${downloads.loc}/newScene.x3d"                    usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.examples.site}/HtmlObjectTagForX3d.html"        dest="${downloads.loc}/HtmlObjectTagForX3d.html"        usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.examples.site}/newHtmlPageWithX3dObject.html"   dest="${downloads.loc}/newHtmlPageWithX3dObject.html"   usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.examples.site}/newXhtmlWithEmbeddedX3dom.xhtml" dest="${downloads.loc}/newXhtmlWithEmbeddedX3dom.xhtml" usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.examples.site}/newECMAscript.js"                dest="${downloads.loc}/newECMAscript.js"                usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.examples.site}/newX3dScript.java"               dest="${downloads.loc}/newX3dScript.java"               usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.examples.site}/newStylesheet.xslt"              dest="${downloads.loc}/newStylesheet.xslt"              usetimestamp="true" verbose="true"/>
+
+    <get src="${x3d.svn.templates.site}/newTextFile.txt"                dest="${examples.test.file}"                            usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.examples.site}/Basic/development/MaterialExample.x3d" dest="${downloads.loc}/MaterialExample.x3d" usetimestamp="true" verbose="true"/>
+
+    <chmod file="${downloads.loc}/newScene.x3d" perm="+w" verbose="true"/>
+
+    <copy file="${downloads.loc}/newScene.x3d"                    todir="${x3d.src.templates.loc}" failonerror="true" verbose="true"/>
+    <copy file="${downloads.loc}/HtmlObjectTagForX3d.html"        todir="${x3d.src.templates.loc}" failonerror="true" verbose="true"/>
+    <copy file="${downloads.loc}/newHtmlPageWithX3dObject.html"   todir="${x3d.src.templates.loc}" failonerror="true" verbose="true"/>
+    <copy file="${downloads.loc}/newXhtmlWithEmbeddedX3dom.xhtml" todir="${x3d.src.templates.loc}" failonerror="true" verbose="true"/>
+    <copy file="${downloads.loc}/newECMAscript.js"                todir="${x3d.src.templates.loc}" failonerror="true" verbose="true"/>
+    <copy file="${downloads.loc}/newStylesheet.xslt"              todir="${x3d.src.templates.loc}" failonerror="true" verbose="true"/>
+    <copy file="${downloads.loc}/newTextFile.txt"                 todir="${x3d.src.templates.loc}" failonerror="true" verbose="true"/>
+    <copy file="${downloads.loc}/MaterialExample.x3d"             todir="${x3d.src.templates.loc}" failonerror="true" verbose="true"/>
+      <!-- avoid compilation error if .java source used -->
+    <copy file="${downloads.loc}/newX3dScript.java"              tofile="${x3d.src.templates.loc}/newX3dScript.java.template"  failonerror="true" verbose="true"/>
+  </target>
+
+  <!-- schematron help -->
+  <!-- *************** -->
+  <property name="schematron.test.file" value="${schematron.loc}/X3dSchematron.html"/>
+  <available property="need.schematron.help" file="${schematron.test.file}"/>
+
+  <target name="check.have.schematron.help" if="${need.schematron.help}">
+    <echo message="${schematron.test.file} etc. already downloaded..."/>
+  </target>
+
+  <target name="get.schematron.help" depends="check.have.schematron.help" unless="${need.schematron.help}">
+    <mkdir dir="${schematron.loc}"/>
+    <mkdir dir="${schematron.loc}/images"/>
+    <get src="${x3d.svn.schematron.site}/X3dSchematron.html"               dest="${schematron.loc}/X3dSchematron.html"               usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.schematron.site}/SvrlReportText.xslt"              dest="${schematron.loc}/SvrlReportText.xslt"              usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.schematron.site}/X3dSchematronValidityChecks.sch"  dest="${schematron.loc}/X3dSchematronValidityChecks.sch"  usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.schematron.site}/X3dSchematronValidityChecks.xslt" dest="${schematron.loc}/X3dSchematronValidityChecks.xslt" usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.schematron.site}/X3dSchematronDataFlow.png"        dest="${schematron.loc}/X3dSchematronDataFlow.png"        usetimestamp="true" verbose="true"/>
+    <get src="${x3d.svn.schematron.site}/build.xml"                        dest="${schematron.loc}/build.xml"                        usetimestamp="true" verbose="true"/>
+
+    <copy file="${downloads.loc}/images/x3d2-s.gif"                        todir="${schematron.loc}/images/" failonerror="true" verbose="true"/>
+    <copy file="${downloads.loc}/images/web3d_logo2.png"                   todir="${schematron.loc}/images/" failonerror="true" verbose="true"/>
+
+    <echo>validate X3dSchematronValidityChecks.xslt, SvrlReportText.xslt</echo>
+    <xmlvalidate file="${schematron.loc}/X3dSchematronValidityChecks.xslt" failonerror="false" warn="true" lenient="yes"/>
+    <xmlvalidate file="${schematron.loc}/SvrlReportText.xslt"              failonerror="false" warn="true" lenient="yes"/>
+
+    <!-- http://www.saxonica.com/documentation/using-xsl/compiling.html -->
+    <!-- TODO unnecesary here ?
+    <property name="saxon.dir"        location="${jh}/../src/org/web3d/x3d/externals/schematron"/>
+
+    <if>
+      <outofdate>
+        <sourcefiles>
+          <fileset file="${schematron.loc}/X3dSchematronValidityChecks.xslt"/>
+        </sourcefiles>
+        <mapper dir="." type="glob" from="*.xslt" to="*.sxx"/>
+      </outofdate>
+      <then>
+        <echo>Compiling X3dSchematronValidityChecks.xslt as X3dSchematronValidityChecks.sxx ...</echo>
+        <java classname="net.sf.saxon.Compile" classpath="${saxon.dir}/saxon9.jar;." fork="true">
+          <arg value="-t"/>
+          <arg value="${schematron.loc}/X3dSchematronValidityChecks.xslt"/>
+          <arg value="${schematron.loc}/X3dSchematronValidityChecks.sxx"/>
+        </java>
+      </then>
+      <else>
+        <echo message="Compiled stylesheet X3dSchematronValidityChecks.sxx up to date"/>
+      </else>
+    </if>
+    <if>
+      <outofdate>
+        <sourcefiles>
+          <fileset file="${schematron.loc}/SvrlReportText.xslt"/>
+        </sourcefiles>
+        <mapper dir="." type="glob" from="*.xslt" to="*.sxx"/>
+      </outofdate>
+      <then>
+        <echo>Compiling SvrlReportText.xslt as SvrlReportText.sxx ...</echo>
+        <java classname="net.sf.saxon.Compile" classpath="${saxon.dir}/saxon9.jar;." fork="true">
+          <arg value="-t"/>
+          <arg value="${schematron.loc}/SvrlReportText.xslt"/>
+          <arg value="${schematron.loc}/SvrlReportText.sxx"/>
+        </java>
+      </then>
+      <else>
+        <echo message="Compiled stylesheet SvrlReportText.sxx up to date"/>
+      </else>
+    </if> -->
+  </target>
+
+  <!-- Xj3D help -->
+  <!-- ********* -->
+  <property name="xj3dhelp.test.file" value="${navigation.loc}/ButtonFly.gif"/>
+  <available property="need.Xj3D.help" file="${xj3dhelp.test.file}"/>
+  
+  <target name="check.have.Xj3D.help" if="${need.Xj3D.help}">
+    <echo message="${xj3dhelp.test.file} etc. already downloaded..."/>
+  </target>
+
+  <target name="get.Xj3D.help" depends="check.have.Xj3D.help" unless="${need.Xj3D.help}">
+    <mkdir dir="${downloads.loc}"/>
+    <mkdir dir="${images.loc}"/>
+    <mkdir dir="${navigation.loc}"/>
+
+    <get src="${xj3d.svn.javahelp.site}/Xj3dNavigationHotkeys.html?format=raw" dest="${downloads.loc}/Xj3dNavigationHotkeys.html" usetimestamp="true" verbose="true"/>
+    <get src="${xj3d.svn.images.site}/Xj3dNavigationBar.png"        dest="${images.loc}/Xj3dNavigationBar.png"  usetimestamp="true" verbose="true"/>
+    <get src="${xj3d.svn.navigation.site}/ButtonFly.gif"            dest="${navigation.loc}/ButtonFly.gif"      usetimestamp="true" verbose="true"/>
+    <get src="${xj3d.svn.navigation.site}/ButtonPan.gif"            dest="${navigation.loc}/ButtonPan.gif"      usetimestamp="true" verbose="true"/>
+    <get src="${xj3d.svn.navigation.site}/ButtonTilt.gif"           dest="${navigation.loc}/ButtonTilt.gif"     usetimestamp="true" verbose="true"/>
+    <get src="${xj3d.svn.navigation.site}/ButtonWalk.gif"           dest="${navigation.loc}/ButtonWalk.gif"     usetimestamp="true" verbose="true"/>
+    <get src="${xj3d.svn.navigation.site}/ButtonExamine.gif"        dest="${navigation.loc}/ButtonExamine.gif"  usetimestamp="true" verbose="true"/>
+    <get src="${xj3d.svn.navigation.site}/ButtonTExamine.gif"       dest="${navigation.loc}/ButtonTExamine.gif" usetimestamp="true" verbose="true"/>
+    <get src="${xj3d.svn.navigation.site}/ButtonBack.gif"           dest="${navigation.loc}/ButtonBack.gif"     usetimestamp="true" verbose="true"/>
+    <get src="${xj3d.svn.navigation.site}/ButtonForward.gif"        dest="${navigation.loc}/ButtonForward.gif"  usetimestamp="true" verbose="true"/>
+    <get src="${xj3d.svn.navigation.site}/ButtonHome.gif"           dest="${navigation.loc}/ButtonHome.gif"     usetimestamp="true" verbose="true"/>
+    <get src="${xj3d.svn.navigation.site}/ButtonFit.gif"            dest="${navigation.loc}/ButtonFit.gif"      usetimestamp="true" verbose="true"/>
+    <get src="${xj3d.svn.navigation.site}/ButtonConsole.gif"        dest="${navigation.loc}/ButtonConsole.gif"  usetimestamp="true" verbose="true"/>
+  </target>
+
+  <!-- X3D specifications -->
+  <!-- ****************** -->
+  <property name="specifications.test.file" value="${specifications.loc}/Ecma-262.pdf"/>
+  <available property="need.specifications" file="${specifications.test.file}"/>
+
+  <target name="check.have.specifications" if="${need.specifications}">
+    <echo message="${specifications.test.file} etc. already downloaded..."/>
+  </target>
+
+    <!-- name mappings -->
+    <!-- workaround JavaHelp bug with paths having multiple periods by renaming the offending directories: replace dot . with - hyphen -->
+    <!-- see javahelp/x3d-map.xml for corresponding page mappings -->
+    <property name="onlineVRML97"                      value="ISO-IEC-14772-IS-V2.0"/>
+    <property name= "localVRML97"                      value="ISO-IEC-14772-VRML97"/>
+    <property name="onlineVRML97Amendment1"            value="ISO-IEC-14772-1-IS-V2.1"/>
+    <property name= "localVRML97Amendment1"            value="ISO-IEC-14772-1-VRML97Amendment1"/>
+    <property name="onlineHumanoidAnimation"           value="ISO-IEC-19774-IS-V1.0"/>
+    <property name= "localHumanoidAnimation"           value="ISO-IEC-19774-IS-V1-0-HumanoidAnimation"/>
+    <property name="onlineX3dAbstractSpecification"    value="ISO-IEC-19775-1-IS-V3.3"/>
+    <property name= "localX3dAbstractSpecification"    value="ISO-IEC-19775-1-IS-V3-3-X3D-Abstract"/>
+    <property name="onlineX3dSceneAccessInterface"     value="ISO-IEC-19775-2-DIS-V3.3"/>
+    <property name= "localX3dSceneAccessInterface"     value="ISO-IEC-19775-2-DIS-V3-3-X3D-SceneAccessInterface"/>
+    <property name="onlineX3dXmlEncoding"              value="ISO-IEC-19776-1-DIS-V3.3"/>
+    <property name= "localX3dXmlEncoding"              value="ISO-IEC-19776-1-DIS-V3-3-X3DEncodings-XML"/>
+    <property name="onlineX3dClassicVrmlEncoding"      value="ISO-IEC-19776-2-DIS-V3.3"/>
+    <property name= "localX3dClassicVrmlEncoding"      value="ISO-IEC-19776-2-DIS-V3-3-X3DEncodings-ClassicVRML"/>
+    <property name="onlineX3dCompressedBinaryEncoding" value="ISO-IEC-19776-3-DIS-V3.3"/>
+    <property name= "localX3dCompressedBinaryEncoding" value="ISO-IEC-19776-3-DIS-V3-3-X3DEncodings-CompressedBinary"/>
+    <property name="onlineX3dSaiEcmascript"            value="ISO-IEC-19777-1-CD-V3.3"/>
+    <property name= "localX3dSaiEcmascript"            value="ISO-IEC-19777-1-CD-V3-3-X3DLanguageBindings-ECMAScript"/>
+    <property name="onlineX3dSaiJava"                  value="ISO-IEC-19777-2-IS-V3.0"/>
+    <property name= "localX3dSaiJava"                  value="ISO-IEC-19777-2-IS-V3-0-X3DLanguageBindings-Java"/>
+
+    <property name="Collada"                           value="collada_spec_1_4.pdf"/>
+
+    <!-- needs to be obsoleted, use brute force on each spec to ensure latest -->
+    <property name="X3dAllSpecifications"        value="X3DPublicSpecifications"/>
+
+  <target name="get.specifications.v3.3" depends="check.have.specifications" unless="${need.specifications}">
+    <mkdir dir="${specifications.loc}"/>
+
+    <!-- https://www.web3d.org/documents/specifications/19775-1/V3.3/ISO-IEC-19775-1-IS-V3.3.zip -->
+    <get   src="${web3d.standards.site}/19775-1/V3.3/${onlineX3dAbstractSpecification}.zip" dest="${specifications.loc}/${localX3dAbstractSpecification}.zip" usetimestamp="true" verbose="true"/>
+    <unzip src="${specifications.loc}/${localX3dAbstractSpecification}.zip" dest="${specifications.loc}/${localX3dAbstractSpecification}" overwrite="true" failonemptyarchive="false" />
+  </target>
+
+  <target name="get.specifications" depends="get.specifications.v3.3" unless="${need.specifications}">
+    <mkdir dir="${specifications.loc}"/>
+
+    <echo message="===== VRML97 and VRML97 Amendment 1 ==========================="/>
+
+    <!-- https://www.web3d.org/documents/specifications/14772/V2.0/ISO-IEC-14772-IS-V2.0.zip -->
+    <get                  src="${web3d.standards.site}/14772/V2.0/${onlineVRML97}.zip"          dest="${specifications.loc}/${localVRML97}.zip"                usetimestamp="true" verbose="true"/> <!-- VRML97 Specification -->
+<!-- https://www.web3d.org/documents/specifications/14772-1/V2.1/ISO-IEC-14772-1-IS-V2.1.zip -->
+    <get              src="${web3d.standards.site}/14772-1/V2.1/${onlineVRML97Amendment1}.zip"  dest="${specifications.loc}/${localVRML97Amendment1}.zip"      usetimestamp="true" verbose="true"/> <!-- VRML97 Specification -->
+
+    <unzip src="${specifications.loc}/${localVRML97}.zip"                   dest="${specifications.loc}/" overwrite="true" failonemptyarchive="false"/>
+    <unzip src="${specifications.loc}/${localVRML97Amendment1}.zip"         dest="${specifications.loc}/" overwrite="true" failonemptyarchive="false"/>
+    <!-- fix inconsistency in extracted directory name -->
+    <move file="${specifications.loc}/VRML97Am1"                            tofile="${specifications.loc}/${localVRML97Amendment1}" verbose="true"/>
+
+    <!-- JavaHelp has a problem if the body of the html has no text
+    <replace file="${specifications.loc}/${VRML97}/part2/box/index.html"        token="body>"    value="body>${line.separator}box"/>
+    <replace file="${specifications.loc}/${VRML97}/part2/create/index.html"     token="body>"    value="body>${line.separator}create"/>
+    <replace file="${specifications.loc}/${VRML97}/part2/helix/index.html"      token="body>"    value="body>${line.separator}helix"/>
+    <replace file="${specifications.loc}/${VRML97}/part2/switcher/index.html"   token="/CENTER>" value="/CENTER>${line.separator}switcher"/>
+    <replace file="${specifications.loc}/${VRML97}/part2/viewswitch/index.html" token="body>"    value="body>${line.separator}viewswitch"/>
+    -->
+
+    <echo message="===== X3D Humanoid Animation (H-Anim) ==========================="/>
+
+    <!-- https://www.web3d.org/documents/specifications/19774/V1.0/ISO-IEC-19774-IS-V1.0.zip -->
+    <get                  src="${web3d.standards.site}/19774/V1.0/${onlineHumanoidAnimation}.zip" dest="${specifications.loc}/${localHumanoidAnimation}.zip" usetimestamp="true" verbose="true"/>
+    <unzip src="${specifications.loc}/${localHumanoidAnimation}.zip" dest="${specifications.loc}/${localHumanoidAnimation}" overwrite="true" failonemptyarchive="false" />
+
+    <echo message="===== Ecmascript and Collada ==========================="/>
+
+    <!-- Ecmascript and Collada specifications -->
+    <!-- TODO local url reference in javahelp page not working, so do not download until fixed:
+    -->
+    <get src="https://www.web3d.org/specifications/Ecma-262.pdf"        dest="${specifications.test.file}"                       usetimestamp="true" verbose="true"/>
+    <get src="${collada.specification.site}/${Collada}"                dest="${specifications.loc}/${Collada}"                  usetimestamp="true" verbose="true"/>
+
+    <echo message="===== X3D Abstract v3.3 ==========================="/>
+
+    <antcall target="get.specifications.v3.3"/>
+
+    <echo message="===== X3D Scene Access Interface ==========================="/>
+
+    <!-- https://www.web3d.org/documents/specifications/19775-2/V3.3/ISO-IEC-19775-2-DIS-V3.3.zip -->
+    <get                  src="${web3d.standards.site}/19775-2/V3.3/${onlineX3dSceneAccessInterface}.zip" dest="${specifications.loc}/${localX3dSceneAccessInterface}.zip" usetimestamp="true" verbose="true"/>
+    <unzip src="${specifications.loc}/${localX3dSceneAccessInterface}.zip" dest="${specifications.loc}/${localX3dSceneAccessInterface}" overwrite="true" failonemptyarchive="false" />
+    <!-- *** TODO fix zip archive bug -->
+    <move file="${specifications.loc}/${localX3dSceneAccessInterface}/images"                            tofile="${specifications.loc}/${localX3dSceneAccessInterface}/images2" verbose="true"/>
+    <move file="${specifications.loc}/${localX3dSceneAccessInterface}/images2"                           tofile="${specifications.loc}/${localX3dSceneAccessInterface}/Images" verbose="true"/>
+
+    <echo message="===== X3D XML Encoding ==========================="/>
+
+    <!-- https://www.web3d.org/documents/specifications/19776-1/V3.3/ISO-IEC-19776-1-DIS-V3.3.zip -->
+    <get                  src="${web3d.standards.site}/19776-1/V3.3/${onlineX3dXmlEncoding}.zip" dest="${specifications.loc}/${localX3dXmlEncoding}.zip" usetimestamp="true" verbose="true"/>
+    <unzip src="${specifications.loc}/${localX3dXmlEncoding}.zip" dest="${specifications.loc}/${localX3dXmlEncoding}" overwrite="true" failonemptyarchive="false" />
+
+    <echo message="===== X3D ClassicVrml Encoding ==========================="/>
+
+    <!-- https://www.web3d.org/documents/specifications/19776-2/V3.3/ISO-IEC-19776-2-DIS-V3.3.zip -->
+    <get                  src="${web3d.standards.site}/19776-2/V3.3/${onlineX3dClassicVrmlEncoding}.zip" dest="${specifications.loc}/${localX3dClassicVrmlEncoding}.zip" usetimestamp="true" verbose="true"/>
+    <unzip src="${specifications.loc}/${localX3dClassicVrmlEncoding}.zip" dest="${specifications.loc}/${localX3dClassicVrmlEncoding}" overwrite="true" failonemptyarchive="false" />
+
+    <echo message="===== X3D Compressed Binary Encoding ==========================="/>
+
+    <!-- https://www.web3d.org/documents/specifications/19776-3/V3.3/ISO-IEC-19776-3-DIS-V3.3.zip -->
+    <get                  src="${web3d.standards.site}/19776-3/V3.3/${onlineX3dCompressedBinaryEncoding}.zip" dest="${specifications.loc}/${localX3dCompressedBinaryEncoding}.zip" usetimestamp="true" verbose="true"/>
+    <unzip src="${specifications.loc}/${localX3dCompressedBinaryEncoding}.zip" dest="${specifications.loc}/${localX3dCompressedBinaryEncoding}" overwrite="true" failonemptyarchive="false" />
+
+    <echo message="===== X3D SAI Ecmascript ==========================="/>
+
+    <!-- https://www.web3d.org/documents/specifications/19777-1/V3.3/ISO-IEC-19777-1-CD-V3.3.zip -->
+    <get                  src="${web3d.standards.site}/19777-1/V3.3/${onlineX3dSaiEcmascript}.zip" dest="${specifications.loc}/${localX3dSaiEcmascript}.zip" usetimestamp="true" verbose="true"/>
+    <unzip src="${specifications.loc}/${localX3dSaiEcmascript}.zip" dest="${specifications.loc}/${localX3dSaiEcmascript}" overwrite="true" failonemptyarchive="false" />
+
+    <echo message="===== X3D SAI Java ==========================="/>
+
+    <!-- https://www.web3d.org/documents/specifications/19777-2/V3.0/ISO-IEC-19777-2-IS-V3.0.zip -->
+    <get                  src="${web3d.standards.site}/19777-2/V3.0/${onlineX3dSaiJava}.zip" dest="${specifications.loc}/${localX3dSaiJava}.zip" usetimestamp="true" verbose="true"/>
+
+    <!-- *** TODO fix zip archive bug, nested root directory with different name in zip -->
+    <unzip src="${specifications.loc}/${localX3dSaiJava}.zip" dest="${specifications.loc}" overwrite="true" failonemptyarchive="false" />
+    <!-- *** TODO fix zip archive bug -->
+    <move file="${specifications.loc}/ISO-IEC-19777-2-FDIS-X3DLanguageBindings-Java"                            tofile="${specifications.loc}/${localX3dSaiJava}" verbose="true"/>
+
+
+    <!--
+    <unzip src="${specifications.loc}/${X3dAllSpecifications}.zip"     dest="${specifications.loc}/" overwrite="true" failonemptyarchive="false"/>
+    <get src="${web3d.standards.site}/${X3dAllSpecifications}.zip"               dest="${specifications.loc}/${X3dAllSpecifications}.zip"  usetimestamp="true" verbose="true"/>
+    -->
+
+    <!-- workaround JavaHelp bug with paths having multiple periods by renaming the offending directories: replace dot . with - hyphen
+    <move file="${specifications.loc}/ISO-IEC-19775-1.2-X3D-AbstractSpecification"                tofile="${specifications.loc}/ISO-IEC-19775-1-2-X3D-AbstractSpecification"/>
+    <move file="${specifications.loc}/ISO-IEC-19776-2.2-X3DEncodings-ClassicVRML"                 tofile="${specifications.loc}/ISO-IEC-19776-2-2-X3DEncodings-ClassicVRML"/>
+    <move file="${specifications.loc}/ISO-IEC-FDIS-19775-2.2-X3D-SceneAccessInterface"            tofile="${specifications.loc}/ISO-IEC-FDIS-19775-2-2-X3D-SceneAccessInterface"/>
+    <move file="${specifications.loc}/ISO-IEC-FCD-19776-3.2-X3DEncodings-CompressedBinary"        tofile="${specifications.loc}/ISO-IEC-FCD-19776-3-2-X3DEncodings-CompressedBinary"/>
+    <move file="${specifications.loc}/ISO-IEC-19776-1.2-X3DEncodings-XML"                         tofile="${specifications.loc}/ISO-IEC-19776-1-2-X3DEncodings-XML"/>
+    -->
+
+    <!--
+    ISO-IEC-19774-HumanoidAnimation
+    ISO-IEC-19775-1.2-X3D-AbstractSpecification
+    ISO-IEC-19775-2-X3D-SceneAccessInterface
+    ISO-IEC-19776-1.2-X3DEncodings-XML
+    ISO-IEC-19776-2.2-X3DEncodings-ClassicVRML
+    ISO-IEC-19776-3-X3DEncodings-CompressedBinary
+    ISO-IEC-19776-X3DEncodings-All-Edition-1
+    ISO-IEC-19777-1-X3DLanguageBindings-ECMAScript
+    ISO-IEC-19777-2-X3DLanguageBindings-Java
+    ISO-IEC-19777-X3DLanguageBindings
+    ISO-IEC-FCD-19776-3.2-X3DEncodings-CompressedBinary
+    ISO-IEC-FDIS-19775-2.2-X3D-SceneAccessInterface
+    -->
+
+    <!-- patch 6 files to get them through the javahelp indexer -->
+
+    <!-- TODO consider using online EncodingOfNodes.html
+    <get src="https://www.web3d.org/x3d/stylesheets/EncodingOfNodes.html"
+         dest="${specifications.loc}/ISO-IEC-19776-1-2-X3DEncodings-XML/Part01/EncodingOfNodes.html" usetimestamp="true" verbose="true"/>
+ -->
+    <!-- This file has a 3-byte "BOM" header, or byte-order-mark.  The indexer chokes on that...
+             it might be an incorrect file with the BOM missing, but taking it out works. -->
+    <copy encoding="UTF-8" outputencoding="UTF-8" verbose="true"
+          file = "${specifications.loc}/${localX3dXmlEncoding}/Part01/EncodingOfNodes.html"
+        tofile = "${specifications.loc}/${localX3dXmlEncoding}/Part01/EncodingOfNodesNoBOM.html">
+      <filterchain>
+        <deletecharacters chars="&#xFEFF;" />  <!--BOM indicator-->
+      </filterchain>
+    </copy>
+    <move overwrite="true" verbose="true"
+          file = "${specifications.loc}/${localX3dXmlEncoding}/Part01/EncodingOfNodesNoBOM.html"
+        tofile = "${specifications.loc}/${localX3dXmlEncoding}/Part01/EncodingOfNodes.html" />
+
+    <antcall target="clean.specification.zips"/> <!-- no longer needed, reduce deployment size -->
+  </target>
+
+  <target name="clean.tooltips">
+    <delete verbose="true" failonerror="false">
+        <fileset dir="${downloads.loc}" includes="X3dTooltips*.html"/>
+    </delete>
+  </target>
+
+  <target name="clean.downloads">
+    <delete dir="${downloads.loc}"/>  <!-- removes top and all contents -->
+  </target>
+  
+  <target name="clean.specifications">
+    <delete dir="${specifications.loc}" failonerror="false"/> <!-- removes the top dir and all contents -->
+  </target>
+
+  <!-- <property name="saveZips" value="true"/>  debug: comment out this line to avoid setting property value and thus retain .zip files -->
+
+  <target name="clean.specification.zips" unless="saveZips">
+    <delete verbose="true" failonerror="false">
+        <fileset dir="${specifications.loc}" includes="*.zip"/>
+    </delete>
+  </target>
+
+  <target name="clean.all.javahelp.pages" depends="clean.tooltips,clean.downloads,clean.specifications,clean.specification.zips"/>
+</project>

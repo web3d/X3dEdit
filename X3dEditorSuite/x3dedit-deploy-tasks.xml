@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="X3dEditorDeployment" basedir="." default="">
+  <!--
+  These targets will deploy the editor to 2 servers.  The zip distribution goes to 
+  savage.nps.edu and the netbeans modules and update descriptor go to movesinstitute.org.
+  The reason for not having all on savage is that the savage website is accessed through
+  https, and the update code in netbeans doesn't work to an https server (reason, I think,
+  is that a self-signed certificate is not kosher, but I may be mistaken here.  Anyway,
+  the modules are on the movesinstitute.org machine, where they're accessed through http.
+  
+  This file is meant to be "<import"-ed into the master suite build file since it refers
+  to a couple of parent targets at the bottom.
+  -->
+  <property name="maverickLib"       location="antJars/maverick-ant.jar"/>
+
+  <property name="buildModulesPath"  location="build/updates"/>
+  <property name="localModulesPath"  location="websites/www.movesinstitute.org/X3D-Edit/netbeans_modules"/>
+  <property name="localZipOrig"      location="dist/x3dedit40.zip"/>
+  <property name="tmpZipUnpackDir"   location="build/tmpZipUnpack"/>
+  <property name="zipconfig"         location="${tmpZipUnpackDir}/x3deditor32/etc/x3deditor32.conf"/>
+  <property name="distZipPath"       location="build"/>
+  <property name="distZipName"          value="X3D-Edit4.0.zip"/>
+  <property name="distZip"           location="${distZipPath}/${distZipName}"/>
+  <property name="ReadmePath"        location="websites/savage.nps.edu/X3D-Edit"/>
+  <property name="ReadmeFile"           value="X3D-Edit.html"/>
+  
+  <property name="unixRunScriptFile"    value="runX3dEditUnix.sh"/>
+  <property name="unixRunScript"     location="scripts/${unixRunScriptFile}"/>
+  <property name="macRunScriptFile"     value="runX3dEditMac.sh.command"/>
+  <property name="macRunScript"      location="scripts/${macRunScriptFile}"/>
+  <property name="winRunScript"      location="scripts/runX3dEditWindows.bat"/>
+  <property name="winRunScript32"    location="scripts/runX3dEditWindows32.bat"/>
+  <property name="winRunScript64"    location="scripts/runX3dEditWindows64.bat"/>
+
+  <property name="javaCheckScriptFile"  value="javaVersionCheck.sh"/>
+  <property name="javaCheckScript"   location="scripts/${javaCheckScriptFile}"/>
+  <property name="MemoryReadMe"      location="scripts/ReadmeX3D-EditMemorySettings.txt"/>
+
+  <property name="unixCleanScriptFile"   value="removeX3D-EditPreferencesUnix.sh"/>
+  <property name="unixCleanScript"    location="scripts/${unixCleanScriptFile}"/>
+  <property name="macCleanScriptFile"    value="removeX3D-EditPreferencesMac.sh.command"/>
+  <property name="macCleanScript"     location="scripts/${macCleanScriptFile}"/>
+  <property name="xpCleanScript"      location="scripts/removeX3D-EditPreferencesWinXP.bat"/>
+  <property name="vistaCleanScript"   location="scripts/removeX3D-EditPreferencesWinVista.bat"/>
+
+  <property name="nbms.serverName"        value="movesinstitute.org"/> <!-- TODO: This needs a new path (tdn)-->
+  <property name="nbms.serverPath"        value="/data/moves/MovesWebSiteDirectories/X3D-Edit/netbeans_modules"/> <!-- TODO: This needs a new path (tdn)-->
+  <property name="nbms.serverArchivePath" value="${nbms.serverPath}/archive"/>
+  
+  <property name="zip.serverName"        value="savage.nps.edu"/>
+  <property name="zip.serverPath"        value="/data/html/X3D-Edit"/>
+  <property name="zip.serverArchivePath" value="${zip.serverPath}/archive"/>
+  <property name="zip.serverFileName"    value="${distZipName}"/>
+  <property name="zip.serverFile"        value="${zip.serverPath}/${zip.serverFileName}"/>
+  
+  <!-- set the following in a properties file, to avoid password/username prompts -->
+  <!-- Or, put these key=value pairs in nbproject/private/platform-private.properties -->
+  <!--
+  <property name="deploy.username" value="myName"/>
+  <property name="deploy.password" value="myPass"/>
+  -->
+
+  <target name="clear-lock" description="Clear netbeans lock from prior run that prevents application re-launch">
+    <echo message="User dir = ${nbuser}"/>
+    <delete file="${basedir}/build/testuserdir/lock" verbose="true" />
+  </target>
+  <taskdef name="ssh" classname="com.sshtools.ant.Ssh" classpath="${maverickLib}"/>
+  
+  <target name="_x3dedit_check-deployment-server">
+    <condition property="deploymentserver.available">
+      <and>
+        <socket port="22" server="${nbms.serverName}"/>
+        <socket port="22" server="${zip.serverName}"/>
+      </and>
+    </condition>
+    <condition property="username.defined">
+      <isset property="deploy.username"/>
+    </condition>
+    <condition property="password.defined">
+      <isset property="deploy.password"/>
+    </condition>
+  </target>
+  
+  <target name="_x3dedit_nbms_check-username" unless="username.defined">
+    <input message="Enter ${nbms.serverName} server username:"
+           addproperty="deploy.username"/>
+  </target>
+  <target name="_x3dedit_zip_check-username" unless="username.defined">
+    <input message="Enter ${zip.serverName} server username:"
+           addproperty="deploy.username"/>
+  </target>
+  <target name="_x3dedit_nbms_check-password" unless="password.defined">
+    <input message="Enter password for server ${nbms.serverName}, username ${deploy.username} (warning, not hidden):"
+           addproperty="deploy.password"/>
+  </target>
+  <target name="_x3dedit_zip_check-password" unless="password.defined">
+    <input message="Enter password for server ${zip.serverName}, username ${deploy.username} (warning, not hidden):"
+           addproperty="deploy.password"/>
+  </target>
+  
+  <!-- This defines an xml-editing task in the given jar -->
+  <taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask" classpath="antJars/xmltask-v1.15.1.jar"/>
+  
+  <target name="_x3dedit_prompt-for-version">
+    <input message="&lt;html&gt;&lt;center&gt;X3D-Edit.html home page publication date is usually revised, and &lt;br /&gt; module specification version numbers are normally bumped before deployment&lt;br&gt;(in the X3D-Edit Project Properties for API Versioning) for auto-update to work.&lt;/p&gt; &lt;br /&gt; &lt;p&gt;Subversion - Update with Dependencies also needs to be run to get all the latest greatest versions of stylesheets etc.&lt;/p&gt; &lt;br /&gt; &lt;p&gt;Choose &quot;yes&quot; if this has been done in order to continue with the deployment."
+           validargs="yes,no"
+           addproperty="do.continue"/>
+    <condition property="do.keepgoing">
+      <equals arg1="${do.continue}" arg2="yes" casesensitive="false" trim="true"/>
+    </condition>
+    <fail unless="do.keepgoing"/>
+  </target>
+
+  <!-- ================ -->
+  <target name="x3dedit-modules-build-and-deploy-to-server"
+          depends="_x3dedit_prompt-for-version,
+          x3dedit-modules-build-zip,
+          _x3dedit_check-deployment-server,
+          _x3dedit_nbms_check-username,
+          _x3dedit_nbms_check-password">
+    <fail unless="deploymentserver.available" message="Deployment server unavailable at port 22 (ssh)."/>
+    
+    <tstamp/>
+    <property name="newArchiveDirName" value="${DSTAMP}${TSTAMP}"/>
+
+    <!-- user must have sudo set on server to run this script via terminal -->
+    <echo message="To fix web-retrieval permissions, ssh to server shell:"/>
+    <echo message="   'ssh ${nbms.serverName}' then 'cd ${nbms.serverPath}; sudo ./fixPermissions.sh'"/>
+    <echo message="connecting to ${nbms.serverName} as ${deploy.username} ..."/>
+	<scp remotetodir="${username.savage}@${zip.serverName}:${zip.serverPath}" password="${password.savage}"
+             verbose="${VERBOSE_UPLOAD}">
+        <fileset dir="${buildModulesPath}">
+          <include name="*.nbm"/>
+          <!-- combined .zip of modules for netbeans update-center -->
+          <include name="X3D-EditNetbeansModules.zip"/>
+          <include name="updates.xml"/>
+        </fileset>
+        <fileset dir="${localModulesPath}">
+            <include name="fixPermissions.sh"/>
+        </fileset>
+	</scp>
+    <ssh host="${nbms.serverName}" username="${deploy.username}" password="${deploy.password}">
+      <!-- transfer can take a long time from remote location, so use hold subdirectory to minimize clobbered downtime during upload -->
+      <sftp action="mkdir" remotedir="${nbms.serverPath}/hold"/>
+      <sftp action="put"   remotedir="${nbms.serverPath}/hold" verbose="true">
+        <fileset dir="${buildModulesPath}">
+          <include name="*.nbm"/>
+          <!-- combined .zip of modules for netbeans update-center -->
+          <include name="X3D-EditNetbeansModules.zip"/>
+          <include name="updates.xml"/>
+        </fileset>
+        <fileset dir="${localModulesPath}">
+            <include name="fixPermissions.sh"/>
+        </fileset>
+      </sftp>
+      <!-- move hold subdirectory contents to parent destination -->
+      <exec cmd="cp ${nbms.serverPath}/hold/* ${nbms.serverPath}"/>
+      <!-- now upload module licenses -->
+      <sftp action="put" remotedir="${nbms.serverPath}/licenses" verbose="true">
+        <fileset dir="${buildModulesPath}/licenses">
+          <include name="*.license"/>
+        </fileset>
+      </sftp>
+      <!-- save all latest greatest in archive -->
+      <sftp action="mkdir" remotedir="${nbms.serverArchivePath}/${newArchiveDirName}"/>
+      <sftp action="mkdir" remotedir="${nbms.serverArchivePath}/${newArchiveDirName}/licenses"/>
+      <exec cmd="cp ${nbms.serverPath}/*.nbm       ${nbms.serverArchivePath}/${newArchiveDirName}"/>
+      <exec cmd="cp ${nbms.serverPath}/updates.xml ${nbms.serverArchivePath}/${newArchiveDirName}"/>
+      <exec cmd="cp ${nbms.serverPath}/licenses/*  ${nbms.serverArchivePath}/${newArchiveDirName}/licenses"/>
+      <exec cmd="ls -al ${nbms.serverPath}"/>
+      <exec cmd="ls -al ${nbms.serverPath}/licenses/*"/>
+    </ssh>
+    <!-- user must have sudo set on server to run this script via terminal -->
+    <echo message="To fix web-retrieval permissions, ssh to server shell:"/>
+    <echo message="   'ssh ${nbms.serverName}' then 'cd ${nbms.serverPath}; sudo ./fixPermissions.sh'"/>
+  </target>
+
+  <!-- ================ -->
+  <!-- references build-zip target in parent -->
+  <target name="x3dedit-zipapplication_build" depends="x3dedit-deploy-setup,build-zip">
+    <available file="${localZipOrig}" property="zip.present"/>
+    <fail  unless="zip.present" message="Build ZIP Distribution from X3dEditorSuite contextual menu before running this target."/>
+
+    <tstamp/>
+    <mkdir dir="${tmpZipUnpackDir}"/>
+
+    <unzip src="${localZipOrig}"  dest="${tmpZipUnpackDir}"/>
+
+    <copy file="${unixRunScript}"    todir="${tmpZipUnpackDir}" verbose="true"/>
+    <chmod file="${tmpZipUnpackDir}/${unixRunScriptFile}" perm="ugo+rx"/>
+    <copy file="${macRunScript}"     todir="${tmpZipUnpackDir}" verbose="true"/>
+    <chmod file="${tmpZipUnpackDir}/${macRunScriptFile}" perm="ugo+rx"/>
+
+    <copy file="${winRunScript}"     todir="${tmpZipUnpackDir}" verbose="true"/>
+    <copy file="${winRunScript32}"   todir="${tmpZipUnpackDir}" verbose="true"/>
+    <copy file="${winRunScript64}"   todir="${tmpZipUnpackDir}" verbose="true"/>
+
+    <copy file="${MemoryReadMe}"     todir="${tmpZipUnpackDir}" verbose="true"/>
+    <copy file="${javaCheckScript}"  todir="${tmpZipUnpackDir}" verbose="true"/>
+    <chmod file="${tmpZipUnpackDir}/${javaCheckScriptFile}" perm="ugo+rx"/>
+
+    <copy file="${unixCleanScript}"  todir="${tmpZipUnpackDir}" verbose="true"/>
+    <chmod file="${tmpZipUnpackDir}/${unixCleanScriptFile}" perm="ugo+rx"/>
+    <copy file="${macCleanScript}"   todir="${tmpZipUnpackDir}" verbose="true"/>
+    <chmod file="${tmpZipUnpackDir}/${macCleanScriptFile}" perm="ugo+rx"/>
+
+    <copy file="${xpCleanScript}"    todir="${tmpZipUnpackDir}" verbose="true"/>
+    <copy file="${vistaCleanScript}" todir="${tmpZipUnpackDir}" verbose="true"/>
+
+    <!-- not used in lastest NB platform versions...
+    <echo message="Patching x3deditor32.conf file to remove memory settings"/>
+    <replaceregexp file="${zipconfig}" flags="g">
+      <regexp pattern=" -J-Xms\d*[kmg] -J-Xmx\d*[kmg]"/>
+      <substitution expression=""/>
+    </replaceregexp>
+    -->
+
+    <!-- <zip destfile="${distZip}" basedir="${tmpZipUnpackDir}"/> -->
+    <!-- need to preserve permissions -->
+    <zip destfile="${distZip}">
+      <zipfileset dir="${tmpZipUnpackDir}" excludes="**/*.sh **/*.command"/>
+      <zipfileset dir="${tmpZipUnpackDir}" includes="${unixRunScriptFile} ${macRunScriptFile} ${unixCleanScriptFile} ${macCleanScriptFile} ${javaCheckScriptFile}" filemode="755"/>
+    </zip>
+    <delete dir="{tmpZipUnpackDir}"/>
+  </target>
+  
+  <!-- ================ -->
+
+    <!-- configuration properties:  server names, user names and passwords ====================== -->
+
+    <property name="access.properties.filename"  value="/.access/access.properties"/>
+    <property file="${access.properties.filename}"/>
+
+  <target name="x3dedit-webpages-deploy-to-server"
+          depends="_x3dedit_check-deployment-server"
+          if="username.savage">
+    <fail unless="deploymentserver.available" message="Deployment server unavailable at port 22 (ssh)."/>
+
+    <echo message="connecting to ${zip.serverName} ..."/>
+	<scp remotetodir="${username.savage}@${zip.serverName}:${zip.serverPath}" password="${password.savage}"
+             verbose="${VERBOSE_UPLOAD}">
+        <fileset dir="${ReadmePath}">
+            <include name="${ReadmeFile}"/>
+            <include name="fixPermissions.sh"/>
+            <include name="**/*.*"/>
+        </fileset>
+        <fileset dir="${ReadmePath}">
+            <include name="${ReadmeFile}"/>
+            <include name="fixPermissions.sh"/>
+            <include name="**/*.*"/>
+        </fileset>
+	</scp>
+	<echo message="scp complete ..."/>
+	<sshexec host="${zip.serverName}" username="${username.savage}" password="${password.savage}" 
+             command="ls -al ${zip.serverPath}"/>
+	<sshexec host="${zip.serverName}" username="${username.savage}" password="${password.savage}" 
+             command="ls -al ${zip.serverPath}/images/*"/>
+	<sshexec host="${zip.serverName}" username="${username.savage}" password="${password.savage}" 
+             command="ls -al ${zip.serverPath}/models/*"/>
+	<echo message="sshexec complete ..."/>
+	<!-- superceded
+    <ssh host="${zip.serverName}" username="${username.savage}" password="${password.savage}">
+      <sftp action="put" remotedir="${zip.serverPath}" newer="true" verbose="true">
+        <fileset dir="${ReadmePath}">
+            <include name="${ReadmeFile}"/>
+            <include name="fixPermissions.sh"/>
+            <include name="**/*.*"/>
+        </fileset>
+      </sftp>
+      <exec cmd="ls -al ${zip.serverPath}"/>
+      <exec cmd="ls -al ${zip.serverPath}/images/*"/>
+      <exec cmd="ls -al ${zip.serverPath}/models/*"/>
+    </ssh>
+	-->
+    <!-- user must have sudo set on server to run this script via terminal -->
+    <echo message="To fix web-retrieval permissions, ssh to server shell:"/>
+    <echo message="   'ssh ${zip.serverName}' then 'cd ${zip.serverPath}; sudo ./fixPermissions.sh'"/>
+  </target>
+  
+  <!-- ================ -->
+  <target name="x3dedit-webpage-refresh" 
+          depends="_x3dedit_check-deployment-server"
+          if="username.savage">
+    <fail unless="deploymentserver.available" message="Deployment server unavailable at port 22 (ssh)."/>
+    <echo message="connecting to ${zip.serverName} to copy ${ReadmePath}/${ReadmeFile} ..."/>
+	
+	<scp remotetodir="${username.savage}@${zip.serverName}:${zip.serverPath}" password="${password.savage}"
+             verbose="${VERBOSE_UPLOAD}">
+        <fileset dir="${ReadmePath}">
+            <include name="${ReadmeFile}"/>
+        </fileset>
+	</scp>
+	<!-- superceded
+    <ssh host="${zip.serverName}" username="${username.savage}" password="${password.savage}">
+      <sftp action="put" remotedir="${zip.serverPath}" newer="true" verbose="true">
+        <fileset dir="${ReadmePath}">
+            <include name="${ReadmeFile}"/>
+        </fileset>
+      </sftp>
+    </ssh>
+	-->
+  </target>
+
+  <!-- ================ -->
+  <target name="x3dedit-zipapplication-build-and-deploy-to-server"
+          depends="_x3dedit_prompt-for-version,
+          x3dedit-zipapplication_build,
+          _x3dedit_check-deployment-server,
+          _x3dedit_zip_check-username,
+          _x3dedit_zip_check-password">
+    <fail unless="deploymentserver.available" message="Deployment server unavailable at port 22 (ssh)."/>
+
+    <tstamp/>
+    <property name="newArchivedFile" value="${zip.serverArchivePath}/${DSTAMP}${TSTAMP}_${zip.serverFileName}"/>
+
+    <echo message="connecting to ${zip.serverName} ..."/>
+    <echo message="transfer can take a long time from remote location, so use /hold subdirectory to minimize clobbered downtime during upload"/>
+	<scp remotetodir="${username.savage}@${zip.serverName}:${zip.serverPath}/hold" password="${password.savage}"
+             verbose="${VERBOSE_UPLOAD}">
+            <filelist dir="${distZipPath}" files="${distZipName}"/>
+	</scp>
+    <!-- move hold directory contents to parent destination -->
+	<sshexec host="${zip.serverName}" username="${deploy.username}" password="${deploy.password}"
+             command="cp ${zip.serverPath}/hold/* ${zip.serverPath}"/>
+      <!-- save latest version in archive -->
+    <sshexec host="${zip.serverName}" username="${deploy.username}" password="${deploy.password}"
+             command="cp ${zip.serverFile} ${newArchivedFile}"/>
+	<!-- superceded
+    <ssh host="${zip.serverName}" username="${deploy.username}" password="${deploy.password}">
+      < ! - - transfer can take a long time from remote location, so use hold subdirectory to minimize clobbered downtime during upload
+      <sftp action="mkdir" remotedir="${zip.serverPath}/hold"/>
+      <sftp action="put"   remotedir="${zip.serverPath}/hold" verbose="true">
+        <filelist dir="${distZipPath}" files="${distZipName}"/>
+      </sftp>
+      < ! - - move hold directory contents to parent destination - - >
+      <exec cmd="cp ${zip.serverPath}/hold/* ${zip.serverPath}"/>
+      < ! - - save latest version in archive - - >
+      <exec cmd="cp ${zip.serverFile} ${newArchivedFile}"/>
+    </ssh> -->
+    <!-- user must have sudo set on server to run this script via terminal -->
+    <echo message="To fix web-retrieval permissions, ssh to server shell:"/>
+    <echo message="   'ssh ${nbms.serverName}' then 'cd ${nbms.serverPath}; sudo ./fixPermissions.sh'"/>
+	<!-- TODO fix
+	<sshexec host="${nbms.serverName}" username="${deploy.username}" password="${deploy.password}"
+             command="cd ${nbms.serverPath}; sudo ./fixPermissions.sh"/> -->
+  </target>
+  
+  <!-- ================ -->
+  
+  <!-- references nbms target in parent -->
+  <target name="x3dedit-modules-build-zip" depends="x3dedit-deploy-setup,nbms">
+    <zip destfile="${buildModulesPath}/X3D-EditNetbeansModules.zip">
+      <fileset dir="${buildModulesPath}">
+        <include name="edu-nps-moves-kmleditor.nbm"/>
+        <include name="org-apache.nbm"/>
+        <include name="org-jdom.nbm"/>
+        <include name="org-web3d-javahelp.nbm"/>
+        <include name="org-web3d-x3d-collada.nbm"/>
+        <include name="org-web3d-x3d-x3dedit-config.nbm"/>
+        <include name="org-web3d-x3d-xj3d.nbm"/>
+        <include name="org-web3d-x3d.nbm"/>
+        <include name="updates.xml"/>
+      </fileset>
+    </zip>
+  </target>
+  
+  
+  <!-- ================ -->
+  <target name="x3dedit-deploy-setup">
+    <!-- this is now part of x3d.build
+    <ant dir="../X3D/javahelp" antfile="build.xml" target="get.all" inheritAll="false"/> -->
+    <!-- TODO:  after creation of build/ tree and prior to final deployment, remove large, duplicative Ecma-262.pdf and javahelp/specifications directory
+      <ant dir="../X3D/javahelp" antfile="build.xml" target="clean.specifications" inheritAll="false"/>
+      and tooltips as well -->
+  </target>
+  
+  <!-- ================ -->
+  <target name="x3dedit-deploy-all" depends="x3dedit-zipapplication-build-and-deploy-to-server,x3dedit-modules-build-and-deploy-to-server,x3dedit-webpages-deploy-to-server">
+    <!-- TODO:  how to ensure full clean and build? -->
+  </target>
+  
+  <!-- TODO:  Java Webstart deploy tasks -->
+</project>

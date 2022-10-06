@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Xj3d Wrapper for X3D-Edit" default="build" basedir=".">
+    <description>Builds, tests, and runs the org.web3d.x3d.xj3d Xj3D Wrapper project.</description>
+    <import file="nbproject/build-impl.xml"/>
+
+    <!-- Xj3D source NPS branch https://savage.nps.edu/Savage/developers.html#Xj3D -->
+    <property name="Xj3D.nps.dir"    location="C:\x-nps-gitlab\xj3d" description="local directory of Xj3D source NPS branch"/>
+    <property name="Xj3D.nps.buildfile" value="build.xml"            description="ant build file for Xj3D source NPS branch"/>
+
+    <target name="module-fix-dependencies">
+        <ant antfile= "${suite.dir}/versions.xml" target="fix"/>
+    </target>
+    
+    <target name="platformType">
+        <condition property="isWindows" >
+            <os family="windows"/>
+        </condition>
+        <condition property="isMac" >
+            <os family="mac"/>
+        </condition>
+
+        <!-- Based on Apache Ant user-manual example -->
+        <condition property="isUnixNotMac">
+            <and>
+                <os family="unix"/>
+
+                <not>
+                    <equals arg1="${os.name}" arg2="Mac OS X"/>
+                </not>
+            </and>
+        </condition>
+    </target>
+    
+    <!-- NOTE: Needs to under a OS specific flag as the build.copy.xj3d.jar paths are developer specific. Breaks other machine builds -->
+    <target name="all" depends="platformType,build.copy.xj3d.jars,javadoc,test" if="isWindows" description="build and copy the latest .jars from Xj3D.NPS project on local system">
+        <antcall target="build.copy.xj3d.jars.completionMessage"/>
+    </target>
+
+    <target name="build.copy.xj3d.jars"               description="build and copy the latest .jars from Xj3D.NPS project on local system">
+        <!-- prerequisite:  install, test Xj3D source NPS branch -->
+        <echo message="build local Xj3D source NPS branch then copy Xj3D .jar distributions" />
+        <ant   dir="${Xj3D.nps.dir}" antfile="${Xj3D.nps.dir}/${Xj3D.nps.buildfile}" target="dist"/>
+
+        <copy file="${Xj3D.nps.dir}/jars/xj3d-2.3-3rdparty-nps.jar"    todir="release/modules/ext" force="true" verbose="true"/>
+        <copy file="${Xj3D.nps.dir}/jars/xj3d-2.3-nps.jar"             todir="release/modules/ext" force="true" verbose="true"/>
+        <copy file="${Xj3D.nps.dir}/jars/xj3d.browser_2.3.0-nps.jar"   todir="release/modules/ext" force="true" verbose="true"/>
+        <copy file="${Xj3D.nps.dir}/jars/xj3d.cadfilter_2.3.0-nps.jar" todir="release/modules/ext" force="true" verbose="true"/>
+        <copy file="${Xj3D.nps.dir}/jars/xj3d.replica_2.3.0-nps.jar"   todir="release/modules/ext" force="true" verbose="true"/>
+
+        <copy todir="release/modules/lib/amd64/Windows 7" force="true" verbose="true">
+            <fileset dir="${Xj3D.nps.dir}/natives/Windows 7/amd64/">
+              <include name="*.dll" />
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="build.copy.xj3d.jars.completionMessage"               description="build and copy the latest .jars from Xj3D.NPS project on local system">
+        <echo message="TODO next steps:  if testing is successful, then" />
+        <echo message="- check all updated Xj3dWrapper/release/modules/ext/*.jar file updates into gitlab version control for this project" />
+        <echo message="- update Xj3dWrapper project properties to next API version, and check into gitlab version control" />
+        <echo message="- once gitlab version control changes are checked in, update X3D-Edit suite with dependencies, then release " />
+    </target>
+
+    <!-- FYI this target should not be run.  Instead the .jar files are instead separately updated, tested and (if successful) checked into version control. -->
+    <target name="get.xj3d.jars.obsolete" description="Retrieve the latest build from the hudson server">
+        <!-- Need to do some kind of keystore trick here for https -->
+        <get src="https://savage.nps.edu/Xj3D.nps/jars/xj3d-2.2-3rdparty-nps.jar"
+             dest="release/modules/ext"
+             verbose="true"
+             usetimestamp="true"/>
+        <get src="https://savage.nps.edu/Xj3D.nps/jars/xj3d-2.2-nps.jar"
+             dest="release/modules/ext"
+             verbose="true"
+             usetimestamp="true"/>
+        <get src="https://savage.nps.edu/Xj3D.nps/jars/xj3d.cadfilter_2.2.0-nps.jar"
+             dest="release/modules/ext"
+             verbose="true"
+             usetimestamp="true"/>
+    </target>
+    
+    <!-- Run X3D-Edit from the this module -->
+    <target name="run" description="Runs X3D-Edit in place without building">
+        <ant antfile="${suite.dir}/build.xml" useNativeBasedir="true" inheritAll="false" target="quick.run"/>
+    </target>
+  
+    <!-- Debug X3D-Edit from the this module -->
+    <target name="debug" description="Debugs X3D-Edit in place without building">
+        <ant antfile="${suite.dir}/build.xml" useNativeBasedir="true" inheritAll="false" target="quick.debug"/>
+    </target>
+
+</project>

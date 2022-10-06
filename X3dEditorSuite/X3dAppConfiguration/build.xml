@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+<!-- for some information on what you could do (e.g. targets to override). -->
+<!-- If you delete this file and reopen the project it will be recreated. -->
+<project name="org.web3d.x3d.x3dedit.config" default="netbeans" basedir=".">
+    <description>Builds, tests, and runs the project org.web3d.x3d.x3dedit.config.</description>
+    <import file="nbproject/build-impl.xml"/>
+     
+    <target name="module-fix-dependencies">
+        <ant antfile= "${suite.dir}/versions.xml" target="fix"/>
+    </target>
+    
+    <!-- As per the readme.txt in release/modules/ext -->
+    <!-- This process assumes you have already downloaded and stored the new
+         certificate file in release/modules/ext -->
+    <target name="update.server.certificate" description="Accomplished anytime there is a certificate change, or change in server configuration">
+        
+        <!-- First, delete the old certificate -->
+        <exec executable="keytool" dir="release/modules/ext">
+            <arg line="-delete -alias savage.nps.edu -storepass changeit -keystore java-dod-stat-cacerts.jks"/>
+        </exec>
+        
+        <!-- Now, import the new one -->
+        <exec executable="keytool" dir="release/modules/ext">
+            <arg line="-import -noprompt -alias savage.nps.edu -file savage.nps.edu.cer -storepass changeit -keystore java-dod-stat-cacerts.jks"/>
+        </exec>
+    </target>
+    
+    <!-- Run X3D-Edit from the this module -->
+    <target name="run" description="Runs X3D-Edit in place without building">
+        <ant antfile="${suite.dir}/build.xml" useNativeBasedir="true" inheritAll="false" target="quick.run"/>
+    </target>
+  
+    <!-- Debug X3D-Edit from the this module -->
+    <target name="debug" description="Debugs X3D-Edit in place without building">
+        <ant antfile="${suite.dir}/build.xml" useNativeBasedir="true" inheritAll="false" target="quick.debug"/>
+    </target>
+</project>

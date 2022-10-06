@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 2.0//EN" "http://java.sun.com/products/javahelp/map_2_0.dtd">
+<map version="2.0">
+  
+    <mapID target="about" url="x3d-about.html"/>
+    <!--mapID target="x3d-summary" url="x3d-summary.html"/-->
+    <mapID target="x3d-bugreport" url="X3D-Edit-BugReport.html"/>
+  
+    <!-- ==================================================================  -->
+    <mapID target="ide.welcome"                    url="downloads/X3D-Edit.html"/>
+    <!-- javahelp bug:  cannot have more than one . in filename !! -->
+    <mapID target="X3D-Edit"                       url="downloads/X3D-Edit.html"/>
+    <mapID target="X3D-Edit.Overview"              url="downloads/X3D-Edit.html#Overview"/>
+    <mapID target="X3D-Edit.Acknowledgements"      url="downloads/X3D-Edit.html#Acknowledgements"/>
+    <mapID target="X3D-Edit.Books"                 url="downloads/X3D-Edit.html#Books"/>
+    <!-- .png still not supported!                     downloads/images/X3D-EditToolbarButtons.png -->
+    <mapID target="X3D-Edit.Buttons"               url="X3D-EditToolbarButtons.html"/>
+    <mapID target="X3D-Edit.Downloads"             url="downloads/X3D-Edit.html#Downloads"/>
+    <mapID target="X3D-Edit.Features"              url="downloads/X3D-Edit.html#Features"/>
+    <mapID target="X3D-Edit.IssueTracking"         url="downloads/X3D-Edit.html#IssueTracking"/>
+    <mapID target="X3D-Edit.Licenses"              url="downloads/X3D-Edit.html#Licenses"/>
+    <mapID target="X3D-Edit.MailingLists"          url="downloads/X3D-Edit.html#MailingLists"/>
+    <mapID target="X3D-Edit.Mobile"                url="downloads/X3D-Edit.html#Mobile"/>
+    <mapID target="X3D-Edit.Plugins"               url="downloads/X3D-Edit.html#Plugins"/>
+    <mapID target="X3D-Edit.Source"                url="downloads/X3D-Edit.html#Source"/>
+    <mapID target="X3D-Edit.Support"               url="downloads/X3D-Edit.html#Support"/>
+    <mapID target="X3D-Edit.Visualization"         url="downloads/X3D-Edit.html#Visualization"/>
+    <mapID target="X3D-Edit.Contact"               url="downloads/X3D-Edit.html#Contact"/>
+    <mapID target="netbeans-collaboration-module"  url="downloads/XmppChatCollaborationModule.html"/>
+ 
+    <!-- ================================================================== -->
+    <mapID target="X3dResources.html"              url="downloads/X3dResources.html"/>
+    <mapID target="X3dResourcesApplications"       url="downloads/X3dResources.html#Applications"/>
+    <mapID target="X3dResourcesAuthoringSoftware"  url="downloads/X3dResources.html#AuthoringSoftware"/>
+    <mapID target="X3dResourcesAuthoringSupport"   url="downloads/X3dResources.html#AuthoringSupport"/>
+    <mapID target="X3dResourcesBooks"              url="downloads/X3dResources.html#Books"/>
+    <mapID target="X3dResourcesConformance"        url="downloads/X3dResources.html#Conformance"/>
+    <mapID target="X3dResourcesConversions"        url="downloads/X3dResources.html#Conversions"/>
+    <mapID target="X3dResourcesExamples"           url="downloads/X3dResources.html#Examples"/>
+    <mapID target="X3dResourcesExport"             url="downloads/X3dResources.html#Export"/>
+    <mapID target="X3dResourcesFeedback"           url="downloads/X3dResources.html#Feedback"/>
+    <mapID target="X3dResourcesLicense"            url="downloads/X3dResources.html#license"/>
+    <mapID target="X3dResourcesMobile"             url="downloads/X3dResources.html#Mobile"/>
+    <mapID target="X3dResourcesModelSearch"        url="downloads/X3dResources.html#ModelSearch"/>
+    <mapID target="X3dResourcesPowerPoint"         url="downloads/X3dResources.html#PowerPoint"/>
+    <mapID target="X3dResourcesQualityAssurance"   url="downloads/X3dResources.html#QualityAssurance"/>
+    <mapID target="X3dResourcesReferences"         url="downloads/X3dResources.html#References"/>
+    <mapID target="X3dResourcesSecurity"           url="downloads/X3dResources.html#Security"/>
+    <mapID target="X3dResourcesTooltips"           url="downloads/X3dResources.html#Tooltips"/>
+    <mapID target="X3dResourcesReferences"         url="downloads/X3dResources.html#References"/>
+    <mapID target="X3dResourcesTraining"           url="downloads/X3dResources.html#Training"/>
+    <mapID target="X3dResourcesVideos"             url="downloads/X3dResources.html#Videos"/>
+    <mapID target="X3dResourcesVRML"               url="downloads/X3dResources.html#VRML"/>
+    <mapID target="X3dResourcesContact"            url="downloads/X3dResources.html#Contact"/>
+    <mapID target="X3dResourcesExampleDownloads"   url="downloads/X3dResources.html#Examples"/>
+  
+    <!-- ================================================================== -->
+    <mapID target="hints.html"             url="downloads/X3dSceneAuthoringHints.html"/>
+    <mapID target="hintsAudio"             url="downloads/X3dSceneAuthoringHints.html#Audio"/>
+    <mapID target="hintsAuthoring"         url="downloads/X3dSceneAuthoringHints.html#Authoring"/>
+    <mapID target="hintsColor"             url="downloads/X3dSceneAuthoringHints.html#Color"/>
+    <mapID target="hintsCoordinateSystems" url="downloads/X3dSceneAuthoringHints.html#CoordinateSystems"/>
+    <mapID target="hintsCredits"           url="downloads/X3dSceneAuthoringHints.html#Credits"/>
+    <mapID target="hintsDates"             url="downloads/X3dSceneAuthoringHints.html#Dates"/>
+    <mapID target="hintsHTML"              url="downloads/X3dSceneAuthoringHints.html#HTML"/>
+    <mapID target="hintsImages"            url="downloads/X3dSceneAuthoringHints.html#Images"/>
+    <mapID target="hintsInlinesPrototypes" url="downloads/X3dSceneAuthoringHints.html#InlinesPrototypes"/>
+    <mapID target="hintsLicense"           url="downloads/X3dSceneAuthoringHints.html#license"/>
+    <mapID target="hintsMeshes"            url="downloads/X3dSceneAuthoringHints.html#Meshes"/>
+    <mapID target="hintsmetaTags"          url="downloads/X3dSceneAuthoringHints.html#metaTags"/>
+    <mapID target="hintsMetadata"          url="downloads/X3dSceneAuthoringHints.html#Metadata"/>
+    <mapID target="hintsNamingConventions" url="downloads/X3dSceneAuthoringHints.html#NamingConventions"/>
+    <mapID target="hintsScale"             url="downloads/X3dSceneAuthoringHints.html#Scale"/>
+    <mapID target="hintsScripts"           url="downloads/X3dSceneAuthoringHints.html#Scripts"/>
+    <mapID target="hintsurls"              url="downloads/X3dSceneAuthoringHints.html#urls"/>
+    <mapID target="hintsValidation"        url="downloads/X3dSceneAuthoringHints.html#Validation"/>
+    <mapID target="hintsViewpoints"        url="downloads/X3dSceneAuthoringHints.html#Viewpoints"/>
+    <mapID target="hintsVolumes"           url="downloads/X3dSceneAuthoringHints.html#Volumes"/>
+  
+    <!-- ================================================================== -->
+
+    <mapID target="X3dTooltips"            url="TooltipsLaunchedInBrowser.html"/>
+    <mapID target="X3dTooltipsEnglish"     url="downloads/X3dTooltips.html"/>
+    <mapID target="X3dTooltipsFrench"      url="downloads/X3dTooltipsFrench.html"/>
+    <mapID target="X3dTooltipsChinese"     url="downloads/X3dTooltipsChinese.html"/>
+    <mapID target="X3dTooltipsGerman"      url="downloads/X3dTooltipsGerman.html"/>
+    <mapID target="X3dTooltipsItalian"     url="downloads/X3dTooltipsItalian.html"/>
+    <mapID target="X3dTooltipsKorean"      url="downloads/X3dTooltipsKorean.html"/>
+    <mapID target="X3dTooltipsPortuguese"  url="downloads/X3dTooltipsPortuguese.html"/>
+    <mapID target="X3dTooltipsSpanish"     url="downloads/X3dTooltipsSpanish.html"/>
+    <mapID target="X3dTooltipsThai"        url="downloads/X3dTooltipsThai.html"/>
+    
+    <!-- ================================================================== -->
+    <!-- *** note that these directories must match the destination directories after extracting the .zip files -->
+  
+    <!-- had to rename directories (to get rid of embedded . character in name) due to javahelp bug :( -->
+  
+    <!-- see javahelp/getDocs.xml for corresponding archive retrievals and property definitions -->
+    <!--
+        <property name= "localVRML97"                      value="ISO-IEC-14772-VRML97"/>
+        <property name= "localVRML97Amendment1"            value="ISO-IEC-14772-1-VRML97Amendment1"/>
+        <property name= "localHumanoidAnimation"           value="ISO-IEC-19774-IS-V1-0-HumanoidAnimation"/>
+        <property name= "localX3dAbstractSpecification"    value="ISO-IEC-19775-1-IS-V3-3-X3D-Abstract"/>
+        <property name= "localX3dSceneAccessInterface"     value="ISO-IEC-19775-2-DIS-V3-3-X3D-SceneAccessInterface"/>
+        <property name= "localX3dXmlEncoding"              value="ISO-IEC-19776-1-DIS-V3-3-X3DEncodings-XML"/>
+        <property name= "localX3dClassicVrmlEncoding"      value="ISO-IEC-19776-2-DIS-V3-3-X3DEncodings-ClassicVRML"/>
+        <property name= "localX3dCompressedBinaryEncoding" value="ISO-IEC-19776-3-DIS-V3-3-X3DEncodings-CompressedBinary"/>
+        <property name= "localX3dSaiEcmascript"            value="ISO-IEC-19777-1-CD-V3-3-X3DLanguageBindings-ECMAScript"/>
+        <property name= "localX3dSaiJava"                  value="ISO-IEC-19777-2-IS-V3-0-X3DLanguageBindings-Java"/>
+    -->
+    
+    <mapID target="VRML97"                    url="specifications/ISO-IEC-14772-IS-V2_0/ISO-IEC-14772-VRML97/index.html"/>
+    <mapID target="VRML97Amendment1"          url="specifications/ISO-IEC-14772-1-IS-V2_1/VRML97Am1/index.html"/>
+    <mapID target="HAnim"                     url="specifications/ISO-IEC-19774-IS-V1_0/HAnim/HAnim.html"/>
+    <mapID target="X3dAbstractSpecification"  url="specifications/ISO-IEC-19775-1-IS-V3_3/Part01/Architecture.html"/>
+    <!-- TODO fix weird intermediate directory -->
+    <mapID target="X3dSai"                    url="specifications/ISO-IEC-19775-2-IS-V3_3/C060500e-html/Part02/X3D_SAI.html"/>
+    <mapID target="X3dEncoding.x3d"           url="specifications/ISO-IEC-19776-1-IS-V3_3/Part01/X3D_XML.html"/>
+    <mapID target="X3dEncoding.x3dv"          url="specifications/ISO-IEC-19776-2-IS-V3_3/Part02/X3D_ClassicVRML.html"/>
+    <mapID target="X3dEncoding.x3db"          url="specifications/ISO-IEC-19776-3-IS-V3_3/Part03/X3D_Binary.html"/>
+    <mapID target="X3dSai.Ecmascript"         url="specifications/ISO-IEC-19777-1-CD-V3_3/Part1/X3D_ECMAScript.html"/>
+    <mapID target="X3dSai.Java"               url="specifications/ISO-IEC-19777-2-IS-V3_0/Part2/X3D_Java.html"/>
+    <mapID target="OnlineAvailability"        url="X3dSpecificationsFeedback.html#OnlineAvailability"/>
+    <mapID target="ECMAscript"                url="X3dSpecificationsFeedback.html#ECMAscript"/>
+    <mapID target="Collada"                   url="X3dSpecificationsFeedback.html#Collada"/>
+    <mapID target="XmlSecurity"               url="X3dSpecificationsFeedback.html#XmlSecurity"/>
+    <mapID target="X3dSpecificationsFeedback" url="X3dSpecificationsFeedback.html#X3dSpecificationsFeedback"/>    
+
+    <!-- ================================================================== -->
+  
+    <mapID target="AdditionalReferences"      url="AdditionalReferences.html"/>
+
+    <mapID target="X3dForWebAuthors"          url="AdditionalReferences.html#X3dForWebAuthors"/>
+    <mapID target="DisPlainAndSimple.pdf"     url="AdditionalReferences.html#DisPlainAndSimpleGuide"/>
+    <!-- generated from http://www.sisostds.org/DigitalLibrary.aspx?Command=Core_Download&EntryId=29302 -->
+    <mapID target="EcmascriptJavascript"     url="AdditionalReferences.html#EcmascriptJavascript"/>
+
+    <mapID target="SMAL"                      url="AdditionalReferences.html#SMAL"/>
+    <mapID target="X3dMimeTypes"              url="AdditionalReferences.html#MIME"/>
+    <mapID target="X3dSecurityExamples"       url="AdditionalReferences.html#X3dSecurity"/>
+    <!-- TODO help page for the following -->
+    <mapID target="MANAGE_KEYSTORE_HELPID"    url="AdditionalReferences.html#X3dSecurity"/>
+
+    <!-- ================================================================== -->
+
+    <mapID target="HtmlObjectTagForX3d.html"     url="downloads/HtmlObjectTagForX3d.html"/>
+
+    <mapID target="Xj3dNavigationHotkeys.html"   url="downloads/Xj3dNavigationHotkeys.html"/>
+
+    <mapID target="Xj3dKeyboardNavigation.html"  url="downloads/Xj3dKeyboardNavigation.html"/>
+
+    <mapID target="X3dSchematron.html"           url="downloads/schematron/X3dSchematron.html"/>
+
+    <mapID target="X3dRegularExpressions.html"   url="downloads/X3dRegularExpressions.html"/>
+    <mapID target="X3dTidy.html"                 url="downloads/X3dTidy.html"/>
+    <mapID target="X3dToJson.html"               url="downloads/X3dToJson.html"/>
+  
+    <!-- ================================================================== -->
+  
+    <!-- add mapID values for individual tooltips to provide context-sensitive help -->
+  
+    <mapID target="ACOUSTICPROPERTIES_ELEM_HELPID"     url="downloads/X3dTooltips.html#AcousticProperties"/>
+    <mapID target="ANALYSER_ELEM_HELPID"               url="downloads/X3dTooltips.html#Analyser"/>
+    <mapID target="ANCHOR_ELEM_HELPID"                 url="downloads/X3dTooltips.html#Anchor"/>
+    <mapID target="APPEARANCE_ELEM_HELPID"             url="downloads/X3dTooltips.html#Appearance"/>
+    <mapID target="ARC2D_ELEM_HELPID"                  url="downloads/X3dTooltips.html#Arc2D"/>
+    <mapID target="ARCCLOSE2D_ELEM_HELPID"             url="downloads/X3dTooltips.html#ArcClose2D"/>
+    <mapID target="AUDIOCLIP_ELEM_HELPID"              url="downloads/X3dTooltips.html#AudioClip"/>
+    <mapID target="AUDIODESTINATION_ELEM_HELPID"       url="downloads/X3dTooltips.html#AudioDestination"/>
+    <mapID target="BACKGROUND_ELEM_HELPID"             url="downloads/X3dTooltips.html#Background"/>
+    <mapID target="BILLBOARD_ELEM_HELPID"              url="downloads/X3dTooltips.html#Billboard"/>
+    <mapID target="BIQUADFILTER_ELEM_HELPID"           url="downloads/X3dTooltips.html#BiquadFilter"/>
+    <mapID target="BOOLEANFILTER_ELEM_HELPID"          url="downloads/X3dTooltips.html#BooleanFilter"/>
+    <mapID target="BOOLEANSEQUENCER_ELEM_HELPID"       url="downloads/X3dTooltips.html#BooleanSequencer"/>
+    <mapID target="BOOLEANTOGGLE_ELEM_HELPID"          url="downloads/X3dTooltips.html#BooleanToggle"/>
+    <mapID target="BOOLEANTRIGGER_ELEM_HELPID"         url="downloads/X3dTooltips.html#BooleanTrigger"/>
+    <mapID target="BOX_ELEM_HELPID"                    url="downloads/X3dTooltips.html#Box"/>
+    <mapID target="BUFFERAUDIOSOURCE_ELEM_HELPID"      url="downloads/X3dTooltips.html#BufferAudioSource"/>
+    <mapID target="CADASSEMBLY_ELEM_HELPID"            url="downloads/X3dTooltips.html#CADAssembly"/>
+    <mapID target="CADFACE_ELEM_HELPID"                url="downloads/X3dTooltips.html#CADFace"/>
+    <mapID target="CADLAYER_ELEM_HELPID"               url="downloads/X3dTooltips.html#CADLayer"/>
+    <mapID target="CADPART_ELEM_HELPID"                url="downloads/X3dTooltips.html#CADPart"/>
+    <mapID target="CHANNELMERGER_ELEM_HELPID"          url="downloads/X3dTooltips.html#ChannelMerger"/>
+    <mapID target="CHANNELSELECTOR_ELEM_HELPID"        url="downloads/X3dTooltips.html#ChannelSekector"/>
+    <mapID target="CHANNELSPLITTER_ELEM_HELPID"        url="downloads/X3dTooltips.html#ChannelSplitter"/>
+    <mapID target="CIRCLE2D_ELEM_HELPID"               url="downloads/X3dTooltips.html#Circle2D"/>
+    <mapID target="CLIPPLANE_ELEM_HELPID"              url="downloads/X3dTooltips.html#ClipPlane"/>
+    <mapID target="COLLISION_ELEM_HELPID"              url="downloads/X3dTooltips.html#Collision"/>
+    <mapID target="COLOR_ELEM_HELPID"                  url="downloads/X3dTooltips.html#Color"/>
+    <mapID target="COLORCHASER_ELEM_HELPID"            url="downloads/X3dTooltips.html#ColorChaser"/>
+    <mapID target="COLORDAMPER_ELEM_HELPID"            url="downloads/X3dTooltips.html#ColorDamper"/>
+    <mapID target="COLORINTERPOLATOR_ELEM_HELPID"      url="downloads/X3dTooltips.html#ColorInterpolator"/>
+    <mapID target="COLORRGBA_ELEM_HELPID"              url="downloads/X3dTooltips.html#ColorRGBA"/>
+    <mapID target="COMPONENT_ELEM_HELPID"              url="downloads/X3dTooltips.html#component"/>
+    <mapID target="COMPOSED3DTEXTURE_ELEM_HELPID"      url="downloads/X3dTooltips.html#Composed3DTexture"/>
+    <mapID target="COMPOSEDCUBEMAPTEXTURE_ELEM_HELPID" url="downloads/X3dTooltips.html#ComposedCubeMapTexture"/>
+    <mapID target="COMPOSEDSHADER_ELEM_HELPID"         url="downloads/X3dTooltips.html#ComposedShader"/>
+    <mapID target="COMPOSEDTEXTURE_ELEM_HELPID"        url="downloads/X3dTooltips.html#ComposedTexture"/>
+    <mapID target="CONE_ELEM_HELPID" url="downloads/X3dTooltips.html#Cone"/>
+    <mapID target="CONNECT_ELEM_HELPID" url="downloads/X3dTooltips.html#connect"/>
+    <mapID target="CONTOUR2D_ELEM_HELPID" url="downloads/X3dTooltips.html#Contour2D"/>
+    <mapID target="CONTOURPOLYLINE2D_ELEM_HELPID" url="downloads/X3dTooltips.html#ContourPolyline2D"/>
+    <mapID target="CONVOLVER_ELEM_HELPID" url="downloads/X3dTooltips.html#Convolver"/>
+    <mapID target="COORDINATE_ELEM_HELPID" url="downloads/X3dTooltips.html#Coordinate"/>
+    <mapID target="COORDINATEDOUBLE_ELEM_HELPID" url="downloads/X3dTooltips.html#CoordinateDouble"/>
+    <mapID target="COORDINATECHASER_ELEM_HELPID" url="downloads/X3dTooltips.html#CoordinateChaser"/>
+    <mapID target="COORDINATEDAMPER_ELEM_HELPID" url="downloads/X3dTooltips.html#CoordinateDamper"/>
+    <mapID target="COORDINATEINTERPOLATOR_ELEM_HELPID" url="downloads/X3dTooltips.html#CoordinateInterpolator"/>
+    <mapID target="COORDINATEINTERPOLATOR2D_ELEM_HELPID" url="downloads/X3dTooltips.html#CoordinateInterpolator2D"/>
+    <mapID target="CYLINDER_ELEM_HELPID" url="downloads/X3dTooltips.html#Cylinder"/>
+    <mapID target="CYLINDERSENSOR_ELEM_HELPID" url="downloads/X3dTooltips.html#CylinderSensor"/>
+    <mapID target="DELAY_ELEM_HELPID" url="downloads/X3dTooltips.html#Delay"/>
+    <mapID target="DISK2D_ELEM_HELPID" url="downloads/X3dTooltips.html#Disk2D"/>
+    <mapID target="DOCTYPE_HELPID" url="downloads/X3dTooltips.html#X3D"/> <!-- TODO update -->
+    <mapID target="DYNAMICSCOMPRESSOR_ELEM_HELPID" url="downloads/X3dTooltips.html#DynamicsCompressor"/>
+    <mapID target="ELEVATIONGRID_ELEM_HELPID" url="downloads/X3dTooltips.html#ElevationGrid"/>
+    <mapID target="ENVIRONMENTLIGHT_ELEM_HELPID" url="downloads/X3dTooltips.html#EnvironmentLight"/>
+    <mapID target="ESPDUTRANSFORM_ELEM_HELPID" url="downloads/X3dTooltips.html#EspduTransform"/>
+    <mapID target="EXPORT_ELEM_HELPID" url="downloads/X3dTooltips.html#EXPORT"/>
+    <mapID target="EXTERNPROTPDECLARE_ELEM_HELPID" url="downloads/X3dTooltips.html#ExternProtoDeclare"/>
+    <mapID target="EXTRUSION_ELEM_HELPID" url="downloads/X3dTooltips.html#Extrusion"/>
+    <mapID target="FIELD_ELEM_HELPID" url="downloads/X3dTooltips.html#field"/>
+    <mapID target="FIELDVALUE_ELEM_HELPID" url="downloads/X3dTooltips.html#fieldValue"/>
+    <mapID target="FILLPROPERTIES_ELEM_HELPID" url="downloads/X3dTooltips.html#FillProperties"/>
+    <mapID target="FLOATVERTEXATTRIBUTE_ELEM_HELPID" url="downloads/X3dTooltips.html#FloatVertexAttribute"/>
+    <mapID target="FOG_ELEM_HELPID" url="downloads/X3dTooltips.html#Fog"/>
+    <mapID target="FOGCOORDINATE_ELEM_HELPID" url="downloads/X3dTooltips.html#FogCoordinate"/>
+    <mapID target="FONTSTYLE_ELEM_HELPID" url="downloads/X3dTooltips.html#FontStyle"/>
+    <mapID target="GAIN_ELEM_HELPID" url="downloads/X3dTooltips.html#Gain"/>
+    <mapID target="GENERATEDCUBEMAPTEXTURE_ELEM_HELPID" url="downloads/X3dTooltips.html#GeneratedCubeMapTexture"/>
+    <mapID target="GEOCOORDINATE_ELEM_HELPID" url="downloads/X3dTooltips.html#GeoCoordinate"/>
+    <mapID target="GEOELEVATIONGRID_ELEM_HELPID" url="downloads/X3dTooltips.html#GeoElevationGrid"/>
+    <mapID target="GEOLOCATION_ELEM_HELPID" url="downloads/X3dTooltips.html#GeoLocation"/>
+    <mapID target="GEOLOD_ELEM_HELPID" url="downloads/X3dTooltips.html#GeoLOD"/>
+    <mapID target="GEOMETADATA_ELEM_HELPID" url="downloads/X3dTooltips.html#GeoMetadata"/>
+    <mapID target="GEOORIGIN_ELEM_HELPID" url="downloads/X3dTooltips.html#GeoOrigin"/>
+    <mapID target="GEOPOSITIONINTERPOLATOR_ELEM_HELPID" url="downloads/X3dTooltips.html#GeoPositionInterpolator"/>
+    <mapID target="GEOTOUCHSENSOR_ELEM_HELPID" url="downloads/X3dTooltips.html#GeoTouchSensor"/>
+    <mapID target="GEOVIEWPOINT_ELEM_HELPID" url="downloads/X3dTooltips.html#GeoViewpoint"/>
+    <mapID target="GROUP_ELEM_HELPID" url="downloads/X3dTooltips.html#Group"/>
+    <mapID target="HANIMDISPLACER_ELEM_HELPID" url="downloads/X3dTooltips.html#HAnimDisplacer"/>
+    <mapID target="HANIMHUMANOID_ELEM_HELPID" url="downloads/X3dTooltips.html#HAnimHumanoid"/>
+    <mapID target="HANIMJOINT_ELEM_HELPID" url="downloads/X3dTooltips.html#HAnimJoint"/>
+    <mapID target="HANIMSEGMENT_ELEM_HELPID" url="downloads/X3dTooltips.html#HAnimSegment"/>
+    <mapID target="HANIMSITE_ELEM_HELPID" url="downloads/X3dTooltips.html#HAnimSite"/>
+    <mapID target="HEAD_ELEM_HELPID" url="downloads/X3dTooltips.html#head"/>
+    <mapID target="IMAGETEXTURE3D_ELEM_HELPID" url="downloads/X3dTooltips.html#ImageTexture3D"/>
+    <mapID target="IMAGECUBEMAPTEXTURE_ELEM_HELPID" url="downloads/X3dTooltips.html#ImageCubeMapTexture"/>
+    <mapID target="IMAGETEXTURE_ELEM_HELPID" url="downloads/X3dTooltips.html#ImageTexture"/>
+    <mapID target="IMPORT_ELEM_HELPID" url="downloads/X3dTooltips.html#IMPORT"/>
+    <mapID target="INDEXEDFACESET_ELEM_HELPID" url="downloads/X3dTooltips.html#IndexedFaceSet"/>
+    <mapID target="INDEXEDLINESET_ELEM_HELPID" url="downloads/X3dTooltips.html#IndexedLineSet"/>
+    <mapID target="INDEXEDQUADSET_ELEM_HELPID" url="downloads/X3dTooltips.html#IndexedQuadSet"/>
+    <mapID target="INDEXEDTRIANGLEFANSET_ELEM_HELPID" url="downloads/X3dTooltips.html#IndexedTriangleFanSet"/>
+    <mapID target="INDEXEDTRIANGLESET_ELEM_HELPID" url="downloads/X3dTooltips.html#IndexedTriangleSet"/>
+    <mapID target="INDEXEDTRIANGLESTRIPSET_ELEM_HELPID" url="downloads/X3dTooltips.html#IndexedTriangleStripSet"/>
+    <mapID target="INLINE_ELEM_HELPID" url="downloads/X3dTooltips.html#Inline"/>
+    <mapID target="INTEGERSEQUENCER_ELEM_HELPID" url="downloads/X3dTooltips.html#IntegerSequencer"/>
+    <mapID target="INTEGERTRIGGER_ELEM_HELPID" url="downloads/X3dTooltips.html#IntegerTrigger"/>
+    <mapID target="IS_ELEM_HELPID" url="downloads/X3dTooltips.html#IS"/>
+    <mapID target="KEYSENSOR_ELEM_HELPID" url="downloads/X3dTooltips.html#KeySensor"/>
+    <mapID target="LINEPROPERTIES_ELEM_HELPID" url="downloads/X3dTooltips.html#LineProperties"/>
+    <mapID target="LINESET_ELEM_HELPID" url="downloads/X3dTooltips.html#LineSet"/>
+    <mapID target="LISTENERPOINTSOURCE_ELEM_HELPID" url="downloads/X3dTooltips.html#ListenerPointSource"/>
+    <mapID target="LOADSENSOR_ELEM_HELPID" url="downloads/X3dTooltips.html#LoadSensor"/>
+    <mapID target="LOCALFOG_ELEM_HELPID" url="downloads/X3dTooltips.html#LocalFog"/>
+    <mapID target="LOD_ELEM_HELPID" url="downloads/X3dTooltips.html#LOD"/>
+    <mapID target="MATERIAL_ELEM_HELPID" url="downloads/X3dTooltips.html#Material"/>
+    <mapID target="MATRIX3VERTEXATTRIBUTE_ELEM_HELPID" url="downloads/X3dTooltips.html#Matrix3VertexAttribute"/>
+    <mapID target="MATRIX4VERTEXATTRIBUTE_ELEM_HELPID" url="downloads/X3dTooltips.html#Matrix4VertexAttribute"/>
+    <mapID target="META_ELEM_HELPID" url="downloads/X3dTooltips.html#meta"/>
+    <mapID target="METADATADOUBLE_ELEM_HELPID" url="downloads/X3dTooltips.html#MetadataDouble"/>
+    <mapID target="METADATAFLOAT_ELEM_HELPID" url="downloads/X3dTooltips.html#MetadataFloat"/>
+    <mapID target="METADATAINTEGER_ELEM_HELPID" url="downloads/X3dTooltips.html#MetadataInteger"/>
+    <mapID target="METADATASET_ELEM_HELPID" url="downloads/X3dTooltips.html#MetadataSet"/>
+    <mapID target="METADATASTRING_ELEM_HELPID" url="downloads/X3dTooltips.html#MetadataString"/>
+    <mapID target="MICROPHONESOURCE_ELEM_HELPID" url="downloads/X3dTooltips.html#MicrophoneSource"/>
+    <mapID target="MOVIETEXTURE_ELEM_HELPID" url="downloads/X3dTooltips.html#MovieTexture"/>
+    <mapID target="MULTITEXTURE_ELEM_HELPID" url="downloads/X3dTooltips.html#MultiTexture"/>
+    <mapID target="MULTITEXTURECOORDINATE_ELEM_HELPID" url="downloads/X3dTooltips.html#MultiTextureCoordinate"/>
+    <mapID target="MULTITEXTURETRANSFORM_ELEM_HELPID" url="downloads/X3dTooltips.html#MultiTextureTransform"/>
+    <mapID target="NAVIGATIONINFO_ELEM_HELPID" url="downloads/X3dTooltips.html#NavigationInfo"/>
+    <mapID target="NORMAL_ELEM_HELPID" url="downloads/X3dTooltips.html#Normal"/>
+    <mapID target="NORMALINTERPOLATOR_ELEM_HELPID" url="downloads/X3dTooltips.html#NormalInterpolator"/>
+    <mapID target="NURBSCURVE_ELEM_HELPID" url="downloads/X3dTooltips.html#NurbsCurve"/>
+    <mapID target="NURBSCURVE2D_ELEM_HELPID" url="downloads/X3dTooltips.html#NurbsCurve2D"/>
+    <mapID target="NURBSORIENTATIONINTERPOLATOR_ELEM_HELPID" url="downloads/X3dTooltips.html#NurbsOrientationInterpolator"/>
+    <mapID target="NURBSPATCHSURFACE_ELEM_HELPID" url="downloads/X3dTooltips.html#NurbsPatchSurface"/>
+    <mapID target="NURBSPOSITIONINTERPOLATOR_ELEM_HELPID" url="downloads/X3dTooltips.html#NurbsPositionInterpolator"/>
+    <mapID target="NURBSSET_ELEM_HELPID" url="downloads/X3dTooltips.html#NurbsSet"/>
+    <mapID target="NURBSSURFACEINTERPOLATOR_ELEM_HELPID" url="downloads/X3dTooltips.html#NurbsSurfaceInterpolator"/>
+    <mapID target="NURBSSWEPTSURFACE_ELEM_HELPID" url="downloads/X3dTooltips.html#NurbsSweptSurface"/>
+    <mapID target="NURBSSWUNGSURFACE_ELEM_HELPID" url="downloads/X3dTooltips.html#NurbsSwungSurface"/>
+    <mapID target="NURBSTEXTURECOORDINATE_ELEM_HELPID" url="downloads/X3dTooltips.html#NurbsTextureCoordinate"/>
+    <mapID target="NURBSTRIMMEDSURFACE_ELEM_HELPID" url="downloads/X3dTooltips.html#NurbsTrimmedSurface"/>
+    <mapID target="ORIENTATIONCHASER_ELEM_HELPID" url="downloads/X3dTooltips.html#OrientationChaser"/>
+    <mapID target="ORIENTATIONDAMPER_ELEM_HELPID" url="downloads/X3dTooltips.html#OrientationDamper"/>
+    <mapID target="ORIENTATIONINTERPOLATOR_ELEM_HELPID" url="downloads/X3dTooltips.html#OrientationInterpolator"/>
+    <mapID target="OSCILLATORSOURCE_ELEM_HELPID" url="downloads/X3dTooltips.html#OscillatorSource"/>
+    <mapID target="PACKAGEDSHADER_ELEM_HELPID" url="downloads/X3dTooltips.html#PackagedShader"/>
+    <mapID target="PERIODICWAVE_ELEM_HELPID" url="downloads/X3dTooltips.html#PeriodicWave"/>
+    <mapID target="PHYSICALMATERIAL_ELEM_HELPID" url="downloads/X3dTooltips.html#PhysicalMaterial"/>
+    <mapID target="PIXELTEXTURE3D_ELEM_HELPID" url="downloads/X3dTooltips.html#PixelTexture3D"/>
+    <mapID target="PIXELTEXTURE_ELEM_HELPID" url="downloads/X3dTooltips.html#PixelTexture"/>
+    <mapID target="PLANESENSOR_ELEM_HELPID" url="downloads/X3dTooltips.html#PlaneSensor"/>
+    <mapID target="POINTLIGHT_ELEM_HELPID" url="downloads/X3dTooltips.html#PointLight"/>
+    <mapID target="POINTSET_ELEM_HELPID" url="downloads/X3dTooltips.html#PointSet"/>
+    <mapID target="POLYLINE2D_ELEM_HELPID" url="downloads/X3dTooltips.html#Polyline2D"/>
+    <mapID target="POLYPOINT2D_ELEM_HELPID" url="downloads/X3dTooltips.html#Polypoint2D"/>
+    <mapID target="POSITIONCHASER_ELEM_HELPID" url="downloads/X3dTooltips.html#PositionChaser"/>
+    <mapID target="POSITIONDAMPER_ELEM_HELPID" url="downloads/X3dTooltips.html#PositionDamper"/>
+    <mapID target="POSITIONCHASER2D_ELEM_HELPID" url="downloads/X3dTooltips.html#PositionChaser2D"/>
+    <mapID target="POSITIONDAMPER2D_ELEM_HELPID" url="downloads/X3dTooltips.html#PositionDamper2D"/>
+    <mapID target="POSITIONINTERPOLATOR_ELEM_HELPID" url="downloads/X3dTooltips.html#PositionInterpolator"/>
+    <mapID target="POSITIONINTERPOLATOR2D_ELEM_HELPID" url="downloads/X3dTooltips.html#PositionInterpolator2D"/>
+    <mapID target="PROGRAMSHADER_ELEM_HELPID" url="downloads/X3dTooltips.html#ProgramShader"/>
+    <mapID target="PROTOBODY_ELEM_HELPID" url="downloads/X3dTooltips.html#ProtoBody"/>
+    <mapID target="PROTODECLARE_ELEM_HELPID" url="downloads/X3dTooltips.html#ProtoDeclare"/>
+    <mapID target="PROTOINSTANCE_ELEM_HELPID" url="downloads/X3dTooltips.html#ProtoInstance"/>
+    <mapID target="PROTOINTERFACE_ELEM_HELPID" url="downloads/X3dTooltips.html#ProtoInterface"/>
+    <mapID target="PROXIMITYSENSOR_ELEM_HELPID" url="downloads/X3dTooltips.html#ProximitySensor"/>
+    <mapID target="QUADSET_ELEM_HELPID" url="downloads/X3dTooltips.html#QuadSet"/>
+    <mapID target="RECEIVERPDU_ELEM_HELPID" url="downloads/X3dTooltips.html#ReceiverPdu"/>
+    <mapID target="RECTANGLE2D_ELEM_HELPID" url="downloads/X3dTooltips.html#Rectangle2D"/>
+    <mapID target="ROUTE_ELEM_HELPID" url="downloads/X3dTooltips.html#ROUTE"/>
+    <mapID target="SCALARCHASER_ELEM_HELPID" url="downloads/X3dTooltips.html#ScalarChaser"/>
+    <mapID target="SCALARDAMPER_ELEM_HELPID" url="downloads/X3dTooltips.html#ScalarDamper"/>
+    <mapID target="SCALARINTERPOLATOR_ELEM_HELPID" url="downloads/X3dTooltips.html#ScalarInterpolator"/>
+    <mapID target="SCENE_ELEM_HELPID" url="downloads/X3dTooltips.html#Scene"/>
+    <mapID target="SCRIPT_ELEM_HELPID" url="downloads/X3dTooltips.html#Script"/>
+    <mapID target="SHADERPART_ELEM_HELPID" url="downloads/X3dTooltips.html#ShaderPart"/>
+    <mapID target="SHADERPROGRAM_ELEM_HELPID" url="downloads/X3dTooltips.html#ShaderProgram"/>
+    <mapID target="SHAPE_ELEM_HELPID" url="downloads/X3dTooltips.html#Shape"/>
+    <mapID target="SIGNALPDU_ELEM_HELPID" url="downloads/X3dTooltips.html#SignalPdu"/>
+    <mapID target="SOUND_ELEM_HELPID" url="downloads/X3dTooltips.html#Sound"/>
+    <mapID target="SPATIALSOUND_ELEM_HELPID" url="downloads/X3dTooltips.html#SpatialSound"/>
+    <mapID target="SPHERE_ELEM_HELPID" url="downloads/X3dTooltips.html#Sphere"/>
+    <mapID target="SPHERESENSOR_ELEM_HELPID" url="downloads/X3dTooltips.html#SphereSensor"/>
+    <mapID target="SPOTLIGHT_ELEM_HELPID" url="downloads/X3dTooltips.html#SpotLight"/>
+    <mapID target="STATICGROUP_ELEM_HELPID" url="downloads/X3dTooltips.html#StaticGroup"/>
+    <mapID target="STREAMAUDIODESTINATION_ELEM_HELPID" url="downloads/X3dTooltips.html#StreamAudioDestination"/>
+    <mapID target="STREAMAUDIOSOURCE_ELEM_HELPID" url="downloads/X3dTooltips.html#StreamAudioSource"/>
+    <mapID target="STRINGSENSOR_ELEM_HELPID" url="downloads/X3dTooltips.html#StringSensor"/>
+    <mapID target="SWITCH_ELEM_HELPID" url="downloads/X3dTooltips.html#Switch"/>
+    <mapID target="TEXT_ELEM_HELPID" url="downloads/X3dTooltips.html#Text"/>
+    <mapID target="TEXCOORDCHASER2D_ELEM_HELPID" url="downloads/X3dTooltips.html#TexCoordChaser2D"/>
+    <mapID target="TEXCOORDDAMPER2D_ELEM_HELPID" url="downloads/X3dTooltips.html#TexCoordDamper2D"/>
+    <mapID target="TEXTUREBACKGROUND_ELEM_HELPID" url="downloads/X3dTooltips.html#TextureBackground"/>
+    <mapID target="TEXTURECOORDINATE_ELEM_HELPID" url="downloads/X3dTooltips.html#TextureCoordinate"/>
+    <mapID target="TEXTURECOORDINATE3D_ELEM_HELPID" url="downloads/X3dTooltips.html#TextureCoordinate3D"/>
+    <mapID target="TEXTURECOORDINATE4D_ELEM_HELPID" url="downloads/X3dTooltips.html#TextureCoordinate4D"/>
+    <mapID target="TEXTURECOORDINATEGENERATOR_ELEM_HELPID" url="downloads/X3dTooltips.html#TextureCoordinateGenerator"/>
+    <mapID target="TEXTUREMATRIXTRANSFORM_ELEM_HELPID" url="downloads/X3dTooltips.html#TextureMatrixTransform"/>
+    <mapID target="TEXTUREPROJECTOR_ELEM_HELPID" url="downloads/X3dTooltips.html#TextureProjector"/>
+    <mapID target="TEXTUREPROJECTORPARALLEL_ELEM_HELPID" url="downloads/X3dTooltips.html#TextureProjectorParallel"/>
+    <mapID target="TEXTUREPROPERTIES_ELEM_HELPID" url="downloads/X3dTooltips.html#TextureProperties"/>
+    <mapID target="TEXTURETRANSFORM_ELEM_HELPID" url="downloads/X3dTooltips.html#TextureTransform"/>
+    <mapID target="TEXTURETRANSFORM3D_ELEM_HELPID" url="downloads/X3dTooltips.html#TextureTransform3D"/>
+    <mapID target="TEXTURETRANSFORMMATRIX3D_ELEM_HELPID" url="downloads/X3dTooltips.html#TextureTransformMatrix3D"/>
+    <mapID target="TIMESENSOR_ELEM_HELPID" url="downloads/X3dTooltips.html#TimeSensor"/>
+    <mapID target="TIMETRIGGER_ELEM_HELPID" url="downloads/X3dTooltips.html#TimeTrigger"/>
+    <mapID target="TOUCHSENSOR_ELEM_HELPID" url="downloads/X3dTooltips.html#TouchSensor"/>
+    <mapID target="TRANSFORM_ELEM_HELPID" url="downloads/X3dTooltips.html#Transform"/>
+    <mapID target="TRANSMITTERPDU_ELEM_HELPID" url="downloads/X3dTooltips.html#TransmitterPdu"/>
+    <mapID target="TRIANGLEFANSET_ELEM_HELPID" url="downloads/X3dTooltips.html#TriangleFanSet"/>
+    <mapID target="TRIANGLESET_ELEM_HELPID" url="downloads/X3dTooltips.html#TriangleSet"/>
+    <mapID target="TRIANGLESET2D_ELEM_HELPID" url="downloads/X3dTooltips.html#TriangleSet2D"/>
+    <mapID target="TRIANGLESTRIPSET_ELEM_HELPID" url="downloads/X3dTooltips.html#TriangleStripSet"/>
+    <mapID target="TWOSIDEDMATERIAL_ELEM_HELPID" url="downloads/X3dTooltips.html#TwoSidedMaterial"/>
+    <mapID target="UNIT_ELEM_HELPID" url="downloads/X3dTooltips.html#unit"/>
+    <mapID target="UNLITMATERIAL_ELEM_HELPID" url="downloads/X3dTooltips.html#UnlitMaterial"/>
+    <mapID target="VIEWPOINT_ELEM_HELPID" url="downloads/X3dTooltips.html#Viewpoint"/>
+    <mapID target="VISIBILITYSENSOR_ELEM_HELPID" url="downloads/X3dTooltips.html#VisibilitySensor"/>
+    <mapID target="WAVESHAPER_ELEM_HELPID" url="downloads/X3dTooltips.html#WaveShaper"/>
+    <mapID target="WORLDINFO_ELEM_HELPID" url="downloads/X3dTooltips.html#WorldInfo"/>
+    <mapID target="X3D_ELEM_HELPID" url="downloads/X3dTooltips.html#X3D"/>
+    <mapID target="XVLSHELL_ELEM_HELPID" url="downloads/X3dTooltips.html#XvlShell"/>
+
+    <mapID target=          "VOLUMEDATA_ELEM_HELPID" url="downloads/X3dTooltips.html#VolumeData"/>
+    <mapID target="ISOSURFACEVOLUMEDATA_ELEM_HELPID" url="downloads/X3dTooltips.html#IsoSurfaceVolumeData"/>
+    <mapID target= "SEGMENTEDVOLUMEDATA_ELEM_HELPID" url="downloads/X3dTooltips.html#SegmentedVolumeData"/>
+    <mapID target= "BLENDEDVOLUMESTYLE_ELEM_HELPID" url="downloads/X3dTooltips.html#BlendedVolumeStyle"/>
+    <mapID target= "BOUNDARYENHANCEMENTVOLUMESTYLE_ELEM_HELPID" url="downloads/X3dTooltips.html#BoundaryEnhancementVolumeStyle"/>
+    <mapID target= "CARTOONVOLUMESTYLE_ELEM_HELPID" url="downloads/X3dTooltips.html#CartoonVolumeStyle"/>
+    <mapID target= "COMPOSEDVOLUMESTYLE_ELEM_HELPID" url="downloads/X3dTooltips.html#ComposedVolumeStyle"/>
+    <mapID target= "EDGEENHANCEMENTVOLUMESTYLE_ELEM_HELPID" url="downloads/X3dTooltips.html#EdgeEnhancementVolumeStyle"/>
+    <mapID target= "OPACITYMAP_ELEM_HELPID" url="downloads/X3dTooltips.html#OpacityMapVolumeStyle"/>
+    <mapID target= "PROJECTIONVOLUMESTYLE_ELEM_HELPID" url="downloads/X3dTooltips.html#ProjectionVolumeStyle"/>
+    <mapID target= "SHADEDVOLUMESTYLE_ELEM_HELPID" url="downloads/X3dTooltips.html#ShadedVolumeStyle"/>
+    <mapID target= "SILHOUETTEENHANCEMENTVOLUMESTYLE_ELEM_HELPID" url="downloads/X3dTooltips.html#SilhouetteEnhancementVolumeStyle"/>
+    <mapID target= "TONEMAPPEDVOLUMESTYLE_ELEM_HELPID" url="downloads/X3dTooltips.html#ToneMappedVolumeStyle"/>
+  
+</map>

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.web3d.x3d.collada
+OpenIDE-Module-Layer: org/web3d/x3d/collada/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/web3d/x3d/collada/Bundle.properties
+OpenIDE-Module-Specification-Version: 4.0.0
+
+Name: org/web3d/x3d/collada/ColladaDataLoader.class
+Install-Before: org.openide.loaders.XMLDataObject, org.netbeans.modules.xml.core.XMLDataObject, org.netbeans.modules.xml.XMLDataObject

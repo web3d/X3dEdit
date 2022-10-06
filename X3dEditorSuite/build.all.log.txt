@@ -1,0 +1,1522 @@
+platform.download:
+ant -f C:\\x3d-code\\www.web3d.org\\x3d\\tools\\X3dEdit4.next\\X3dEditorSuite all
+all.clean:
+org.apache.taskdefs:
+org.apache.common-init:
+org.apache.projectized-common.basic-init:
+org.apache.basic-init:
+org.apache.files-init:
+org.apache.testuserdir-delete:
+org.apache.clean:
+Deleting: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\update_tracking\org-apache.xml
+========================================================
+org.web3d.x3d.collada.taskdefs:
+org.web3d.x3d.collada.common-init:
+org.web3d.x3d.collada.projectized-common.basic-init:
+org.web3d.x3d.collada.basic-init:
+org.web3d.x3d.collada.files-init:
+org.web3d.x3d.collada.testuserdir-delete:
+org.web3d.x3d.collada.clean:
+Deleting: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\update_tracking\org-web3d-x3d-collada.xml
+========================================================
+org.web3d.javahelp.taskdefs:
+org.web3d.javahelp.common-init:
+org.web3d.javahelp.projectized-common.basic-init:
+org.web3d.javahelp.basic-init:
+org.web3d.javahelp.files-init:
+org.web3d.javahelp.testuserdir-delete:
+org.web3d.javahelp.clean:
+Deleting: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\update_tracking\org-web3d-javahelp.xml
+========================================================
+org.jdom.taskdefs:
+org.jdom.common-init:
+org.jdom.projectized-common.basic-init:
+org.jdom.basic-init:
+org.jdom.files-init:
+org.jdom.testuserdir-delete:
+org.jdom.clean:
+Deleting: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\update_tracking\org-jdom.xml
+========================================================
+edu.nps.moves.kmleditor.taskdefs:
+edu.nps.moves.kmleditor.common-init:
+edu.nps.moves.kmleditor.projectized-common.basic-init:
+edu.nps.moves.kmleditor.basic-init:
+edu.nps.moves.kmleditor.files-init:
+edu.nps.moves.kmleditor.testuserdir-delete:
+edu.nps.moves.kmleditor.clean:
+Deleting: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit3.3\X3dEditorSuite\build\cluster\update_tracking\edu-nps-moves-kmleditor.xml
+========================================================
+org.web3d.x3d.x3dedit.config.taskdefs:
+org.web3d.x3d.x3dedit.config.common-init:
+org.web3d.x3d.x3dedit.config.projectized-common.basic-init:
+org.web3d.x3d.x3dedit.config.basic-init:
+org.web3d.x3d.x3dedit.config.files-init:
+org.web3d.x3d.x3dedit.config.testuserdir-delete:
+org.web3d.x3d.x3dedit.config.clean:
+Deleting: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\update_tracking\org-web3d-x3d-x3dedit-config.xml
+========================================================
+Xj3d Wrapper for X3D-Edit.taskdefs:
+Xj3d Wrapper for X3D-Edit.common-init:
+Xj3d Wrapper for X3D-Edit.projectized-common.basic-init:
+Xj3d Wrapper for X3D-Edit.basic-init:
+Xj3d Wrapper for X3D-Edit.files-init:
+Xj3d Wrapper for X3D-Edit.testuserdir-delete:
+Xj3d Wrapper for X3D-Edit.clean:
+Deleting: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\update_tracking\org-web3d-x3d-xj3d.xml
+========================================================
+org.web3d.x3d.taskdefs:
+org.web3d.x3d.common-init:
+org.web3d.x3d.projectized-common.basic-init:
+org.web3d.x3d.basic-init:
+org.web3d.x3d.files-init:
+org.web3d.x3d.testuserdir-delete:
+org.web3d.x3d.projectized-common.clean:
+Deleting: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\update_tracking\org-web3d-x3d.xml
+org.web3d.x3d.get.latest.DTDs:
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/catalog.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\catalog.dtd
+local file date : Thu Aug 23 22:22:16 PDT 2007
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-InputOutputFields.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-InputOutputFields.dtd
+local file date : Sat Oct 31 12:51:27 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensions.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensions.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsPrivate.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsPrivate.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsAmendment1.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsAmendment1.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsPublic.Specification.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsPublic.Specification.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsPublic.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsPublic.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0.dtd
+local file date : Tue Jun 01 22:16:46 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1-InputOutputFields.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1-InputOutputFields.dtd
+local file date : Sat Oct 31 12:51:27 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1-Web3dExtensionsPrivate.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1-Web3dExtensionsPrivate.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1-Web3dExtensionsPublic.Specification.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1-Web3dExtensionsPublic.Specification.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1-Web3dExtensionsPublic.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1-Web3dExtensionsPublic.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1.dtd
+local file date : Tue Jun 01 22:16:46 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2-InputOutputFields.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2-InputOutputFields.dtd
+local file date : Sat Oct 31 12:51:27 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2-Web3dExtensionsPrivate.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2-Web3dExtensionsPrivate.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2-Web3dExtensionsPublic.Specification.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2-Web3dExtensionsPublic.Specification.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2-Web3dExtensionsPublic.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2-Web3dExtensionsPublic.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2.dtd
+local file date : Tue Jun 01 22:16:46 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3-InputOutputFields.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3-InputOutputFields.dtd
+local file date : Sat Oct 31 12:51:27 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3-Web3dExtensionsPrivate.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3-Web3dExtensionsPrivate.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3-Web3dExtensionsPublic.Specification.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3-Web3dExtensionsPublic.Specification.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3-Web3dExtensionsPublic.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3-Web3dExtensionsPublic.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3.dtd
+local file date : Tue Jun 01 22:16:46 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0-InputOutputFields.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0-InputOutputFields.dtd
+local file date : Sat Oct 31 13:10:17 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPrivate.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0-Web3dExtensionsPrivate.dtd
+local file date : Sat Oct 31 13:10:17 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPublic.Specification.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0-Web3dExtensionsPublic.Specification.dtd
+local file date : Sat Oct 31 13:10:17 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPublic.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0-Web3dExtensionsPublic.dtd
+local file date : Sat Oct 31 13:10:17 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0.dtd
+local file date : Mon Aug 02 17:59:53 PDT 2021
+Not modified - so not downloaded
+org.web3d.x3d.get.latest.schemas:
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0.xsd
+local file date : Sun May 09 09:56:05 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1.xsd
+local file date : Thu Jul 01 11:34:16 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2.xsd
+local file date : Sun May 09 09:56:05 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3.xsd
+local file date : Sun May 09 09:56:05 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0.xsd
+local file date : Mon Aug 02 17:59:53 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/OasisXmlCatalogX3D.xml
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\OasisXmlCatalogX3D.xml
+local file date : Sun Sep 27 21:03:50 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsAmendment1.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsAmendment1.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsPrivate.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsPrivate.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsPublic.Specification.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsPublic.Specification.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsPublic.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsPublic.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1-Web3dExtensionsPrivate.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1-Web3dExtensionsPrivate.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1-Web3dExtensionsPublic.Specification.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1-Web3dExtensionsPublic.Specification.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1-Web3dExtensionsPublic.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1-Web3dExtensionsPublic.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2-Web3dExtensionsPrivate.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2-Web3dExtensionsPrivate.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2-Web3dExtensionsPublic.Specification.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2-Web3dExtensionsPublic.Specification.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2-Web3dExtensionsPublic.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2-Web3dExtensionsPublic.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3-Web3dExtensionsPrivate.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3-Web3dExtensionsPrivate.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3-Web3dExtensionsPublic.Specification.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3-Web3dExtensionsPublic.Specification.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3-Web3dExtensionsPublic.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3-Web3dExtensionsPublic.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPrivate.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0-Web3dExtensionsPrivate.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPublic.Specification.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0-Web3dExtensionsPublic.Specification.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPublic.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0-Web3dExtensionsPublic.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+org.web3d.x3d.get.latest.schematrons:
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/build.xml
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\build.xml
+local file date : Fri Oct 02 12:10:48 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/buildSchematronDevelopment.xml
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\buildSchematronDevelopment.xml
+local file date : Fri May 14 16:03:39 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/SvrlReportText.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\SvrlReportText.xslt
+local file date : Sun Oct 22 12:35:45 PDT 2017
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/X3dSchematronValidityChecks.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\X3dSchematronValidityChecks.xslt
+local file date : Sun Jun 20 17:55:57 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/X3dSchematronValidityChecks.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\X3dSchematronValidityChecks.xslt
+local file date : Sun Jun 20 17:55:57 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/iso_abstract_expand.xsl
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\iso_abstract_expand.xsl
+local file date : Sun Oct 22 12:35:45 PDT 2017
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/iso_dsdl_include.xsl
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\iso_dsdl_include.xsl
+local file date : Sun Oct 22 12:35:45 PDT 2017
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/iso_schematron_skeleton_for_saxon.xsl
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\iso_schematron_skeleton_for_saxon.xsl
+local file date : Sun Oct 22 12:35:45 PDT 2017
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/iso_schematron_skeleton_for_xslt1.xsl
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\iso_schematron_skeleton_for_xslt1.xsl
+local file date : Sun Oct 22 12:35:45 PDT 2017
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/iso_svrl.xsl
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\iso_svrl.xsl
+local file date : Tue Feb 17 09:59:42 PST 2009
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/iso_svrl_for_xslt2.xsl
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\iso_svrl_for_xslt2.xsl
+local file date : Sun Oct 22 12:35:45 PDT 2017
+Not modified - so not downloaded
+org.web3d.x3d.get.latest.stylesheets:
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToX3dvClassicVrmlEncoding.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToX3dvClassicVrmlEncoding.xslt
+local file date : Sun Jul 21 05:28:28 PDT 2019
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToVrml97.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToVrml97.xslt
+local file date : Sat Aug 07 18:59:34 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dExtrusionToSvgViaXslt2.0.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dExtrusionToSvgViaXslt2.0.xslt
+local file date : Sun Jul 21 05:28:28 PDT 2019
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dTidy.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dTidy.xslt
+local file date : Sat Aug 07 18:57:03 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToHtml.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToHtml.xslt
+local file date : Thu May 27 10:27:50 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToXhtml-1.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToXhtml-1.xslt
+local file date : Sun Jul 21 05:28:28 PDT 2019
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToXhtml-2.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToXhtml-2.xslt
+local file date : Sun Jul 21 05:28:28 PDT 2019
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToXhtml-3.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToXhtml-3.xslt
+local file date : Mon Oct 05 06:17:06 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToXhtml-4.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToXhtml-4.xslt
+local file date : Mon Oct 05 06:17:06 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToXhtml-5.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToXhtml-5.xslt
+local file date : Mon Oct 05 06:17:06 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToXhtml.xslt
+local file date : Sat Aug 07 19:00:36 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToX3dom.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToX3dom.xslt
+local file date : Thu May 27 10:27:50 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToJson.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToJson.xslt
+local file date : Wed Jun 09 09:32:19 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToTurtle.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToTurtle.xslt
+local file date : Sat Aug 07 18:58:27 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dTooltipConversions.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dTooltipConversions.xslt
+local file date : Thu Feb 18 22:19:35 PST 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dUnwrap.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dUnwrap.xslt
+local file date : Wed Jun 09 09:32:19 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dWrap.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dWrap.xslt
+local file date : Wed Jun 09 09:32:19 PDT 2021
+Not modified - so not downloaded
+org.web3d.x3d.get.latest:
+org.web3d.x3d.clean:
+========================================================
+platform.download:
+testuserdir-delete:
+suite-jnlp.clean:
+clean:
+org.apache.taskdefs:
+org.apache.common-init:
+org.apache.projectized-common.basic-init:
+org.apache.basic-init:
+org.apache.files-init:
+org.apache.testuserdir-delete:
+org.apache.clean:
+org.jdom.taskdefs:
+org.jdom.common-init:
+org.jdom.projectized-common.basic-init:
+org.jdom.basic-init:
+org.jdom.files-init:
+org.jdom.testuserdir-delete:
+org.jdom.clean:
+edu.nps.moves.kmleditor.taskdefs:
+edu.nps.moves.kmleditor.common-init:
+edu.nps.moves.kmleditor.projectized-common.basic-init:
+edu.nps.moves.kmleditor.basic-init:
+edu.nps.moves.kmleditor.files-init:
+edu.nps.moves.kmleditor.testuserdir-delete:
+edu.nps.moves.kmleditor.clean:
+org.web3d.javahelp.taskdefs:
+org.web3d.javahelp.common-init:
+org.web3d.javahelp.projectized-common.basic-init:
+org.web3d.javahelp.basic-init:
+org.web3d.javahelp.files-init:
+org.web3d.javahelp.testuserdir-delete:
+org.web3d.javahelp.clean:
+org.web3d.x3d.collada.taskdefs:
+org.web3d.x3d.collada.common-init:
+org.web3d.x3d.collada.projectized-common.basic-init:
+org.web3d.x3d.collada.basic-init:
+org.web3d.x3d.collada.files-init:
+org.web3d.x3d.collada.testuserdir-delete:
+org.web3d.x3d.collada.clean:
+org.web3d.x3d.x3dedit.config.taskdefs:
+org.web3d.x3d.x3dedit.config.common-init:
+org.web3d.x3d.x3dedit.config.projectized-common.basic-init:
+org.web3d.x3d.x3dedit.config.basic-init:
+org.web3d.x3d.x3dedit.config.files-init:
+org.web3d.x3d.x3dedit.config.testuserdir-delete:
+org.web3d.x3d.x3dedit.config.clean:
+Xj3d Wrapper for X3D-Edit.taskdefs:
+Xj3d Wrapper for X3D-Edit.common-init:
+Xj3d Wrapper for X3D-Edit.projectized-common.basic-init:
+Xj3d Wrapper for X3D-Edit.basic-init:
+Xj3d Wrapper for X3D-Edit.files-init:
+Xj3d Wrapper for X3D-Edit.testuserdir-delete:
+Xj3d Wrapper for X3D-Edit.clean:
+org.web3d.x3d.taskdefs:
+org.web3d.x3d.common-init:
+org.web3d.x3d.projectized-common.basic-init:
+org.web3d.x3d.basic-init:
+org.web3d.x3d.files-init:
+org.web3d.x3d.testuserdir-delete:
+org.web3d.x3d.projectized-common.clean:
+org.web3d.x3d.get.latest.DTDs:
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/catalog.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\catalog.dtd
+local file date : Thu Aug 23 22:22:16 PDT 2007
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-InputOutputFields.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-InputOutputFields.dtd
+local file date : Sat Oct 31 12:51:27 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensions.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensions.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsPrivate.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsPrivate.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsAmendment1.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsAmendment1.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsPublic.Specification.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsPublic.Specification.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsPublic.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsPublic.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0.dtd
+local file date : Tue Jun 01 22:16:46 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1-InputOutputFields.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1-InputOutputFields.dtd
+local file date : Sat Oct 31 12:51:27 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1-Web3dExtensionsPrivate.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1-Web3dExtensionsPrivate.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1-Web3dExtensionsPublic.Specification.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1-Web3dExtensionsPublic.Specification.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1-Web3dExtensionsPublic.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1-Web3dExtensionsPublic.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1.dtd
+local file date : Tue Jun 01 22:16:46 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2-InputOutputFields.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2-InputOutputFields.dtd
+local file date : Sat Oct 31 12:51:27 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2-Web3dExtensionsPrivate.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2-Web3dExtensionsPrivate.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2-Web3dExtensionsPublic.Specification.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2-Web3dExtensionsPublic.Specification.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2-Web3dExtensionsPublic.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2-Web3dExtensionsPublic.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2.dtd
+local file date : Tue Jun 01 22:16:46 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3-InputOutputFields.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3-InputOutputFields.dtd
+local file date : Sat Oct 31 12:51:27 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3-Web3dExtensionsPrivate.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3-Web3dExtensionsPrivate.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3-Web3dExtensionsPublic.Specification.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3-Web3dExtensionsPublic.Specification.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3-Web3dExtensionsPublic.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3-Web3dExtensionsPublic.dtd
+local file date : Sat Oct 31 12:44:59 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3.dtd
+local file date : Tue Jun 01 22:16:46 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0-InputOutputFields.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0-InputOutputFields.dtd
+local file date : Sat Oct 31 13:10:17 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPrivate.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0-Web3dExtensionsPrivate.dtd
+local file date : Sat Oct 31 13:10:17 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPublic.Specification.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0-Web3dExtensionsPublic.Specification.dtd
+local file date : Sat Oct 31 13:10:17 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPublic.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0-Web3dExtensionsPublic.dtd
+local file date : Sat Oct 31 13:10:17 PDT 2015
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0.dtd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0.dtd
+local file date : Mon Aug 02 17:59:53 PDT 2021
+Not modified - so not downloaded
+org.web3d.x3d.get.latest.schemas:
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0.xsd
+local file date : Sun May 09 09:56:05 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1.xsd
+local file date : Thu Jul 01 11:34:16 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2.xsd
+local file date : Sun May 09 09:56:05 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3.xsd
+local file date : Sun May 09 09:56:05 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0.xsd
+local file date : Mon Aug 02 17:59:53 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/OasisXmlCatalogX3D.xml
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\OasisXmlCatalogX3D.xml
+local file date : Sun Sep 27 21:03:50 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsAmendment1.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsAmendment1.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsPrivate.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsPrivate.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsPublic.Specification.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsPublic.Specification.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.0-Web3dExtensionsPublic.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.0-Web3dExtensionsPublic.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1-Web3dExtensionsPrivate.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1-Web3dExtensionsPrivate.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1-Web3dExtensionsPublic.Specification.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1-Web3dExtensionsPublic.Specification.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.1-Web3dExtensionsPublic.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.1-Web3dExtensionsPublic.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2-Web3dExtensionsPrivate.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2-Web3dExtensionsPrivate.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2-Web3dExtensionsPublic.Specification.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2-Web3dExtensionsPublic.Specification.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.2-Web3dExtensionsPublic.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.2-Web3dExtensionsPublic.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3-Web3dExtensionsPrivate.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3-Web3dExtensionsPrivate.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3-Web3dExtensionsPublic.Specification.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3-Web3dExtensionsPublic.Specification.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-3.3-Web3dExtensionsPublic.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-3.3-Web3dExtensionsPublic.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPrivate.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0-Web3dExtensionsPrivate.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPublic.Specification.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0-Web3dExtensionsPublic.Specification.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPublic.xsd
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\specifications\x3d-4.0-Web3dExtensionsPublic.xsd
+local file date : Sun Jun 28 10:28:32 PDT 2020
+Not modified - so not downloaded
+org.web3d.x3d.get.latest.schematrons:
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/build.xml
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\build.xml
+local file date : Fri Oct 02 12:10:48 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/buildSchematronDevelopment.xml
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\buildSchematronDevelopment.xml
+local file date : Fri May 14 16:03:39 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/SvrlReportText.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\SvrlReportText.xslt
+local file date : Sun Oct 22 12:35:45 PDT 2017
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/X3dSchematronValidityChecks.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\X3dSchematronValidityChecks.xslt
+local file date : Sun Jun 20 17:55:57 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/X3dSchematronValidityChecks.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\X3dSchematronValidityChecks.xslt
+local file date : Sun Jun 20 17:55:57 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/iso_abstract_expand.xsl
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\iso_abstract_expand.xsl
+local file date : Sun Oct 22 12:35:45 PDT 2017
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/iso_dsdl_include.xsl
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\iso_dsdl_include.xsl
+local file date : Sun Oct 22 12:35:45 PDT 2017
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/iso_schematron_skeleton_for_saxon.xsl
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\iso_schematron_skeleton_for_saxon.xsl
+local file date : Sun Oct 22 12:35:45 PDT 2017
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/iso_schematron_skeleton_for_xslt1.xsl
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\iso_schematron_skeleton_for_xslt1.xsl
+local file date : Sun Oct 22 12:35:45 PDT 2017
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/iso_svrl.xsl
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\iso_svrl.xsl
+local file date : Tue Feb 17 09:59:42 PST 2009
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/tools/schematron/iso_svrl_for_xslt2.xsl
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\schematron\iso_svrl_for_xslt2.xsl
+local file date : Sun Oct 22 12:35:45 PDT 2017
+Not modified - so not downloaded
+org.web3d.x3d.get.latest.stylesheets:
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToX3dvClassicVrmlEncoding.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToX3dvClassicVrmlEncoding.xslt
+local file date : Sun Jul 21 05:28:28 PDT 2019
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToVrml97.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToVrml97.xslt
+local file date : Sat Aug 07 18:59:34 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dExtrusionToSvgViaXslt2.0.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dExtrusionToSvgViaXslt2.0.xslt
+local file date : Sun Jul 21 05:28:28 PDT 2019
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dTidy.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dTidy.xslt
+local file date : Sat Aug 07 18:57:03 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToHtml.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToHtml.xslt
+local file date : Thu May 27 10:27:50 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToXhtml-1.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToXhtml-1.xslt
+local file date : Sun Jul 21 05:28:28 PDT 2019
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToXhtml-2.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToXhtml-2.xslt
+local file date : Sun Jul 21 05:28:28 PDT 2019
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToXhtml-3.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToXhtml-3.xslt
+local file date : Mon Oct 05 06:17:06 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToXhtml-4.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToXhtml-4.xslt
+local file date : Mon Oct 05 06:17:06 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToXhtml-5.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToXhtml-5.xslt
+local file date : Mon Oct 05 06:17:06 PDT 2020
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToXhtml.xslt
+local file date : Sat Aug 07 19:00:36 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToX3dom.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToX3dom.xslt
+local file date : Thu May 27 10:27:50 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToJson.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToJson.xslt
+local file date : Wed Jun 09 09:32:19 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dToTurtle.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dToTurtle.xslt
+local file date : Sat Aug 07 18:58:27 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dTooltipConversions.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dTooltipConversions.xslt
+local file date : Thu Feb 18 22:19:35 PST 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dUnwrap.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dUnwrap.xslt
+local file date : Wed Jun 09 09:32:19 PDT 2021
+Not modified - so not downloaded
+Getting: http://svn.code.sf.net/p/x3d/code/www.web3d.org/x3d/stylesheets/X3dWrap.xslt
+To: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\src\org\web3d\x3d\stylesheets\X3dWrap.xslt
+local file date : Wed Jun 09 09:32:19 PDT 2021
+Not modified - so not downloaded
+org.web3d.x3d.get.latest:
+org.web3d.x3d.clean:
+========================================================
+all.build:
+org.apache.taskdefs:
+org.apache.common-init:
+org.apache.projectized-common.basic-init:
+org.apache.basic-init:
+org.apache.files-init:
+org.apache.nbm-license-init:
+org.apache.build-init:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\extide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\ide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\java
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\nb
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\platform
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\webcommon
+Scanning for modules in suite C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-openide-modules.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\lib\org-openide-modules.jar]
+org.apache.init:
+org.apache.up-to-date:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\ApacheXMLApis\build\classes
+Compiling 1 source file to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\ApacheXMLApis\build\classes
+Ignoring source, target and bootclasspath as release has been set
+Copying 2 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\ApacheXMLApis\build\classes
+org.apache.compile:
+org.apache.jar-prep:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\org-apache.jar
+org.apache.jar:
+org.apache.netbeans-extra:
+org.apache.javahelp:
+org.apache.module-auto-deps:
+Copying 11 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+org.apache.release:
+org.apache.module-xml-regular:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\config\Modules
+org.apache.module-xml-autoload:
+org.apache.module-xml-eager:
+org.apache.chmod-executables:
+org.apache.verify-class-linkage:
+1 file(s) have been successfully validated.
+org.apache.netbeans:
+Generating Auto Update information for org.apache
+org.apache.test-unit-dep-build:
+org.apache.test-qa-functional-dep-build:
+org.apache.test-dep-build:
+org.apache.test-preinit:
+org.apache.test-lib-init:
+org.apache.test-init:
+org.apache.do-unit-test-build:
+org.apache.do-qa-functional-test-build:
+org.apache.do-test-build:
+org.apache.test-build:
+org.apache.build:
+========================================================
+org.web3d.x3d.collada.taskdefs:
+org.web3d.x3d.collada.common-init:
+org.web3d.x3d.collada.projectized-common.basic-init:
+org.web3d.x3d.collada.basic-init:
+org.web3d.x3d.collada.files-init:
+org.web3d.x3d.collada.nbm-license-init:
+org.web3d.x3d.collada.build-init:
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\extide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\ide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\java
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\nb
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\platform
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\webcommon
+Scanning for modules in suite C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-netbeans-api-xml-ui.jar from [C:\Program Files\NetBeans-12.4\netbeans\ide\modules\org-netbeans-api-xml-ui.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-netbeans-modules-xml-catalog.jar from [C:\Program Files\NetBeans-12.4\netbeans\ide\modules\org-netbeans-modules-xml-catalog.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-openide-filesystems.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\core\org-openide-filesystems.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-openide-loaders.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\modules\org-openide-loaders.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-openide-nodes.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\modules\org-openide-nodes.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-openide-text.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\modules\org-openide-text.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-openide-util.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\lib\org-openide-util.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-openide-util-lookup.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\lib\org-openide-util-lookup.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-openide-util-ui.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\lib\org-openide-util-ui.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-openide-windows.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\modules\org-openide-windows.jar]
+org.web3d.x3d.collada.init:
+org.web3d.x3d.collada.up-to-date:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\Collada\build\classes
+Compiling 5 source files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\Collada\build\classes
+Ignoring source, target and bootclasspath as release has been set
+Copying 8 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\Collada\build\classes
+org.web3d.x3d.collada.compile:
+org.web3d.x3d.collada.jar-prep:
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\org-web3d-x3d-collada.jar
+org.web3d.x3d.collada.jar:
+org.web3d.x3d.collada.netbeans-extra:
+org.web3d.x3d.collada.javahelp:
+org.web3d.x3d.collada.module-auto-deps:
+org.web3d.x3d.collada.release:
+org.web3d.x3d.collada.module-xml-regular:
+org.web3d.x3d.collada.module-xml-autoload:
+org.web3d.x3d.collada.module-xml-eager:
+org.web3d.x3d.collada.chmod-executables:
+org.web3d.x3d.collada.verify-class-linkage:
+1 file(s) have been successfully validated.
+org.web3d.x3d.collada.netbeans:
+Generating Auto Update information for org.web3d.x3d.collada
+org.web3d.x3d.collada.test-unit-dep-build:
+org.web3d.x3d.collada.test-qa-functional-dep-build:
+org.web3d.x3d.collada.test-dep-build:
+org.web3d.x3d.collada.test-preinit:
+org.web3d.x3d.collada.test-lib-init:
+org.web3d.x3d.collada.test-init:
+org.web3d.x3d.collada.do-unit-test-build:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\Collada\build\test\unit\classes
+org.web3d.x3d.collada.do-qa-functional-test-build:
+org.web3d.x3d.collada.do-test-build:
+org.web3d.x3d.collada.test-build:
+org.web3d.x3d.collada.build:
+========================================================
+org.web3d.javahelp.taskdefs:
+org.web3d.javahelp.common-init:
+org.web3d.javahelp.projectized-common.basic-init:
+org.web3d.javahelp.basic-init:
+org.web3d.javahelp.files-init:
+org.web3d.javahelp.nbm-license-init:
+org.web3d.javahelp.build-init:
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\extide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\ide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\java
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\nb
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\platform
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\webcommon
+Scanning for modules in suite C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite
+org.web3d.javahelp.init:
+org.web3d.javahelp.up-to-date:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\JavaHelpWrapper\build\classes
+Copying 1 file to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\JavaHelpWrapper\build\classes
+org.web3d.javahelp.compile:
+org.web3d.javahelp.jar-prep:
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\org-web3d-javahelp.jar
+org.web3d.javahelp.jar:
+org.web3d.javahelp.netbeans-extra:
+org.web3d.javahelp.javahelp:
+org.web3d.javahelp.module-auto-deps:
+Copying 2 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+org.web3d.javahelp.release:
+org.web3d.javahelp.module-xml-regular:
+org.web3d.javahelp.module-xml-autoload:
+org.web3d.javahelp.module-xml-eager:
+org.web3d.javahelp.chmod-executables:
+org.web3d.javahelp.verify-class-linkage:
+0 file(s) have been successfully validated.
+org.web3d.javahelp.netbeans:
+Generating Auto Update information for org.web3d.javahelp
+org.web3d.javahelp.test-unit-dep-build:
+org.web3d.javahelp.test-qa-functional-dep-build:
+org.web3d.javahelp.test-dep-build:
+org.web3d.javahelp.test-preinit:
+org.web3d.javahelp.test-lib-init:
+org.web3d.javahelp.test-init:
+org.web3d.javahelp.do-unit-test-build:
+org.web3d.javahelp.do-qa-functional-test-build:
+org.web3d.javahelp.do-test-build:
+org.web3d.javahelp.test-build:
+org.web3d.javahelp.build:
+========================================================
+org.jdom.taskdefs:
+org.jdom.common-init:
+org.jdom.projectized-common.basic-init:
+org.jdom.basic-init:
+org.jdom.files-init:
+org.jdom.nbm-license-init:
+org.jdom.build-init:
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\extide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\ide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\java
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\nb
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\platform
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\webcommon
+Scanning for modules in suite C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite
+org.jdom.init:
+org.jdom.up-to-date:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\JdomWrapper\build\classes
+Copying 3 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\JdomWrapper\build\classes
+org.jdom.compile:
+org.jdom.jar-prep:
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\org-jdom.jar
+org.jdom.jar:
+org.jdom.netbeans-extra:
+org.jdom.javahelp:
+org.jdom.module-auto-deps:
+Copying 3 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+org.jdom.release:
+org.jdom.module-xml-regular:
+org.jdom.module-xml-autoload:
+org.jdom.module-xml-eager:
+org.jdom.chmod-executables:
+org.jdom.verify-class-linkage:
+1 file(s) have been successfully validated.
+org.jdom.netbeans:
+Generating Auto Update information for org.jdom
+org.jdom.test-unit-dep-build:
+org.jdom.test-qa-functional-dep-build:
+org.jdom.test-dep-build:
+org.jdom.test-preinit:
+org.jdom.test-lib-init:
+org.jdom.test-init:
+org.jdom.do-unit-test-build:
+org.jdom.do-qa-functional-test-build:
+org.jdom.do-test-build:
+org.jdom.test-build:
+org.jdom.build:
+========================================================
+edu.nps.moves.kmleditor.taskdefs:
+edu.nps.moves.kmleditor.common-init:
+edu.nps.moves.kmleditor.projectized-common.basic-init:
+edu.nps.moves.kmleditor.basic-init:
+edu.nps.moves.kmleditor.files-init:
+edu.nps.moves.kmleditor.nbm-license-init:
+edu.nps.moves.kmleditor.build-init:
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\extide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\ide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\java
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\nb
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\platform
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\webcommon
+Scanning for modules in suite C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit3.3\X3dEditorSuite
+Warning: edu.nps.moves.kmleditor lacks a unit test dependency on org.netbeans.libs.junit4; using default dependencies for compatibility
+edu.nps.moves.kmleditor.init:
+edu.nps.moves.kmleditor.up-to-date:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\KmlEditorModule\build\classes
+Compiling 257 source files to C:\x3d-code\www.web3d.org\x3d\tools\KmlEditorModule\build\classes
+Ignoring source, target and bootclasspath as release has been set
+Copying 141 files to C:\x3d-code\www.web3d.org\x3d\tools\KmlEditorModule\build\classes
+Copied 5 empty directories to 1 empty directory under C:\x3d-code\www.web3d.org\x3d\tools\KmlEditorModule\build\classes
+edu.nps.moves.kmleditor.compile:
+edu.nps.moves.kmleditor.jar-prep:
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit3.3\X3dEditorSuite\build\cluster\modules\edu-nps-moves-kmleditor.jar
+edu.nps.moves.kmleditor.jar:
+edu.nps.moves.kmleditor.netbeans-extra:
+edu.nps.moves.kmleditor.javahelp:
+edu.nps.moves.kmleditor.module-auto-deps:
+edu.nps.moves.kmleditor.release:
+edu.nps.moves.kmleditor.module-xml-regular:
+edu.nps.moves.kmleditor.module-xml-autoload:
+edu.nps.moves.kmleditor.module-xml-eager:
+edu.nps.moves.kmleditor.chmod-executables:
+edu.nps.moves.kmleditor.verify-class-linkage:
+1 file(s) have been successfully validated.
+edu.nps.moves.kmleditor.netbeans:
+Generating Auto Update information for edu.nps.moves.kmleditor
+edu.nps.moves.kmleditor.test-unit-dep-build:
+edu.nps.moves.kmleditor.test-qa-functional-dep-build:
+edu.nps.moves.kmleditor.test-dep-build:
+edu.nps.moves.kmleditor.test-preinit:
+edu.nps.moves.kmleditor.test-lib-init:
+edu.nps.moves.kmleditor.test-init:
+edu.nps.moves.kmleditor.do-unit-test-build:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\KmlEditorModule\build\test\unit\classes
+edu.nps.moves.kmleditor.do-qa-functional-test-build:
+edu.nps.moves.kmleditor.do-test-build:
+edu.nps.moves.kmleditor.test-build:
+edu.nps.moves.kmleditor.build:
+========================================================
+org.web3d.x3d.x3dedit.config.taskdefs:
+org.web3d.x3d.x3dedit.config.common-init:
+org.web3d.x3d.x3dedit.config.projectized-common.basic-init:
+org.web3d.x3d.x3dedit.config.basic-init:
+org.web3d.x3d.x3dedit.config.files-init:
+org.web3d.x3d.x3dedit.config.nbm-license-init:
+org.web3d.x3d.x3dedit.config.build-init:
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\extide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\ide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\java
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\nb
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\platform
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\webcommon
+Scanning for modules in suite C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-openide-awt.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\modules\org-openide-awt.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-openide-dialogs.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\modules\org-openide-dialogs.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-web3d-javahelp.jar from [C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\org-web3d-javahelp.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\JavaHelpWrapper\release\modules\ext\jh.jar]
+org.web3d.x3d.x3dedit.config.init:
+org.web3d.x3d.x3dedit.config.up-to-date:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\X3dAppConfiguration\build\classes
+Compiling 5 source files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\X3dAppConfiguration\build\classes
+Ignoring source, target and bootclasspath as release has been set
+Copying 4 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\X3dAppConfiguration\build\classes
+org.web3d.x3d.x3dedit.config.compile:
+org.web3d.x3d.x3dedit.config.jar-prep:
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\org-web3d-x3d-x3dedit-config.jar
+org.web3d.x3d.x3dedit.config.jar:
+org.web3d.x3d.x3dedit.config.netbeans-extra:
+org.web3d.x3d.x3dedit.config.javahelp:
+org.web3d.x3d.x3dedit.config.module-auto-deps:
+Copying 3 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+org.web3d.x3d.x3dedit.config.release:
+org.web3d.x3d.x3dedit.config.module-xml-regular:
+org.web3d.x3d.x3dedit.config.module-xml-autoload:
+org.web3d.x3d.x3dedit.config.module-xml-eager:
+org.web3d.x3d.x3dedit.config.chmod-executables:
+org.web3d.x3d.x3dedit.config.verify-class-linkage:
+1 file(s) have been successfully validated.
+org.web3d.x3d.x3dedit.config.netbeans:
+Generating Auto Update information for org.web3d.x3d.x3dedit.config
+org.web3d.x3d.x3dedit.config.test-unit-dep-build:
+org.web3d.x3d.x3dedit.config.test-qa-functional-dep-build:
+org.web3d.x3d.x3dedit.config.test-dep-build:
+org.web3d.x3d.x3dedit.config.test-preinit:
+org.web3d.x3d.x3dedit.config.test-lib-init:
+org.web3d.x3d.x3dedit.config.test-init:
+org.web3d.x3d.x3dedit.config.do-unit-test-build:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\X3dAppConfiguration\build\test\unit\classes
+org.web3d.x3d.x3dedit.config.do-qa-functional-test-build:
+org.web3d.x3d.x3dedit.config.do-test-build:
+org.web3d.x3d.x3dedit.config.test-build:
+org.web3d.x3d.x3dedit.config.build:
+========================================================
+Xj3d Wrapper for X3D-Edit.taskdefs:
+Xj3d Wrapper for X3D-Edit.common-init:
+Xj3d Wrapper for X3D-Edit.projectized-common.basic-init:
+Xj3d Wrapper for X3D-Edit.basic-init:
+Xj3d Wrapper for X3D-Edit.files-init:
+Xj3d Wrapper for X3D-Edit.nbm-license-init:
+Xj3d Wrapper for X3D-Edit.build-init:
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\extide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\ide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\java
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\nb
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\platform
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\webcommon
+Scanning for modules in suite C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite
+Xj3d Wrapper for X3D-Edit.init:
+Xj3d Wrapper for X3D-Edit.up-to-date:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\Xj3dWrapper\build\classes
+Compiling 1 source file to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\Xj3dWrapper\build\classes
+Ignoring source, target and bootclasspath as release has been set
+Copying 3 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\Xj3dWrapper\build\classes
+Xj3d Wrapper for X3D-Edit.compile:
+Xj3d Wrapper for X3D-Edit.jar-prep:
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\org-web3d-x3d-xj3d.jar
+Xj3d Wrapper for X3D-Edit.jar:
+Xj3d Wrapper for X3D-Edit.netbeans-extra:
+Xj3d Wrapper for X3D-Edit.javahelp:
+Xj3d Wrapper for X3D-Edit.module-auto-deps:
+Copying 20 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+Xj3d Wrapper for X3D-Edit.release:
+Xj3d Wrapper for X3D-Edit.module-xml-regular:
+Xj3d Wrapper for X3D-Edit.module-xml-autoload:
+Xj3d Wrapper for X3D-Edit.module-xml-eager:
+Xj3d Wrapper for X3D-Edit.chmod-executables:
+Xj3d Wrapper for X3D-Edit.verify-class-linkage:
+1 file(s) have been successfully validated.
+Xj3d Wrapper for X3D-Edit.netbeans:
+Generating Auto Update information for org.web3d.x3d.xj3d
+Xj3d Wrapper for X3D-Edit.test-unit-dep-build:
+Xj3d Wrapper for X3D-Edit.test-qa-functional-dep-build:
+Xj3d Wrapper for X3D-Edit.test-dep-build:
+Xj3d Wrapper for X3D-Edit.test-preinit:
+Xj3d Wrapper for X3D-Edit.test-lib-init:
+Xj3d Wrapper for X3D-Edit.test-init:
+Xj3d Wrapper for X3D-Edit.do-unit-test-build:
+Xj3d Wrapper for X3D-Edit.do-qa-functional-test-build:
+Xj3d Wrapper for X3D-Edit.do-test-build:
+Xj3d Wrapper for X3D-Edit.test-build:
+Xj3d Wrapper for X3D-Edit.build:
+========================================================
+org.web3d.x3d.taskdefs:
+org.web3d.x3d.common-init:
+org.web3d.x3d.projectized-common.basic-init:
+org.web3d.x3d.basic-init:
+org.web3d.x3d.files-init:
+org.web3d.x3d.nbm-license-init:
+org.web3d.x3d.build-init:
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\extide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\ide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\java
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\nb
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\platform
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\webcommon
+Scanning for modules in suite C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\edu-nps-moves-kmleditor.jar from [C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit3.3\X3dEditorSuite\build\cluster\modules\edu-nps-moves-kmleditor.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-apache.jar from [C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\org-apache.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\ApacheXMLApis\release\modules\ext\bcprov.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\ApacheXMLApis\release\modules\ext\xmlsec-2.1.4.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\ApacheXMLApis\release\modules\ext\saxon9B.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\ApacheXMLApis\release\modules\ext\log4j-1.2.17.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\ApacheXMLApis\release\modules\ext\slf4j-simple-1.7.30.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\ApacheXMLApis\release\modules\ext\slf4j-api-1.7.30.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\ApacheXMLApis\release\modules\ext\xalan.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\ApacheXMLApis\release\modules\ext\portecle.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-apache-tools-ant-module.jar from [C:\Program Files\NetBeans-12.4\netbeans\extide\modules\org-apache-tools-ant-module.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-jdom.jar from [C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\org-jdom.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\JdomWrapper\release\modules\ext\jdom.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\JdomWrapper\release\modules\ext\jaxen-1.1.2.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\JdomWrapper\release\modules\ext\dom4j-1.6.1.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-netbeans-libs-xerces.jar from [C:\Program Files\NetBeans-12.4\netbeans\ide\modules\org-netbeans-libs-xerces.jar, C:\Program Files\NetBeans-12.4\netbeans\ide\modules\ext\xerces-2.8.0.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-netbeans-modules-editor-document.jar from [C:\Program Files\NetBeans-12.4\netbeans\ide\modules\org-netbeans-modules-editor-document.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-netbeans-modules-editor-indent.jar from [C:\Program Files\NetBeans-12.4\netbeans\ide\modules\org-netbeans-modules-editor-indent.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-netbeans-modules-editor-lib.jar from [C:\Program Files\NetBeans-12.4\netbeans\ide\modules\org-netbeans-modules-editor-lib.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-netbeans-modules-javahelp.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\modules\org-netbeans-modules-javahelp.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-netbeans-modules-options-api.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\modules\org-netbeans-modules-options-api.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-netbeans-modules-settings.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\modules\org-netbeans-modules-settings.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-netbeans-modules-xml-jaxb-api.jar from [C:\Program Files\NetBeans-12.4\netbeans\ide\modules\org-netbeans-modules-xml-jaxb-api.jar, C:\Program Files\NetBeans-12.4\netbeans\ide\modules\ext\jaxb\activation.jar, C:\Program Files\NetBeans-12.4\netbeans\ide\modules\ext\jaxb\api\jaxb-api.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-netbeans-spi-palette.jar from [C:\Program Files\NetBeans-12.4\netbeans\ide\modules\org-netbeans-spi-palette.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-openide-actions.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\modules\org-openide-actions.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-openide-execution.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\modules\org-openide-execution.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-openide-io.jar from [C:\Program Files\NetBeans-12.4\netbeans\platform\modules\org-openide-io.jar]
+Distilling C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\public-package-jars\org-web3d-x3d-xj3d.jar from [C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\org-web3d-x3d-xj3d.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\Xj3dWrapper\release\modules\ext\xj3d.browser_2.3.0-nps.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\Xj3dWrapper\release\modules\ext\jogamp-fat.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\Xj3dWrapper\release\modules\ext\xj3d-2.3-nps.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\Xj3dWrapper\release\modules\ext\xj3d.cadfilter_2.3.0-nps.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\Xj3dWrapper\release\modules\ext\xj3d-2.3-3rdparty-nps.jar, C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\Xj3dWrapper\release\modules\ext\aviatrix3d-all_3.1.1-nps.jar]
+org.web3d.x3d.init:
+org.web3d.x3d.up-to-date:
+org.web3d.x3d.projectized-common.-pre-compile:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\build\classes
+Compiling 818 source files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\build\classes
+Ignoring source, target and bootclasspath as release has been set
+Copying 825 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\build\classes
+org.web3d.x3d.compile:
+org.web3d.x3d.jar-prep:
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\org-web3d-x3d.jar
+org.web3d.x3d.jar:
+org.web3d.x3d.netbeans-extra:
+org.web3d.x3d.javahelp.initialization:
+javahelp.initialization: private.properties.file=nbproject/private/private.xml
+have.private.properties=${have.private.properties}
+# javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    
+../nbproject/private/private.properties:
+# javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    
+org.web3d.x3d.check.have.X3D-EditPages:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/X3D-Edit.html etc. already downloaded...
+org.web3d.x3d.get.X3D-EditPages:
+org.web3d.x3d.check.have.other.javahelp:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/X3dRegularExpressions.html etc. already downloaded...
+org.web3d.x3d.get.other.javahelp.pages:
+org.web3d.x3d.check.have.tooltips:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/X3dTooltips.html etc. already downloaded...
+org.web3d.x3d.get.tooltips:
+org.web3d.x3d.check.have.examples:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/newTextFile.txt etc. already downloaded...
+org.web3d.x3d.get.examples:
+org.web3d.x3d.check.have.schematron.help:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/schematron/X3dSchematron.html etc. already downloaded...
+org.web3d.x3d.get.schematron.help:
+org.web3d.x3d.check.have.Xj3D.help:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/images/Xj3D/navigation/ButtonFly.gif etc. already downloaded...
+org.web3d.x3d.get.Xj3D.help:
+org.web3d.x3d.get.all.javahelp.pages:
+org.web3d.x3d.harness.javahelp:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\build\javahelp\org\web3d\x3d\docs\JavaHelpSearch
+Copying 514 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\build\javahelp
+Deleting directory C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\build\javahelp\org\web3d\x3d\docs\JavaHelpSearch
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\build\javahelp\org\web3d\x3d\docs\JavaHelpSearch
+Running JavaHelp search database indexer...
+I/O exception occurred in file 'C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\build\javahelp\org\web3d\x3d\docs\X3D-EditToolbarButtons.html'
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\docs
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\docs\org-web3d-x3d.jar
+org.web3d.x3d.javahelp:
+Deleting: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\docs\org-web3d-x3d.jar
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\docs\org-web3d-x3d.jar
+org.web3d.x3d.module-auto-deps:
+Copying 6 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+org.web3d.x3d.release:
+org.web3d.x3d.module-xml-regular:
+org.web3d.x3d.module-xml-autoload:
+org.web3d.x3d.module-xml-eager:
+org.web3d.x3d.chmod-executables:
+org.web3d.x3d.verify-class-linkage:
+1 file(s) have been successfully validated.
+org.web3d.x3d.netbeans:
+Generating Auto Update information for org.web3d.x3d
+org.web3d.x3d.test-unit-dep-build:
+org.web3d.x3d.test-qa-functional-dep-build:
+org.web3d.x3d.test-dep-build:
+org.web3d.x3d.projectized-common.test-preinit:
+org.web3d.x3d.test-preinit:
+-Xmx1g -XX:-UseParallelGC -Dorg.web3d.vrml.renderer.common.nodes.shape.useTextureCache=true -Dswing.aatext=true -Dawt.useSystemAAFontSettings=gasp --add-exports java.base/java.lang=ALL-UNNAMED --add-exports java.desktop/sun.awt=ALL-UNNAMED --add-exports java.desktop/sun.java2d=ALL-UNNAMED --add-opens java.base/java.net=ALL-UNNAMED -Djava.library.path='build/cluster/modules/lib/amd64/Windows 10' -Dsun.java2d.opengl=true -Dsun.java2d.opengl.fbobject=true -Dsun.java2d.dpiaware=true -Dapple.awt.graphics.UseQuartz=true -Dapple.laf.useScreenMenuBar=true -Dapple.awt.brushMetalLook=true
+org.web3d.x3d.test-lib-init:
+org.web3d.x3d.test-init:
+org.web3d.x3d.do-unit-test-build:
+Created dir: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\build\test\unit\classes
+Compiling 2 source files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\build\test\unit\classes
+Ignoring source, target and bootclasspath as release has been set
+Copying 2 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\build\test\unit\classes
+org.web3d.x3d.do-qa-functional-test-build:
+org.web3d.x3d.do-test-build:
+org.web3d.x3d.test-build:
+org.web3d.x3d.build:
+========================================================
+platform.download:
+branding:
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\core\locale\core_x3dedit40.jar
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\locale\org-netbeans-core-windows_x3dedit40.jar
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\locale\org-netbeans-core_x3dedit40.jar
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\locale\org-netbeans-modules-javahelp_x3dedit40.jar
+files-init:
+release:
+build:
+org.apache.taskdefs:
+org.apache.common-init:
+org.apache.projectized-common.basic-init:
+org.apache.basic-init:
+org.apache.files-init:
+org.apache.nbm-license-init:
+org.apache.build-init:
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\extide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\ide
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\java
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\nb
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\platform
+Scanning for modules in C:\Program Files\NetBeans-12.4\netbeans\webcommon
+Scanning for modules in suite C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite
+org.apache.init:
+org.apache.up-to-date:
+org.apache.compile:
+org.apache.jar-prep:
+org.apache.jar:
+org.apache.netbeans-extra:
+org.apache.javahelp:
+org.apache.module-auto-deps:
+Copying 11 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+org.apache.release:
+org.apache.module-xml-regular:
+org.apache.module-xml-autoload:
+org.apache.module-xml-eager:
+org.apache.chmod-executables:
+org.apache.verify-class-linkage:
+1 file(s) have been successfully validated.
+org.apache.netbeans:
+Generating Auto Update information for org.apache
+org.jdom.taskdefs:
+org.jdom.common-init:
+org.jdom.projectized-common.basic-init:
+org.jdom.basic-init:
+org.jdom.files-init:
+org.jdom.nbm-license-init:
+org.jdom.build-init:
+org.jdom.init:
+org.jdom.up-to-date:
+org.jdom.compile:
+org.jdom.jar-prep:
+org.jdom.jar:
+org.jdom.netbeans-extra:
+org.jdom.javahelp:
+org.jdom.module-auto-deps:
+Copying 3 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+org.jdom.release:
+org.jdom.module-xml-regular:
+org.jdom.module-xml-autoload:
+org.jdom.module-xml-eager:
+org.jdom.chmod-executables:
+org.jdom.verify-class-linkage:
+1 file(s) have been successfully validated.
+org.jdom.netbeans:
+Generating Auto Update information for org.jdom
+edu.nps.moves.kmleditor.taskdefs:
+edu.nps.moves.kmleditor.common-init:
+edu.nps.moves.kmleditor.projectized-common.basic-init:
+edu.nps.moves.kmleditor.basic-init:
+edu.nps.moves.kmleditor.files-init:
+edu.nps.moves.kmleditor.nbm-license-init:
+edu.nps.moves.kmleditor.build-init:
+Scanning for modules in suite C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit3.3\X3dEditorSuite
+Warning: edu.nps.moves.kmleditor lacks a unit test dependency on org.netbeans.libs.junit4; using default dependencies for compatibility
+edu.nps.moves.kmleditor.init:
+edu.nps.moves.kmleditor.up-to-date:
+edu.nps.moves.kmleditor.compile:
+edu.nps.moves.kmleditor.jar-prep:
+edu.nps.moves.kmleditor.jar:
+edu.nps.moves.kmleditor.netbeans-extra:
+edu.nps.moves.kmleditor.javahelp:
+edu.nps.moves.kmleditor.module-auto-deps:
+edu.nps.moves.kmleditor.release:
+edu.nps.moves.kmleditor.module-xml-regular:
+edu.nps.moves.kmleditor.module-xml-autoload:
+edu.nps.moves.kmleditor.module-xml-eager:
+edu.nps.moves.kmleditor.chmod-executables:
+edu.nps.moves.kmleditor.verify-class-linkage:
+1 file(s) have been successfully validated.
+edu.nps.moves.kmleditor.netbeans:
+Generating Auto Update information for edu.nps.moves.kmleditor
+org.web3d.javahelp.taskdefs:
+org.web3d.javahelp.common-init:
+org.web3d.javahelp.projectized-common.basic-init:
+org.web3d.javahelp.basic-init:
+org.web3d.javahelp.files-init:
+org.web3d.javahelp.nbm-license-init:
+org.web3d.javahelp.build-init:
+org.web3d.javahelp.init:
+org.web3d.javahelp.up-to-date:
+org.web3d.javahelp.compile:
+org.web3d.javahelp.jar-prep:
+org.web3d.javahelp.jar:
+org.web3d.javahelp.netbeans-extra:
+org.web3d.javahelp.javahelp:
+org.web3d.javahelp.module-auto-deps:
+Copying 2 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+org.web3d.javahelp.release:
+org.web3d.javahelp.module-xml-regular:
+org.web3d.javahelp.module-xml-autoload:
+org.web3d.javahelp.module-xml-eager:
+org.web3d.javahelp.chmod-executables:
+org.web3d.javahelp.verify-class-linkage:
+0 file(s) have been successfully validated.
+org.web3d.javahelp.netbeans:
+Generating Auto Update information for org.web3d.javahelp
+org.web3d.x3d.collada.taskdefs:
+org.web3d.x3d.collada.common-init:
+org.web3d.x3d.collada.projectized-common.basic-init:
+org.web3d.x3d.collada.basic-init:
+org.web3d.x3d.collada.files-init:
+org.web3d.x3d.collada.nbm-license-init:
+org.web3d.x3d.collada.build-init:
+org.web3d.x3d.collada.init:
+org.web3d.x3d.collada.up-to-date:
+org.web3d.x3d.collada.compile:
+org.web3d.x3d.collada.jar-prep:
+org.web3d.x3d.collada.jar:
+org.web3d.x3d.collada.netbeans-extra:
+org.web3d.x3d.collada.javahelp:
+org.web3d.x3d.collada.module-auto-deps:
+org.web3d.x3d.collada.release:
+org.web3d.x3d.collada.module-xml-regular:
+org.web3d.x3d.collada.module-xml-autoload:
+org.web3d.x3d.collada.module-xml-eager:
+org.web3d.x3d.collada.chmod-executables:
+org.web3d.x3d.collada.verify-class-linkage:
+1 file(s) have been successfully validated.
+org.web3d.x3d.collada.netbeans:
+Generating Auto Update information for org.web3d.x3d.collada
+org.web3d.x3d.x3dedit.config.taskdefs:
+org.web3d.x3d.x3dedit.config.common-init:
+org.web3d.x3d.x3dedit.config.projectized-common.basic-init:
+org.web3d.x3d.x3dedit.config.basic-init:
+org.web3d.x3d.x3dedit.config.files-init:
+org.web3d.x3d.x3dedit.config.nbm-license-init:
+org.web3d.x3d.x3dedit.config.build-init:
+org.web3d.x3d.x3dedit.config.init:
+org.web3d.x3d.x3dedit.config.up-to-date:
+org.web3d.x3d.x3dedit.config.compile:
+org.web3d.x3d.x3dedit.config.jar-prep:
+org.web3d.x3d.x3dedit.config.jar:
+org.web3d.x3d.x3dedit.config.netbeans-extra:
+org.web3d.x3d.x3dedit.config.javahelp:
+org.web3d.x3d.x3dedit.config.module-auto-deps:
+Copying 3 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+org.web3d.x3d.x3dedit.config.release:
+org.web3d.x3d.x3dedit.config.module-xml-regular:
+org.web3d.x3d.x3dedit.config.module-xml-autoload:
+org.web3d.x3d.x3dedit.config.module-xml-eager:
+org.web3d.x3d.x3dedit.config.chmod-executables:
+org.web3d.x3d.x3dedit.config.verify-class-linkage:
+1 file(s) have been successfully validated.
+org.web3d.x3d.x3dedit.config.netbeans:
+Generating Auto Update information for org.web3d.x3d.x3dedit.config
+Xj3d Wrapper for X3D-Edit.taskdefs:
+Xj3d Wrapper for X3D-Edit.common-init:
+Xj3d Wrapper for X3D-Edit.projectized-common.basic-init:
+Xj3d Wrapper for X3D-Edit.basic-init:
+Xj3d Wrapper for X3D-Edit.files-init:
+Xj3d Wrapper for X3D-Edit.nbm-license-init:
+Xj3d Wrapper for X3D-Edit.build-init:
+Xj3d Wrapper for X3D-Edit.init:
+Xj3d Wrapper for X3D-Edit.up-to-date:
+Xj3d Wrapper for X3D-Edit.compile:
+Xj3d Wrapper for X3D-Edit.jar-prep:
+Xj3d Wrapper for X3D-Edit.jar:
+Xj3d Wrapper for X3D-Edit.netbeans-extra:
+Xj3d Wrapper for X3D-Edit.javahelp:
+Xj3d Wrapper for X3D-Edit.module-auto-deps:
+Copying 20 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+Xj3d Wrapper for X3D-Edit.release:
+Xj3d Wrapper for X3D-Edit.module-xml-regular:
+Xj3d Wrapper for X3D-Edit.module-xml-autoload:
+Xj3d Wrapper for X3D-Edit.module-xml-eager:
+Xj3d Wrapper for X3D-Edit.chmod-executables:
+Xj3d Wrapper for X3D-Edit.verify-class-linkage:
+1 file(s) have been successfully validated.
+Xj3d Wrapper for X3D-Edit.netbeans:
+Generating Auto Update information for org.web3d.x3d.xj3d
+org.web3d.x3d.taskdefs:
+org.web3d.x3d.common-init:
+org.web3d.x3d.projectized-common.basic-init:
+org.web3d.x3d.basic-init:
+org.web3d.x3d.files-init:
+org.web3d.x3d.nbm-license-init:
+org.web3d.x3d.build-init:
+org.web3d.x3d.init:
+org.web3d.x3d.up-to-date:
+org.web3d.x3d.projectized-common.-pre-compile:
+org.web3d.x3d.compile:
+org.web3d.x3d.jar-prep:
+org.web3d.x3d.jar:
+org.web3d.x3d.netbeans-extra:
+org.web3d.x3d.javahelp.initialization:
+javahelp.initialization: private.properties.file=nbproject/private/private.xml
+have.private.properties=${have.private.properties}
+# javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    
+../nbproject/private/private.properties:
+# javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    # javahelp initialization
+jhall.jar=C:/java/jh2.0_05/javahelp/lib/jsearch.jar
+    
+org.web3d.x3d.check.have.X3D-EditPages:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/X3D-Edit.html etc. already downloaded...
+org.web3d.x3d.get.X3D-EditPages:
+org.web3d.x3d.check.have.other.javahelp:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/X3dRegularExpressions.html etc. already downloaded...
+org.web3d.x3d.get.other.javahelp.pages:
+org.web3d.x3d.check.have.tooltips:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/X3dTooltips.html etc. already downloaded...
+org.web3d.x3d.get.tooltips:
+org.web3d.x3d.check.have.examples:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/newTextFile.txt etc. already downloaded...
+org.web3d.x3d.get.examples:
+org.web3d.x3d.check.have.schematron.help:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/schematron/X3dSchematron.html etc. already downloaded...
+org.web3d.x3d.get.schematron.help:
+org.web3d.x3d.check.have.Xj3D.help:
+C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3D\javahelp/org/web3d/x3d/docs/downloads/images/Xj3D/navigation/ButtonFly.gif etc. already downloaded...
+org.web3d.x3d.get.Xj3D.help:
+org.web3d.x3d.get.all.javahelp.pages:
+org.web3d.x3d.harness.javahelp:
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\docs\org-web3d-x3d.jar
+org.web3d.x3d.javahelp:
+Deleting: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\docs\org-web3d-x3d.jar
+Building jar: C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster\modules\docs\org-web3d-x3d.jar
+org.web3d.x3d.module-auto-deps:
+Copying 6 files to C:\x3d-code\www.web3d.org\x3d\tools\X3dEdit4.next\X3dEditorSuite\build\cluster
+org.web3d.x3d.release:
+org.web3d.x3d.module-xml-regular:
+org.web3d.x3d.module-xml-autoload:
+org.web3d.x3d.module-xml-eager:
+org.web3d.x3d.chmod-executables:
+org.web3d.x3d.verify-class-linkage:
+1 file(s) have been successfully validated.
+org.web3d.x3d.netbeans:
+Generating Auto Update information for org.web3d.x3d
+========================================================
+all:
+BUILD SUCCESSFUL (total time: 3 minutes 14 seconds)

@@ -1,0 +1,10 @@
+# private.properties.template for automating check-in permissions for an X3D-Edit deployment build
+
+# instructions:
+# copy/rename this file as private.properties,
+# then replace values below,
+# then run install.sh to copy the new property values into corresponding modules
+
+storepass=put-keystore-password-here
+# deploy.username=joeblow
+# deploy.password=joespassword

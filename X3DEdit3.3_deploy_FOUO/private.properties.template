@@ -1,0 +1,10 @@
+# to sign X3D-Edit modules:
+
+# instructions
+# - copy private.properties.template to private.properties
+# - edit private.properties to hold proper name and passwords
+# - run install.sh
+
+storepass=put-keystore-password-here
+deploy.username=enterUserName
+deploy.password=enterUserPassword

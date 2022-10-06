@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+AutoUpdate-Show-In-Client: true
+OpenIDE-Module: org.web3d.x3d/1
+OpenIDE-Module-Layer: org/web3d/x3d/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/web3d/x3d/Bundle.properties
+OpenIDE-Module-Requires: 
+  org.netbeans.api.javahelp.Help,
+  org.openide.windows.IOProvider,
+  org.openide.windows.WindowManager
+OpenIDE-Module-Specification-Version: 4.0.3
+
+Name: org/web3d/x3d/X3DLoader.class
+Install-Before: org.openide.loaders.XMLDataObject, org.netbeans.modules.xml.core.XMLDataObject, org.netbeans.modules.xml.XMLDataObject

@@ -1,0 +1,63 @@
+don@it154928 /cygdrive/c/x3d-code/www.web3d.org/x3d/tools/X3dEdit3.3/X3DEdit3.3Deployment
+$ ./cleanPrivateProperties.sh
+../ApacheXMLApis/nbproject/private exists
+../Collada/nbproject/private exists
+../X3D/JAXB2.1.9/nbproject/private exists
+../JdomWrapper/nbproject/private exists
+../JGoodiesLooksWrapper/nbproject/private exists
+../../KmlEditorModule/nbproject/private exists
+../LookAndFeel/nbproject/private exists
+../X3D/nbproject/private exists
+../Xj3dWrapper/nbproject/private exists
+../X3dEditorSuite/nbproject/private exists
+../X3dEditorSuite/X3dAppConfiguration/nbproject/private exists
+removed ‘../ApacheXMLApis/nbproject/private/private.properties’
+removed ‘../Collada/nbproject/private/private.properties’
+removed ‘../X3D/JAXB2.1.9/nbproject/private/private.properties’
+removed ‘../JdomWrapper/nbproject/private/private.properties’
+removed ‘../JGoodiesLooksWrapper/nbproject/private/private.properties’
+removed ‘../../KmlEditorModule/nbproject/private/private.properties’
+removed ‘../LookAndFeel/nbproject/private/private.properties’
+removed ‘../X3D/nbproject/private/private.properties’
+removed ‘../Xj3dWrapper/nbproject/private/private.properties’
+removed ‘../X3dEditorSuite/nbproject/private/private.properties’
+removed ‘../X3dEditorSuite/X3dAppConfiguration/nbproject/private/private.properties’
+
+don@it154928 /cygdrive/c/x3d-code/www.web3d.org/x3d/tools/X3dEdit3.3/X3DEdit3.3Deployment
+$ ./install.sh
+check permissions:
+-rw-rw-r--+ 1 don None 3301 Feb  1  2008 movesJarSigningKeystore
+-rw-rw-r--+ 1 don None  239 Jul 29  2009 private.properties
+../ApacheXMLApis/nbproject/private exists
+../Collada/nbproject/private exists
+../X3D/JAXB2.1.9/nbproject/private exists
+../JdomWrapper/nbproject/private exists
+../JGoodiesLooksWrapper/nbproject/private exists
+../../KmlEditorModule/nbproject/private exists
+../LookAndFeel/nbproject/private exists
+../X3D/nbproject/private exists
+../Xj3dWrapper/nbproject/private exists
+../X3dEditorSuite/nbproject/private exists
+../X3dEditorSuite/X3dAppConfiguration/nbproject/private exists
+‘movesJarSigningKeystore’ -> ‘../ApacheXMLApis/nbproject/private/movesJarSigningKeystore’
+‘movesJarSigningKeystore’ -> ‘../Collada/nbproject/private/movesJarSigningKeystore’
+‘movesJarSigningKeystore’ -> ‘../X3D/JAXB2.1.9/nbproject/private/movesJarSigningKeystore’
+‘movesJarSigningKeystore’ -> ‘../JdomWrapper/nbproject/private/movesJarSigningKeystore’
+‘movesJarSigningKeystore’ -> ‘../JGoodiesLooksWrapper/nbproject/private/movesJarSigningKeystore’
+‘movesJarSigningKeystore’ -> ‘../../KmlEditorModule/nbproject/private/movesJarSigningKeystore’
+‘movesJarSigningKeystore’ -> ‘../LookAndFeel/nbproject/private/movesJarSigningKeystore’
+‘movesJarSigningKeystore’ -> ‘../X3D/nbproject/private/movesJarSigningKeystore’
+‘movesJarSigningKeystore’ -> ‘../Xj3dWrapper/nbproject/private/movesJarSigningKeystore’
+‘movesJarSigningKeystore’ -> ‘../X3dEditorSuite/nbproject/private/movesJarSigningKeystore’
+‘movesJarSigningKeystore’ -> ‘../X3dEditorSuite/X3dAppConfiguration/nbproject/private/movesJarSigningKeystore’
+‘private.properties’ -> ‘../ApacheXMLApis/nbproject/private/private.properties’
+‘private.properties’ -> ‘../Collada/nbproject/private/private.properties’
+‘private.properties’ -> ‘../X3D/JAXB2.1.9/nbproject/private/private.properties’
+‘private.properties’ -> ‘../JdomWrapper/nbproject/private/private.properties’
+‘private.properties’ -> ‘../JGoodiesLooksWrapper/nbproject/private/private.properties’
+‘private.properties’ -> ‘../../KmlEditorModule/nbproject/private/private.properties’
+‘private.properties’ -> ‘../LookAndFeel/nbproject/private/private.properties’
+‘private.properties’ -> ‘../X3D/nbproject/private/private.properties’
+‘private.properties’ -> ‘../Xj3dWrapper/nbproject/private/private.properties’
+‘private.properties’ -> ‘../X3dEditorSuite/nbproject/private/private.properties’
+‘private.properties’ -> ‘../X3dEditorSuite/X3dAppConfiguration/nbproject/private/private.properties’

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+AutoUpdate-Show-In-Client: false
+OpenIDE-Module: org.web3d.x3d.x3dedit.config
+OpenIDE-Module-Install: org/web3d/x3d/x3dedit/config/Installer.class
+OpenIDE-Module-Layer: org/web3d/x3d/x3dedit/config/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/web3d/x3d/x3dedit/config/Bundle.properties
+OpenIDE-Module-Specification-Version: 4.0.0
+

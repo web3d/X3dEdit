@@ -1,0 +1,5 @@
+$Id: ReadMe 31745 2021-05-01 20:39:38Z tnorbraten $
+
+In order to test the X3D-Edit NetBeans plugin, simply navigate the NBs plug-in
+wizard via Tools -> Plugins -> Downloaded -> Add Plugins... to
+./build/updates and select all the .nbm files, then install.
