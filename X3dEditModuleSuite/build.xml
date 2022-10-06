@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+<!-- for some information on what you could do (e.g. targets to override). -->
+<!-- If you delete this file and reopen the project it will be recreated. -->
+<project name="X3dEditModuleSuite" basedir="." default="quick.run">
+    <description>Builds the module suite X3dEditModuleSuite.</description>
+    
+    <import file="nbproject/build-impl.xml"/>
+        
+    <property file="nbproject/project.properties"/>
+    
+    <!--
+    ============
+    INIT SECTION
+    ============
+    -->
+
+    <target name="platformInitialize" depends="-init,platformType,initializeWindows,initializeUnix,initializeMac"/>
+    <target name="platformType">
+        <condition property="isWindows" >
+            <os family="windows"/>
+        </condition>
+        <condition property="isMac" >
+            <os family="mac"/>
+        </condition>
+
+        <!-- Based on Apache Ant user-manual example -->
+        <condition property="isUnixNotMac">
+            <and>
+                <os family="unix"/>
+
+                <not>
+                    <equals arg1="${os.name}" arg2="Mac OS X"/>
+                </not>
+            </and>
+        </condition>
+    </target>
+
+    <target name="initializeWindows" if="isWindows" depends="initializeXj3d">
+        <property name="run.xj3d.args"  value="${win_runarguments}"/>
+        <property name="run.args"  value="${common.args} ${win.run.args}"/>
+    </target>
+    <target name="initializeUnix" if="isUnixNotMac" depends="initializeXj3d">
+        <property name="run.xj3d.args"  value="${unix_runarguments}"/>
+        <property name="run.args"  value="${common.args} ${unix.run.args}"/>
+    </target>
+    <target name="initializeMac" if="isMac" depends="initializeXj3d">
+        <property name="run.xj3d.args"  value="${mac_runarguments}"/>
+        <property name="run.args"  value="${common.args} ${mac.run.args}"/>
+    </target>
+    <target name="initializeXj3d" >
+        <property name="win_runarguments"  value="${common.xj3d.args} ${xj3darg6}"/>
+        <property name="unix_runarguments" value="${common.xj3d.args} ${xj3darg7}"/>
+        <property name="mac_runarguments"  value="${common.xj3d.args} ${xj3darg8} ${xj3darg9} ${xj3darg10} ${xj3darg11} ${xj3darg14}"/>
+    </target>
+    
+    <!-- Override initializing the app before running -->
+    <target name="run" depends="platformInitialize,suite.run" description="Runs X3D-Edit"/>
+    
+    <!-- Override building the app before running -->
+    <target name="quick.run" depends="platformInitialize,branding,release,-hide-excluded-modules,-jdk-init"
+            description="Runs X3D-Edit without building">
+        <ant antfile="${harness.dir}/run.xml" target="run">
+            <reference refid="cluster.path.id"/>
+        </ant>
+    </target>
+    
+    <target name="run.xj3d.browser"
+            depends="platformInitialize,-init,-jdk-init"
+            description="Run the 3D Simulation Viewer App">
+      
+        <!-- first look on command line, otherwise use ${scene} property from build.properties -->
+        <property name="args" value="${scene}"/>
+
+        <echo message="Xj3D launching ${args}"/>
+        <echo message="main.class=${main.class}"/>
+        <echo message="app.browser.args=${app.browser.args}"/>
+        <echo message="run.xj3d.args=${run.xj3d.args}"/>
+        
+        <ant antfile="${harness.dir}/run.xml" target="-prepare-as-platform">
+            <reference refid="cluster.path.id"/>
+        </ant>
+        
+        <!-- Working directory is apps/browser b/c that's where the javahelp helpset is -->
+        <java classname="${main.class}"
+              fork="true">
+
+            <!-- Comment out for native DIS handling -->
+            <!--sysproperty key="${dis.protocol.handler.prop}"
+                         value="${dis.xmpp.protocol.handler}"/-->
+            <jvmarg line="${run.xj3d.args}"/>
+
+            <!-- Enable the Smack debugger -->
+            <!--jvmarg value="-Dsmack.debugEnabled=true"/-->
+            <classpath>
+                <fileset dir="${cluster}">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+            
+            <!-- ${args} should be the full path to an X3D file -->
+            <!-- commandline given/supplied arguments args=%1 etc -->
+            <arg line="${app.browser.args} ${args}"/>
+
+        </java>
+
+    </target>
+    
+    <!-- Override -->
+    <target name="debug" 
+            depends="platformInitialize,build,-jdk-init,-jdk-presetdef-nbjpdastart,do.debug" 
+            description="Debug after building the entire suite first"/>
+    
+    <target name="quick.debug" 
+            depends="platformInitialize,branding,release,-hide-excluded-modules,-jdk-init,-jdk-presetdef-nbjpdastart,do.debug" 
+            description="Debugs X3D-Edit in place without building"/>
+    
+    <!-- Debug must be overridden here IOT avoid URLStreamHandler Error thrown.
+         Caused by vanilla ${harness.dir}/run.cml debug target not getting the 
+         proper -add-opens=java.base/java.net=ALL-UNNAMED start up directive from 
+         project.properties -->
+    <target name="do.debug">
+        <fail unless="netbeans.home">This target only works when run from inside the NetBeans IDE.</fail>
+        <nbjpdastart name="NetBeans" addressproperty="debug.port" transport="dt_socket">
+            <classpath>
+                <pathfileset include="**/*.jar">
+                    <path refid="cluster.path.id"/>
+                </pathfileset>
+                <fileset dir="${cluster}">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+        </nbjpdastart>
+        <property name="debug.pause" value="y"/>
+        <property name="debug.args" value="${run.args} -J-agentlib:jdwp=transport=dt_socket,suspend=${debug.pause},server=n,address=${debug.port}"/>
+        <ant antfile="${harness.dir}/run.xml" target="run">
+            <property name="run.args" value="${debug.args}"/>
+            <reference refid="cluster.path.id"/>
+        </ant>
+    </target>
+    
+    <target name="view.X3D-Edit.home.local" description="view local copy of X3D-Edit. home page in web browser (Netbeans only)">
+        <echo message="websites/savage.nps.edu/X3D-Edit/X3D-Edit.html" />
+        <nbbrowse file="websites/savage.nps.edu/X3D-Edit/X3D-Edit.html" />
+        <!-- TODO implementation-independent approach if possible, but note that other Ant approaches usually have to be customized for each OS. -->
+    </target>
+
+    <target name="view.X3D-Edit.home.online" description="view online copy of X3D-Edit. home page in web browser (Netbeans only)">
+        <echo message="https://savage.nps.edu/X3D-Edit" />
+        <nbbrowse url="https://savage.nps.edu/X3D-Edit" />
+        <!-- TODO implementation-independent approach if possible, but note that other Ant approaches usually have to be customized for each OS. -->
+    </target>
+
+    <target name="view.sourceforge.issues" description="view X3D-Edit issues on sourceforge. home page in web browser (Netbeans only)">
+        <echo message="https://sourceforge.net/p/x3d/tickets" />
+        <nbbrowse url="https://sourceforge.net/p/x3d/tickets" />
+        <!-- TODO implementation-independent approach if possible, but note that other Ant approaches usually have to be customized for each OS. -->
+    </target>
+    
+    <target name="open.harness.readme" description="view the NetBeans harness README file" depends="open.harness.readme.mac,open.harness.readme.win">
+        <echo message="${message}"/>
+    </target>
+    <target name="open.harness.readme.mac">
+        <loadfile property="message" srcFile="../../../../../../../${harness.readme}"/>
+    </target>
+    <target name="open.harness.readme.win">
+        <loadfile property="message" srcFile="${harness.readme}"/>
+    </target>
+    
+</project>
